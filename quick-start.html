@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <title>Qx Lab AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg custom-sticky-bar">
+      <div class="container-fluid" style="padding: 0 24px;">
+        <div class="header-logo">
+          <a href="overView.html">QX LAB AI</a>
+        </div>
+        <button class="navbar-toggler ps-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-md-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="overView.html">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none res-active" href="documentation.html">Documentation</a>
+              <div class="accordion res-header-bar-list" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Documentation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="documentation.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="quick-start.html">
+                        Quickstart
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="libraries.html">
+                        Libraries
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="models.html">
+                        Models
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="deprecations.html">
+                        Deprecations
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="tutorials.html">
+                        Tutorials
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="policies.html">
+                        Policies
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Guides
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="GPT-Models.html">
+                        GPT
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="gpt-best-practices.html">
+                        GPT best practices
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="image-generation.html">
+                        Image generation
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="fine-tuning.html">
+                        Fine-tuning
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="embeddings.html">
+                        Embeddings
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="speech-to-text.html">
+                        Speech to text
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="moderation.html">
+                        moderation
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="rate-limits.html">
+                        rate-limits
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="error-codes.html">
+                        Error codes
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="safety-best-practices.html">
+                        Safety best practices
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="production-best-practices.html">
+                        Production best practices
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Plugins
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="plugins-introduction.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="plugins-getting-started.html">
+                        Getting started
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-authentication.html">
+                        Authentication
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-examples.html">
+                        Examples
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-production.html">
+                        Production
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-review.html">
+                        Plugin review
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="api-reference.html" class="accordion-button collapsed pt-1 pb-1">
+                      API reference
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="examples.html" class="accordion-button collapsed pt-1 pb-1">
+                      Examples
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="api-reference.html">API reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="examples.html">Examples</a>
+            </li>
+          </ul>
+          <div class="res-flex">
+            <button type="button" class="btn d-res-none">Log in</button>
+            <button type="button" class="btn logInbtn d-res-none">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex ">
+      <div class="left-content-scroll">
+        <div id="list-example" class="list-group border-radius-0">
+          <form class="d-flex searchForm" role="search">
+            <svg width="20" height="20" class="searchIcon" viewBox="0 0 20 20">
+              <path
+                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+            <input class="form-control sidebarSearch" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div>
+            <div class="sidebarPadding sidebarMainText">
+              GET STARTED
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="documentation.html">
+                Introduction
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText active-text" href="quick-start.html">
+                Quickstart
+              </a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#section1">Introduction</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#section2">Start with an instruction</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#section3">Add some examples</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#section4">Adjust your settings</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#section5">Build your application</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#section6">Pricing</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#section7">Closing</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#section8">Next steps</a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="libraries.html">
+              Libraries
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="models.html">
+              Models
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="deprecations.html">
+              Deprecations
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="tutorials.html">
+              Tutorials
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="policies.html">
+              Policies
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Guides
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="GPT-Models.html">
+              GPT
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="gpt-best-practices.html">
+              GPT best practices
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="image-generation.html">
+              Image generation
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="fine-tuning.html">
+              Fine-tuning
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="embeddings.html">
+              Embeddings
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="speech-to-text.html">
+              Speech to text
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="moderation.html">
+              moderation
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="rate-limits.html">
+              rate-limits
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="error-codes.html">
+              Error codes
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="safety-best-practices.html">
+              Safety best practices
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="production-best-practices.html">
+              Production best practices
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Chat plugins
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="plugins-introduction.html">
+              Introduction
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-getting-started.html">
+              Getting started
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-authentication.html">
+              Authentication
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-examples.html">
+              Examples
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-production.html">
+              Production
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-review.html">
+              Plugin review
+            </a>
+            <div class="sidebarListText">
+              Plugin policies
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content-scroll custom-right-content">
+        <div class="custom-right-content-width">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example"
+            tabindex="0">
+            <div class="markdown-content">
+              <div class="pt-4">
+                <h1 class="anchor-heading">Quickstart</h1>
+                <div class="mt-6 mb-6">
+                  <div class="notice-neutral notice d-flex align-items-center">
+                    <svg stroke="#6e6e80" fill="#6e6e80" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z">
+                      </path>
+                    </svg>
+                    <div class="notice-message ms-3">
+                      Looking for Ask Qx? Head to <a class="linkText">chat.qxlabai.com</a>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  QX LabAI has trained cutting-edge language models that are very good at understanding and generating text.
+                  Our API provides access to these models and can be used to solve virtually any task that involves
+                  processing language.
+                  <br><br>
+                  In this quickstart tutorial, you'll build a simple sample application. Along the way, you’ll learn key
+                  concepts and techniques that are fundamental to using the API for any task, including:
+                </p>
+                <ul class="introLi">
+                  <li>Content generation</li>
+                  <li>Summarization</li>
+                  <li>Classification, categorization, and sentiment analysis</li>
+                  <li>Data extraction</li>
+                  <li>Translation</li>
+                  <li>Many more!</li>
+                </ul>
+              </div>
+              <div id="section1">
+                <h2 class="anchor-heading">Introduction</h2>
+                <p>
+                  The completions endpoint is the core of our API and provides a simple interface that’s extremely
+                  flexible and powerful. You input some text as a prompt, and the API will return a text completion that
+                  attempts to match whatever instructions or context you gave it.
+                </p>
+                <div class="completion-example-container">
+                  <div class="completion-example">
+                    <div class="completion-example-label body-small">Prompt</div>
+                    <div>Write a tagline for an ice cream shop.</div>
+                    <div></div>
+                    <div class="completion-example-arrow"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="completion-example-label body-small">Completion</div>
+                    <div class="tutorial-example-completion">We serve up smiles with every scoop!</div>
+                  </div>
+                </div>
+                <p>You can think of this as a very advanced autocomplete — the model processes your text prompt and tries
+                  to predict what’s most likely to come next.</p>
+              </div>
+              <div id="section2">
+                <h2 class="anchor-heading"><span class="md-heading-num">1</span>Start with an instruction</h2>
+                <p>
+                  Imagine you want to create a pet name generator. Coming up with names from scratch is hard!
+                  <br><br>
+                  First, you’ll need a prompt that makes it clear what you want. Let’s start with an instruction. Submit
+                  this prompt to generate your first completion.
+                </p>
+                <div class="completion-example-container">
+                  <div class="completion-example">
+                    <div class="completion-example-label body-small">Prompt</div>
+                    <div>Write a tagline for an ice cream shop.</div>
+                    <div></div>
+                    <div class="completion-example-arrow"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="completion-example-label body-small">Completion</div>
+                    <div class="tutorial-example-completion">We serve up smiles with every scoop!</div>
+                  </div>
+                </div>
+                <p>You can think of this as a very advanced autocomplete — the model processes your text prompt and tries
+                  to predict what’s most likely to come next.</p>
+                <div class="minipg">
+                  <div class="minipg-main">
+                    <div class="minipg-input">
+                      <textarea style="height: 28px !important;">Suggest one name for a horse.</textarea>
+                      <div class="minipg-input-buttons">
+                        <button tabindex="0" class="btn btn-sm btn-minimal btn-neutral minipg-reset hidden" type="button"
+                          aria-label="Reset to default" aria-haspopup="true" aria-expanded="false">
+                          <span class="btn-label-wrap">
+                            <span class="btn-label-inner">
+                              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="1 4 1 10 7 10"></polyline>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                              </svg>&zwj;</span></span></button><button tabindex="0"
+                          class="btn btn-sm btn-filled btn-primary" type="button" aria-label="Generate"
+                          aria-haspopup="true" aria-expanded="false"><span class="btn-label-wrap"><span
+                              class="btn-label-inner"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 16 16" class="minipg-submit-icon" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z">
+                                </path>
+                              </svg>&zwj;
+                            </span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p>Not bad! Now, try making your instruction more specific.</p>
+                <div class="minipg">
+                  <div class="minipg-main">
+                    <div class="minipg-input">
+                      <textarea style="height: 28px !important;">Suggest one name for a black horse.</textarea>
+                      <div class="minipg-input-buttons">
+                        <button tabindex="0" class="btn btn-sm btn-minimal btn-neutral minipg-reset hidden" type="button"
+                          aria-label="Reset to default" aria-haspopup="true" aria-expanded="false">
+                          <span class="btn-label-wrap">
+                            <span class="btn-label-inner">
+                              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="1 4 1 10 7 10"></polyline>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                              </svg>&zwj;</span></span></button><button tabindex="0"
+                          class="btn btn-sm btn-filled btn-primary" type="button" aria-label="Generate"
+                          aria-haspopup="true" aria-expanded="false"><span class="btn-label-wrap"><span
+                              class="btn-label-inner"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 16 16" class="minipg-submit-icon" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z">
+                                </path>
+                              </svg>&zwj;
+                            </span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p>As you can see, adding a simple adjective to our prompt changes the resulting completion. Designing
+                  your prompt is essentially how you “program” the model.</p>
+              </div>
+              <div id="section3">
+                <h2 class="anchor-heading"><span class="md-heading-num">2</span>
+                  Add some examples
+                </h2>
+                <p>
+                  Crafting good instructions is important for getting good results, but sometimes they aren’t enough.
+                  Let’s try making your instruction even more complex.
+                </p>
+                <div class="minipg">
+                  <div class="minipg-main">
+                    <div class="minipg-input">
+                      <textarea
+                        style="height: 28px !important;">Suggest three names for a horse that is a superhero.</textarea>
+                      <div class="minipg-input-buttons">
+                        <button tabindex="0" class="btn btn-sm btn-minimal btn-neutral minipg-reset hidden" type="button"
+                          aria-label="Reset to default" aria-haspopup="true" aria-expanded="false">
+                          <span class="btn-label-wrap">
+                            <span class="btn-label-inner">
+                              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="1 4 1 10 7 10"></polyline>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                              </svg>&zwj;</span></span></button><button tabindex="0"
+                          class="btn btn-sm btn-filled btn-primary" type="button" aria-label="Generate"
+                          aria-haspopup="true" aria-expanded="false"><span class="btn-label-wrap"><span
+                              class="btn-label-inner"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 16 16" class="minipg-submit-icon" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z">
+                                </path>
+                              </svg>&zwj;
+                            </span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p>This completion isn't quite what we want. These names are pretty generic, and it seems like the model
+                  didn't pick up on the horse part of our instruction. Let’s see if we can get it to come up with some
+                  more relevant suggestions.
+                  <br><br>
+                  In many cases, it’s helpful to both show and tell the model what you want. Adding examples to your
+                  prompt can help communicate patterns or nuances. Try submitting this prompt which includes a couple
+                  examples.
+                </p>
+                <div class="minipg">
+                  <div class="minipg-main">
+                    <div class="minipg-input">
+                      <textarea style="height: 220px !important;" spellcheck="false">Suggest three names for an animal that is a superhero.
+
+  Animal: Cat
+  Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+  Animal: Dog
+  Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
+  Animal: Horse
+  Names:</textarea>
+                      <div class="minipg-input-buttons">
+                        <button tabindex="0" class="btn btn-sm btn-minimal btn-neutral minipg-reset hidden" type="button"
+                          aria-label="Reset to default" aria-haspopup="true" aria-expanded="false">
+                          <span class="btn-label-wrap">
+                            <span class="btn-label-inner">
+                              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="1 4 1 10 7 10"></polyline>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                              </svg>&zwj;</span></span></button><button tabindex="0"
+                          class="btn btn-sm btn-filled btn-primary" type="button" aria-label="Generate"
+                          aria-haspopup="true" aria-expanded="false"><span class="btn-label-wrap"><span
+                              class="btn-label-inner"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 16 16" class="minipg-submit-icon" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z">
+                                </path>
+                              </svg>&zwj;
+                            </span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p>Nice! Adding examples of the output we’d expect for a given input helped the model provide the types of
+                  names we were looking for.</p>
+              </div>
+              <div id="section4">
+                <h2 class="anchor-heading"><span class="md-heading-num">3</span>
+                  Adjust your settings
+                </h2>
+                <p>Prompt design isn’t the only tool you have at your disposal. You can also control completions by
+                  adjusting your settings. One of the most important settings is called <strong>temperature</strong>.</p>
+                <p>You may have noticed that if you submitted the same prompt multiple times in the examples above, the
+                  model would always return identical or very similar completions. This is because your temperature was
+                  set to <strong>0</strong>.</p>
+                <p>Try re-submitting the same prompt a few times with temperature set to <strong>1</strong>.</p>
+                <div class="minipg">
+                  <div class="minipg-main">
+                    <div class="minipg-input">
+                      <textarea style="height: 292px !important;" spellcheck="false">Suggest three names for an animal that is a superhero.
+
+  Animal: Cat
+  Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+  Animal: Dog
+  Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
+  Animal: Horse
+  Names:</textarea>
+                      <div class="minipg-input-buttons">
+                        <button tabindex="0" class="btn btn-sm btn-minimal btn-neutral minipg-reset hidden" type="button"
+                          aria-label="Reset to default" aria-haspopup="true" aria-expanded="false">
+                          <span class="btn-label-wrap">
+                            <span class="btn-label-inner">
+                              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="1 4 1 10 7 10"></polyline>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                              </svg>&zwj;</span></span></button><button tabindex="0"
+                          class="btn btn-sm btn-filled btn-primary" type="button" aria-label="Generate"
+                          aria-haspopup="true" aria-expanded="false"><span class="btn-label-wrap"><span
+                              class="btn-label-inner"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 16 16" class="minipg-submit-icon" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z">
+                                </path>
+                              </svg>&zwj;
+                            </span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="minipg-params">
+                      <div class="slider">
+                        <div class="custom-slider-text">
+                          <div>Temperature</div>
+                          <input class="text-input text-input-sm custom-input-wrapper-number" type="text" value="1">
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p>See what happened? When temperature is above 0, submitting the same prompt results in different
+                  completions each time.</p>
+                <p>Remember that the model predicts which text is most likely to follow the text preceding it. Temperature
+                  is a value between 0 and 1 that essentially lets you control how confident the model should be when
+                  making these predictions. Lowering temperature means it will take fewer risks, and completions will be
+                  more accurate and deterministic. Increasing temperature will result in more diverse completions.</p>
+                <p>For your pet name generator, you probably want to be able to generate a lot of name ideas. A moderate
+                  temperature of 0.6 should work well.</p>
+              </div>
+              <div id="section5">
+                <h2 class="anchor-heading"><span class="md-heading-num">4</span>
+                  Build your application
+                </h2>
+                <p>Now that you’ve found a good prompt and settings, you’re ready to build your pet name generator! We’ve
+                  written some code to get you started — follow the instructions below to download the code and run the
+                  app.</p>
+                <h2 class="anchor-heading-root">Setup</h2>
+                <p>If you don’t have Python installed, <a href="https://www.python.org/downloads/" target="_blank"
+                    rel="noopener noreferrer">install it from here</a>. Then download the code by cloning <a
+                    href="https://github.com/QX LabAI/QX LabAI-quickstart-python" target="_blank"
+                    rel="noopener noreferrer">this repository</a>.</p>
+                <div class="code-sample-body code-sample-body-large">
+                  <button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button"
+                    aria-label="Copy">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                      stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                  <div class="CopyBoxText"><span class="">git clone
+                      https://github.com/QX LabAI/QX LabAI-quickstart-node.git</span></div>
+                </div>
+                <p class="mt-3">If you prefer not to use git, you can alternatively download the code using <a
+                    href="https://github.com/QX LabAI/QX LabAI-quickstart-node/archive/refs/heads/master.zip" target="_blank"
+                    rel="noopener noreferrer">this zip file</a>.</p>
+                <div>
+                  <h2 class="anchor-heading-root">Build your application</h2>
+                  <p>To get the app working, you’ll need an API key. You can get one by <a href="/signup">signing up</a>
+                    for
+                    an account and returning to this page.</p>
+                </div>
+                <div>
+                  <h2 class="anchor-heading-root">Run the app</h2>
+                  <p>Run the following commands in the project directory to install the dependencies and run the app.</p>
+                  <div class="code-sample-body code-sample-body-large">
+                    <button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button"
+                      aria-label="Copy">
+                      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                        stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    </button>
+                    <div class="CopyBoxText"><span class="">npm install<br>
+                        npm run dev</span></div>
+                  </div>
+                  <p class="mt-4">Open <a href="http://localhost:3000" target="_blank"
+                      rel="noopener noreferrer">http://localhost:3000</a> in your browser and you should see the pet name
+                    generator!</p>
+                  <h2 class="anchor-heading-root">Understand the code</h2>
+                  <p>Open up <code>generate.js</code> in the <code>QX LabAI-quickstart-node/pages/api</code> folder. At the
+                    bottom, you’ll see the function that generates the prompt that we were using above. Since users will
+                    be
+                    entering the type of animal their pet is, it dynamically swaps out the part of the prompt that
+                    specifies
+                    the animal.</p>
+                  <div class="code-sample-body code-sample-body-large">
+                    <button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button"
+                      aria-label="Copy">
+                      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                        stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    </button>
+                    <div class="CopyBoxText"><span class="">Code Type Here</div>
+                  </div>
+                  <p class="mt-3">On line 9 in <code>generate.js</code>, you’ll see the code that sends the actual API
+                    request. As mentioned above, it uses the <a href="/docs/api-reference/completions">completions</a>
+                    endpoint with a temperature of 0.6.</p>
+                  <div class="code-sample-body code-sample-body-large">
+                    <button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button"
+                      aria-label="Copy">
+                      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                        stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    </button>
+                    <div class="CopyBoxText"><span class="">Code Type Here</div>
+                  </div>
+                  <p class="mt-3">And that’s it! You should now have a full understanding of how your (superhero) pet name
+                    generator uses
+                    the QX LabAI API!</p>
+                </div>
+              </div>
+              <div id="section6">
+                <h2 class="anchor-heading-root">Pricing</h2>
+                <p>We offer a spectrum of <a href="/docs/models">models</a> with different capabilities and <a
+                    href="https://qxlabai.com/pricing/" target="_blank" rel="noopener noreferrer">price points</a>. In
+                  this tutorial, we used <code>text-davinci-003</code>. We recommend using this model or
+                  <code>gpt-3.5-turbo</code> while experimenting since they will yield the best results. Once you’ve got
+                  things working, you can see if the other models can produce the same results with lower latency and
+                  costs. Or if you might need to move to a more powerful model like <code>gpt-4</code>.
+                </p>
+                <p>The total number of tokens processed in a single request (both prompt and completion) can’t exceed
+                  the model's maximum context length. For most models, this is 4,096 tokens or about 3,000 words. As a
+                  rough rule of thumb, 1 token is approximately 4 characters or 0.75 words for English text.</p>
+                <p>Pricing is pay-as-you-go per 1,000 tokens, with $5 in free credit that can be used during your first
+                  3 months. <a href="https://qxlabai.com/pricing/" target="_blank" rel="noopener noreferrer">Learn
+                    more</a>.</p>
+              </div>
+              <div id="section7">
+                <h2 class="anchor-heading-root">Closing</h2>
+                <p>These concepts and techniques will go a long way in helping you build your own application. That
+                  said, this simple example demonstrates just a sliver of what’s possible! The completions endpoint is
+                  flexible enough to solve virtually any language processing task, including content generation,
+                  summarization, semantic search, topic tagging, sentiment analysis, and so much more.</p>
+                <p>One limitation to keep in mind is that, for most models, a single API request can only process up to
+                  4,096 tokens between your prompt and completion.</p>
+                <p>For more advanced tasks, you might find yourself wishing you could provide more examples or context
+                  than you can fit in a single prompt. The <a href="/docs/guides/fine-tuning">fine-tuning API</a> is a
+                  great option for more advanced tasks like this. Fine-tuning allows you to provide hundreds or even
+                  thousands of examples to customize a model for your specific use case.</p>
+              </div>
+              <div id="section8">
+                <h2 class="anchor-heading-root">Next steps</h2>
+                <p>To get inspired and learn more about designing prompts for different tasks:</p>
+                <ul>
+                  <li>Read our <a href="/docs/guides/gpt">GPT guide</a>.</li>
+                  <li>Explore our library of <a href="/examples">example prompts</a>.</li>
+                  <li>Start experimenting in the <a href="/playground">Playground</a>.</li>
+                  <li>Keep our <a href="https://qxlabai.com/policies/usage-policies" target="_blank"
+                      rel="noopener noreferrer">usage policies</a> in mind as you start building.</li>
+                </ul>
+                <div class="mt-6 mb-6">
+                  <div class="notice-neutral notice d-flex align-items-center">
+                    <svg stroke="#6e6e80" fill="#6e6e80" stroke-width="0" viewBox="0 0 512 512" height="20px"
+                      width="20px" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z">
+                      </path>
+                    </svg>
+                    <div class="notice-message ms-3">
+                      Looking for Ask Qx? Head to <a class="linkText">chat.qxlabai.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+
+
+</html>

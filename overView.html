@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <title>Qx Lab AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid" style="padding: 0 24px;">
+      <div class="header-logo">
+        <a href="overView.html">QX LAB AI</a>
+      </div>
+      <button class="navbar-toggler ps-0 pe-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-md-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active res-active" aria-current="page" href="overView.html">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-res-none" href="documentation.html">Documentation</a>
+            <div class="accordion res-header-bar-list" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Documentation
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <a href="documentation.html">
+                      Introduction
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="quick-start.html">
+                      Quickstart
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="libraries.html">
+                      Libraries
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="models.html">
+                      Models
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="deprecations.html">
+                      Deprecations
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="tutorials.html">
+                      Tutorials
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="policies.html">
+                      Policies
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Guides
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <a href="GPT-Models.html">
+                      GPT
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="gpt-best-practices.html">
+                      GPT best practices
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="image-generation.html">
+                      Image generation
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="fine-tuning.html">
+                      Fine-tuning
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="embeddings.html">
+                      Embeddings
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="speech-to-text.html">
+                      Speech to text
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="moderation.html">
+                      moderation
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="rate-limits.html">
+                      rate-limits
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="error-codes.html">
+                      Error codes
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="safety-best-practices.html">
+                      Safety best practices
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="production-best-practices.html">
+                      Production best practices
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Plugins
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <a href="plugins-introduction.html">
+                      Introduction
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-getting-started.html">
+                      Getting started
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-authentication.html">
+                      Authentication
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-examples.html">
+                      Examples
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-production.html">
+                      Production
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-review.html">
+                      Plugin review
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <a href="api-reference.html" class="accordion-button collapsed pt-1 pb-1">
+                    API reference
+                  </a>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <a href="examples.html" class="accordion-button collapsed pt-1 pb-1">
+                    Examples
+                  </a>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <a class="accordion-button collapsed pt-1 pb-1">
+                    Log in
+                  </a>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <a class="accordion-button collapsed pt-1 pb-1">
+                    Sign up
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-res-none" href="api-reference.html">API reference</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-res-none" href="examples.html">Examples</a>
+          </li>
+        </ul>
+        <div class="res-flex">
+          <button type="button" class="btn d-res-none">Log in</button>
+          <button type="button" class="btn logInbtn d-res-none">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="d-flex layout">
+    <div class="overView-content">
+      <div class="overView-content-spacing ovr-page">
+        <div id="list-item-1">
+          <h1 class="anchor-heading">Welcome to the QX LabAI platform</h1>
+          <div class="custom-bg-overview">
+            <h2 class="anchor-heading-root">Start with the basics</h2>
+            <div class="row custom-gap ovr-shortcuts">
+              <div class="col-lg-6">
+                <a href="documentation.html" class="">
+                  <div class="overView-gradient-bg">
+                    <img src="./images/gradient_card_1.png" alt="gradient-color" class="img-fluid ovr-card" />
+                    <div class="gradient-box-content">
+                      <div class="ovr-card-title body-large bold">Quickstart tutorial</div>
+                      <div class="ovr-card-desc body-small">Learn by building a quick sample app</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a href="examples.html" class="ovr-card">
+                  <div class="overView-gradient-bg">
+                    <img src="./images/gradient_card_2.png" alt="gradient-color" class="img-fluid ovr-card" />
+                    <div class="gradient-box-content">
+                      <div class="ovr-card-title body-large bold">Examples</div>
+                      <div class="ovr-card-desc body-small">Explore some example tasks</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h2 class="anchor-heading-root">Build an application</h2>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <a href="GPT-Models.html">
+                  <div class="custom-shape-bg-overview">
+                    <div class="d-flex align-items-center">
+                      <div class="purple-gradient-bg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em"
+                          width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd"
+                            d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                      <div class="ms-3">
+                        <div class="icon-item-title">GPT</div>
+                        <div class="icon-item-desc">Learn how to generate text</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mb-3">
+                <a href="gpt-best-practices.html">
+                  <div class="custom-shape-bg-overview">
+                    <div class="d-flex align-items-center">
+                      <div class="green-gradient-bg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em"
+                          width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="ms-3">
+                        <div class="icon-item-title">GPT best practices</div>
+                        <div class="icon-item-desc">Learn best practices for building with GPT models</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mb-3">
+                <a href="embeddings.html">
+                  <div class="custom-shape-bg-overview">
+                    <div class="d-flex align-items-center">
+                      <div class="orange-gradient-bg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em"
+                          width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd"
+                            d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                      <div class="ms-3">
+                        <div class="icon-item-title">Embeddings</div>
+                        <div class="icon-item-desc">Learn how to search, classify, and compare text</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mb-3">
+                <a href="speech-to-text.html">
+                  <div class="custom-shape-bg-overview">
+                    <div class="d-flex align-items-center">
+                      <div class="red-gradient-bg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em"
+                          width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd"
+                            d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                      <div class="ms-3">
+                        <div class="icon-item-title">Speech to text</div>
+                        <div class="icon-item-desc">Learn how to turn speech into text</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mb-3">
+                <a href="image-generation.html">
+                  <div class="custom-shape-bg-overview">
+                    <div class="d-flex align-items-center">
+                      <div class="purple-gradient-bg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em"
+                          width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd"
+                            d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </div>
+                      <div class="ms-3">
+                        <div class="icon-item-title">Image generation</div>
+                        <div class="icon-item-desc">Learn how to generate or edit images</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mb-3">
+                <a href="fine-tuning.html">
+                  <div class="custom-shape-bg-overview">
+                    <div class="d-flex align-items-center">
+                      <div class="green-gradient-bg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em"
+                          width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="ms-3">
+                        <div class="icon-item-title">Fine-tuning</div>
+                        <div class="icon-item-desc">Learn how to train a model for your use case</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h2 class="anchor-heading-root">Build a Ask Qx plugin</h2>
+            <div class="row">
+              <div class="col-md-6  mb-3">
+                <a href="plugins-introduction.html">
+                  <div class="custom-shape-bg-overview">
+                    <div class="d-flex align-items-center">
+                      <div class="red-gradient-bg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em"
+                          width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="ms-3">
+                        <div class="icon-item-title">Introduction</div>
+                        <div class="icon-item-desc">Learn the basics of building a Ask Qx plugin</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mb-3">
+                <a href="plugins-examples.html">
+                  <div class="custom-shape-bg-overview">
+                    <div class="d-flex align-items-center">
+                      <div class="orange-gradient-bg">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em"
+                          width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="ms-3">
+                        <div class="icon-item-title">Examples</div>
+                        <div class="icon-item-desc">Explore Ask Qx plugin examples</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ovr-footer pt-16 pb-16">
+        <div class="custom-container mx-auto">
+          <div class="ovr-footer-grid">
+            <div class="ovr-footer-item">
+              <div class="d-flex justify-content-center">
+                <div class="white-gradient-bg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px"
+                    height="20px">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M21.6 12a9.6 9.6 0 11-19.2 0 9.6 9.6 0 0119.2 0zm-2.4 0c0 1.192-.29 2.315-.802 3.305l-1.828-1.83a4.797 4.797 0 00.093-2.62l1.875-1.874c.424.918.662 1.939.662 3.019zm-6.198 4.696l1.896 1.896c-.913.402-1.9.609-2.898.608a7.17 7.17 0 01-3.02-.662l1.875-1.875a4.807 4.807 0 002.147.033zM7.389 13.34a4.802 4.802 0 01-.049-2.496l-.096.096L5.408 9.1A7.176 7.176 0 004.8 12c0 1.145.268 2.227.743 3.188L7.39 13.34h-.002zM8.695 5.6A7.17 7.17 0 0112 4.8c1.145 0 2.227.268 3.188.743L13.34 7.39a4.802 4.802 0 00-2.815.04L8.695 5.6zM14.4 12a2.4 2.4 0 11-4.801 0 2.4 2.4 0 014.8 0z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ovr-footer-title body-large bold mt-2 text-white">Help center</div>
+              <div class="ovr-footer-desc body-small mt-2 text-white">
+                Answers to frequently asked account and billing questions.
+              </div>
+              <div class="ovr-footer-links body-small mt-2">
+                <a href="javascript:void(0)">Visit help center</a>
+              </div>
+            </div>
+            <div class="ovr-footer-item">
+              <div class="d-flex justify-content-center">
+                <div class="white-gradient-bg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px"
+                    height="20px">
+                    <path
+                      d="M2.4 6a2.4 2.4 0 012.4-2.4h8.4A2.4 2.4 0 0115.6 6v4.8a2.4 2.4 0 01-2.4 2.4h-2.4l-3.6 3.6v-3.6H4.8a2.4 2.4 0 01-2.4-2.4V6z">
+                    </path>
+                    <path
+                      d="M18 8.4v2.4a4.8 4.8 0 01-4.8 4.8h-1.406l-2.12 2.12c.336.18.72.28 1.126.28h2.4l3.6 3.6V18h2.4a2.4 2.4 0 002.4-2.4v-4.8a2.4 2.4 0 00-2.4-2.4H18z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ovr-footer-title body-large bold mt-2 text-white">Developer forum</div>
+              <div class="ovr-footer-desc body-small mt-2 text-white">
+                Ask questions and discuss topics with other developers.
+              </div>
+              <div class="ovr-footer-links body-small mt-2">
+                <a href="javascript:void(0)">Visit developer forum</a>
+              </div>
+            </div>
+            <div class="ovr-footer-item">
+              <div class="d-flex justify-content-center">
+                <div class="white-gradient-bg">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="2"></circle>
+                    <path
+                      d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ovr-footer-title body-large bold mt-2 text-white">Service status</div>
+              <div class="ovr-footer-desc body-small mt-2 text-white">
+                Check the status of QX LabAI services.
+              </div>
+              <div class="ovr-footer-links body-small mt-2">
+                <a href="javascript:void(0)">Visit status page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

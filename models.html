@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <title>Qx Lab AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body data-spy="scroll" data-target="#scrollspy" data-offset="100">
+    <nav class="navbar navbar-expand-lg custom-sticky-bar">
+      <div class="container-fluid" style="padding: 0 24px;">
+        <div class="header-logo">
+          <a href="overView.html">QX LAB AI</a>
+        </div>
+        <button class="navbar-toggler ps-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-md-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="overView.html">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none res-active" href="documentation.html">Documentation</a>
+              <div class="accordion res-header-bar-list" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Documentation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="documentation.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="quick-start.html">
+                        Quickstart
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="libraries.html">
+                        Libraries
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="models.html">
+                        Models
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="deprecations.html">
+                        Deprecations
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="tutorials.html">
+                        Tutorials
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="policies.html">
+                        Policies
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Guides
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="GPT-Models.html">
+                        GPT
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="gpt-best-practices.html">
+                        GPT best practices
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="image-generation.html">
+                        Image generation
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="fine-tuning.html">
+                        Fine-tuning
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="embeddings.html">
+                        Embeddings
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="speech-to-text.html">
+                        Speech to text
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="moderation.html">
+                        moderation
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="rate-limits.html">
+                        rate-limits
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="error-codes.html">
+                        Error codes
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="safety-best-practices.html">
+                        Safety best practices
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="production-best-practices.html">
+                        Production best practices
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Plugins
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="plugins-introduction.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="plugins-getting-started.html">
+                        Getting started
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-authentication.html">
+                        Authentication
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-examples.html">
+                        Examples
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-production.html">
+                        Production
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-review.html">
+                        Plugin review
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="api-reference.html" class="accordion-button collapsed pt-1 pb-1">
+                      API reference
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="examples.html" class="accordion-button collapsed pt-1 pb-1">
+                      Examples
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="api-reference.html">API reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="examples.html">Examples</a>
+            </li>
+          </ul>
+          <div class="res-flex">
+            <button type="button" class="btn d-res-none">Log in</button>
+            <button type="button" class="btn logInbtn d-res-none">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex">
+      <div class="left-content-scroll">
+        <div id="list-example" class="list-group border-radius-0">
+          <form class="d-flex searchForm" role="search">
+            <svg width="20" height="20" class="searchIcon" viewBox="0 0 20 20">
+              <path
+                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+            <input class="form-control sidebarSearch" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div id="scrollspy">
+            <div class="sidebarPadding sidebarMainText">
+              GET STARTED
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="documentation.html">
+                Introduction
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="quick-start.html">
+                Quickstart
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="libraries.html">
+                Libraries
+              </a>
+
+            </div>
+            <div>
+              <a class="sidebarListText list-group-item active" href="models.html">
+                Models
+              </a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-1">
+                Overview</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-2">
+                Model updates</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-3">
+                GPT-4</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-4">GPT-3.5</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-5">DALL·E</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-6">Whisper</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-7">Embeddings</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-8">Moderation</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-9">GPT-3</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-10">How we
+                use your data</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-11">Endpoint compatibility</a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="deprecations.html">
+              Deprecations
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="tutorials.html">
+              Tutorials
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="policies.html">
+              Policies
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Guides
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="GPT-Models.html">
+              GPT
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="gpt-best-practices.html">
+              GPT best practices
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="image-generation.html">
+              Image generation
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="fine-tuning.html">
+              Fine-tuning
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="embeddings.html">
+              Embeddings
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="speech-to-text.html">
+              Speech to text
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="moderation.html">
+              moderation
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="rate-limits.html">
+              rate-limits
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="error-codes.html">
+              Error codes
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="safety-best-practices.html">
+              Safety best practices
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="production-best-practices.html">
+              Production best practices
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Chat plugins
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="plugins-introduction.html">
+              Introduction
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-getting-started.html">
+              Getting started
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-authentication.html">
+              Authentication
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-examples.html">
+              Examples
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-production.html">
+              Production
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-review.html">
+              Plugin review
+            </a>
+            <div class="sidebarListText">
+              Plugin policies
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content-scroll custom-right-content">
+        <div class="custom-right-content-width">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example"
+          tabindex="0">
+          <div class="markdown-content">
+            <div class="pt-4">
+              <h1 class="anchor-heading">Models</h1>
+              <div id="list-item-1">
+                <h2 class="anchor-heading-root">Overview</h2>
+                <p>The QX LabAI API is powered by a diverse set of models with different capabilities and price points.
+                  You can also make customizations to our models for your specific use case with <a
+                    href="/docs/guides/fine-tuning">fine-tuning</a>.</p>
+                <div class="custom-table docs-models-toc">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Models</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="/docs/models/gpt-4">GPT-4</a></td>
+                        <td>A set of models that improve on GPT-3.5 and can understand as well as generate natural
+                          language or code</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/docs/models/gpt-3-5">GPT-3.5</a></td>
+                        <td>A set of models that improve on GPT-3 and can understand as well as generate natural
+                          language or code</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/docs/models/gpt-base">GPT base</a></td>
+                        <td>A set of models without instruction following that can understand as well as generate
+                          natural language or code</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/docs/models/dall-e">DALL·E</a></td>
+                        <td>A model that can generate and edit images given a natural language prompt</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/docs/models/whisper">Whisper</a></td>
+                        <td>A model that can convert audio into text</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/docs/models/embeddings">Embeddings</a></td>
+                        <td>A set of models that can convert text into a numerical form</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/docs/models/moderation">Moderation</a></td>
+                        <td>A fine-tuned model that can detect whether text may be sensitive or unsafe</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/docs/models/gpt-3">GPT-3</a>
+                          <div class="custom-table-badge">Legacy</div>
+                        </td>
+                        <td>A set of models that can understand and generate natural language</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/docs/deprecations">Deprecated</a></td>
+                        <td>A full list of models that have been deprecated</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>We have also published open source models including <a href="https://github.com/QX LabAI/point-e"
+                    target="_blank" rel="noopener noreferrer">Point-E</a>, <a href="https://github.com/QX LabAI/whisper"
+                    target="_blank" rel="noopener noreferrer">Whisper</a>, <a href="https://github.com/QX LabAI/jukebox"
+                    target="_blank" rel="noopener noreferrer">Jukebox</a>, and <a href="https://github.com/QX LabAI/CLIP"
+                    target="_blank" rel="noopener noreferrer">CLIP</a>.</p>
+                <p>Visit our <a href="/docs/model-index-for-researchers">model index for researchers</a> to learn
+                  more about which models have been featured in our research papers and the differences
+                  between model series like InstructGPT and GPT-3.5.</p>
+              </div>
+              <hr>
+              <div id="list-item-2">
+                <h2 class="anchor-heading-root">Continuous model upgrades</h2>
+                <div class="mt-6 mb-6">
+                  <div class="notice-neutral notice d-flex">
+                    <svg stroke="#6e6e80" fill="#6e6e80" stroke-width="0" viewBox="0 0 512 512" height="20px"
+                      width="20px" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z">
+                      </path>
+                    </svg>
+                    <div class="notice-message ms-3">
+                      <div class="notice-body">Based on developer feedback, we are extending support for
+                        gpt-3.5-turbo-0301 and gpt-4-0314 models in the QX LabAI API until at least June 13, 2024. We've
+                        updated our <a href="https://qxlabai.com/blog/function-calling-and-other-api-updates"
+                          target="_blank" rel="noopener noreferrer">June 13 blog post</a> with more details.</div>
+                    </div>
+                  </div>
+                </div>
+                <p>With the release of <code>gpt-3.5-turbo</code>, some of our models are now being continually updated.
+                  <code>gpt-3.5-turbo</code>, <code>gpt-4</code>, and <code>gpt-4-32k</code> point to the latest model
+                  version. You can verify this by looking at the <a href="/docs/api-reference/chat/object">response
+                    object</a> after sending a ChatCompletion request. The response will include the specific model
+                  version used (e.g. <code>gpt-3.5-turbo-0613</code>).
+                </p>
+                <p>We also offer static model versions that developers can continue using for at least three months
+                  after an updated model has been introduced. With the new cadence of model updates, we are also giving
+                  people the ability to contribute evals to help us improve the model for different use cases. If you
+                  are interested, check out the <a href="https://github.com/QX LabAI/evals" target="_blank"
+                    rel="noopener noreferrer">QX LabAI Evals</a> repository.</p>
+                <p>The following models are the temporary snapshots, we will announce their deprecation dates once
+                  updated versions are available. If you want to use the latest model version, use the standard model
+                  names like <code>gpt-4</code> or <code>gpt-3.5-turbo</code>.</p>
+                <div class="custom-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Model name</th>
+                        <th>Discontinuation date</th>
+                        <th>Replacement model</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>gpt-3.5-turbo-0301</td>
+                        <td>at earliest 06/13/2024</td>
+                        <td>gpt-3.5-turbo-0613</td>
+                      </tr>
+                      <tr>
+                        <td>gpt-4-0314</td>
+                        <td>at earliest 06/13/2024</td>
+                        <td>gpt-4-0613</td>
+                      </tr>
+                      <tr>
+                        <td>gpt-4-32k-0314</td>
+                        <td>at earliest 06/13/2024</td>
+                        <td>gpt-4-32k-0613</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div id="list-item-3">
+                <h2 class="anchor-heading-root">GPT-4</h2>
+                <div class="mt-6 mb-6">
+                  <div class="notice-neutral notice d-flex ">
+                    <svg stroke="#6e6e80" fill="#6e6e80" stroke-width="0" viewBox="0 0 512 512" height="20px"
+                      width="20px" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z">
+                      </path>
+                    </svg>
+                    <div class="notice-message ms-3"><div class="notice-body">GPT-4 is currently accessible to those who have made at least <a href="https://help.qxlabai.com/en/articles/7102672-how-can-i-access-gpt-4" target="_blank" rel="noopener noreferrer">one successful payment</a> through our developer platform.</div></div>
+                  </div>
+                </div>
+                <p>GPT-4 is a large multimodal model (accepting text inputs and emitting text outputs today, with image inputs coming in the future) that can solve difficult problems with greater accuracy than any of our previous models, thanks to its broader general knowledge and advanced reasoning capabilities. Like <code>gpt-3.5-turbo</code>, GPT-4 is optimized for chat but works well for traditional completions tasks using the <a href="/docs/api-reference/chat">Chat completions API</a>. Learn how to use GPT-4 in our <a href="/docs/guides/gpt">GPT guide</a>.</p>
+                <div class="models-table custom-table">
+                  <table><thead><tr><th>Latest model</th><th>Description</th><th>Max tokens</th><th>Training data</th></tr></thead><tbody><tr><td>gpt-4</td><td>More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Will be updated with our latest model iteration 2 weeks after it is released.</td><td>8,192 tokens</td><td>Up to Sep 2021</td></tr><tr><td>gpt-4-0613</td><td>Snapshot of <code>gpt-4</code> from June 13th 2023 with function calling data. Unlike <code>gpt-4</code>, this model will not receive updates, and will be deprecated 3 months after a new version is released.</td><td>8,192 tokens</td><td>Up to Sep 2021</td></tr><tr><td>gpt-4-32k</td><td>Same capabilities as the standard <code>gpt-4</code> mode but with 4x the context length. Will be updated with our latest model iteration.</td><td>32,768 tokens</td><td>Up to Sep 2021</td></tr><tr><td>gpt-4-32k-0613</td><td>Snapshot of <code>gpt-4-32</code> from June 13th 2023. Unlike <code>gpt-4-32k</code>, this model will not receive updates, and will be deprecated 3 months after a new version is released.</td><td>32,768 tokens</td><td>Up to Sep 2021</td></tr><tr><td>gpt-4-0314 (Legacy)</td><td>Snapshot of <code>gpt-4</code> from March 14th 2023 with function calling data. Unlike <code>gpt-4</code>, this model will not receive updates, and will be deprecated on June 13th 2024 at the earliest.</td><td>8,192 tokens</td><td>Up to Sep 2021</td></tr><tr><td>gpt-4-32k-0314 (Legacy)</td><td>Snapshot of <code>gpt-4-32</code> from March 14th 2023. Unlike <code>gpt-4-32k</code>, this model will not receive updates, and will be deprecated on June 13th 2024 at the earliest.</td><td>32,768 tokens</td><td>Up to Sep 2021</td></tr></tbody></table></div>
+                  <p>For many basic tasks, the difference between GPT-4 and GPT-3.5 models is not significant. However, in more complex reasoning situations, GPT-4 is much more capable than any of our previous models.</p>
+              </div>
+              <div id="list-item-4">
+                <h2 class="anchor-heading-root">GPT-3.5</h2>
+                <p>GPT-3.5 models can understand and generate natural language or code. Our most capable and cost effective model in the GPT-3.5 family is <code>gpt-3.5-turbo</code> which has been optimized for chat using the <a href="/docs/api-reference/chat">Chat completions API</a> but works well for traditional completions tasks as well.</p>
+                <div class="models-table custom-table"><table><thead><tr><th>Latest model</th><th>Description</th><th>Max tokens</th><th>Training data</th></tr></thead><tbody><tr><td>gpt-3.5-turbo</td><td>Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of <code>text-davinci-003</code>. Will be updated with our latest model iteration 2 weeks after it is released.</td><td>4,097 tokens</td><td>Up to Sep 2021</td></tr><tr><td>gpt-3.5-turbo-16k</td><td>Same capabilities as the standard <code>gpt-3.5-turbo</code> model but with 4 times the context.</td><td>16,385 tokens</td><td>Up to Sep 2021</td></tr><tr><td>gpt-3.5-turbo-0613</td><td>Snapshot of <code>gpt-3.5-turbo</code> from June 13th 2023 with function calling data. Unlike <code>gpt-3.5-turbo</code>, this model will not receive updates, and will be deprecated 3 months after a new version is released.</td><td>4,097 tokens</td><td>Up to Sep 2021</td></tr><tr><td>gpt-3.5-turbo-16k-0613</td><td>Snapshot of <code>gpt-3.5-turbo-16k</code> from June 13th 2023. Unlike <code>gpt-3.5-turbo-16k</code>, this model will not receive updates, and will be deprecated 3 months after a new version is released.</td><td>16,385 tokens</td><td>Up to Sep 2021</td></tr><tr><td>gpt-3.5-turbo-0301 (Legacy)</td><td>Snapshot of <code>gpt-3.5-turbo</code> from March 1st 2023. Unlike <code>gpt-3.5-turbo</code>, this model will not receive updates, and will be deprecated on June 13th 2024 at the earliest.</td><td>4,097 tokens</td><td>Up to Sep 2021</td></tr><tr><td>text-davinci-003 (Legacy)</td><td>Can do any language task with better quality, longer output, and consistent instruction-following than the curie, babbage, or ada models. Also supports some additional features such as <a href="/docs/guides/gpt/inserting-text">inserting text</a>.</td><td>4,097 tokens</td><td>Up to Jun 2021</td></tr><tr><td>text-davinci-002 (Legacy)</td><td>Similar capabilities to <code>text-davinci-003</code> but trained with supervised fine-tuning instead of reinforcement learning</td><td>4,097 tokens</td><td>Up to Jun 2021</td></tr><tr><td>code-davinci-002 (Legacy)</td><td>Optimized for code-completion tasks</td><td>8,001 tokens</td><td>Up to Jun 2021</td></tr></tbody></table></div>
+                <p>We recommend using <code>gpt-3.5-turbo</code> over the other GPT-3.5 models because of its lower cost and improved performance.</p>
+                <div class="mt-6 mb-6">
+                  <div class="notice-neutral notice d-flex ">
+                    <svg stroke="#6e6e80" fill="#6e6e80" stroke-width="0" viewBox="0 0 512 512" height="20px"
+                      width="20px" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z">
+                      </path>
+                    </svg>
+                    <div class="notice-message ms-3"><div class="notice-body">QX LabAI models are non-deterministic, meaning that identical inputs can yield different outputs. Setting <a href="/docs/api-reference/completions/create#completions/create-temperature">temperature</a> to 0 will make the outputs mostly deterministic, but a small amount of variability may remain.</div></div>
+                  </div>
+                </div>
+                <h2 class="anchor-heading-root">GPT base</h2>
+                <p>
+                  GPT base models can understand and generate natural language or code but are not trained with instruction following. These models are made to be replacements for our original GPT-3 base models and use the legacy Completions API. Most customers should use GPT-3.5 or GPT-4.
+                </p>
+                <div class="models-table custom-table"><table><thead><tr><th>Latest model</th><th>Description</th><th>Max tokens</th><th>Training data</th></tr></thead><tbody><tr><td>babbage-002</td><td>Replacement for the GPT-3 <code>ada</code> and <code>babbage</code> base models.</td><td>16,384 tokens</td><td>Up to Sep 2021</td></tr><tr><td>davinci-002</td><td>Replacement for the GPT-3 <code>curie</code> and <code>davinci</code> base models.</td><td>16,384 tokens</td><td>Up to Sep 2021</td></tr></tbody></table></div>
+              </div>
+              <div id="list-item-5">
+                <h2 class="anchor-heading-root">DALL·E</h2>
+                <p>DALL·E is a AI system that can create realistic images and art from a description in natural language. We currently support the ability, given a prompt, to create a new image with a certain size, edit an existing image, or create variations of a user provided image.</p>
+                <p>The current DALL·E model available through our API is the 2nd iteration of DALL·E with more realistic, accurate, and 4x greater resolution images than the original model. You can try it through the our <a href="https://labs.qxlabai.com/" target="_blank" rel="noopener noreferrer">Labs interface</a> or <a href="/docs/guides/images/introduction">via the API</a>.</p>
+              </div>
+              <div id="list-item-6">
+                <h2 class="anchor-heading-root">Whisper</h2>
+                <p>Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification. The Whisper v2-large model is currently available through our API with the <code>whisper-1</code> model name.</p>
+                <p>Currently, there is no difference between the <a href="https://github.com/QX LabAI/whisper" target="_blank" rel="noopener noreferrer">open source version of Whisper</a> and the version available through our API. However, through our API, we offer an optimized inference process which makes running Whisper through our API much faster than doing it through other means. For more technical details on Whisper, you can <a href="https://arxiv.org/abs/2212.04356" target="_blank" rel="noopener noreferrer">read the paper</a>.</p>
+              </div>
+              <div id="list-item-7">
+                <h2 class="anchor-heading-root">Embeddings</h2>
+                <p>Embeddings are a numerical representation of text that can be used to measure the relatedness between two pieces of text. Our second generation embedding model, <code>text-embedding-ada-002</code> is a designed to replace the previous 16 first-generation embedding models at a fraction of the cost. Embeddings are useful for search, clustering, recommendations, anomaly detection, and classification tasks. You can read more about our latest embedding model in the <a href="https://qxlabai.com/blog/new-and-improved-embedding-model" target="_blank" rel="noopener noreferrer">announcement blog post</a>.</p>
+              </div>
+              <div id="list-item-8">
+                <h2 class="anchor-heading-root">Moderation</h2>
+                <p>The Moderation models are designed to check whether content complies with QX LabAI's <a href="https://qxlabai.com/policies/usage-policies" target="_blank" rel="noopener noreferrer">usage policies</a>. The models provide classification capabilities that look for content in the following categories: hate, hate/threatening, self-harm, sexual, sexual/minors, violence, and violence/graphic. You can find out more in our <a href="/docs/guides/moderation/overview">moderation guide</a>.</p>
+                <p>Moderation models take in an arbitrary sized input that is automatically broken up to fix the models specific context window.</p>
+                <div class="custom-table">
+                  <table><thead><tr><th>Model</th><th>Description</th></tr></thead><tbody><tr><td>text-moderation-latest</td><td>Most capable moderation model. Accuracy will be slightly higher than the stable model.</td></tr><tr><td>text-moderation-stable</td><td>Almost as capable as the latest model, but slightly older.</td></tr></tbody></table>
+                </div>
+              </div>
+              <div id="list-item-9">
+                <h2 class="anchor-heading-root">GPT-3<div class="custom-table-badge ml-3">Legacy</div></h2>
+                <p>GPT-3 models can understand and generate natural language. These models were superseded by the more powerful GPT-3.5 generation models. However, the original GPT-3 base models (<code>davinci</code>, <code>curie</code>, <code>ada</code>, and <code>babbage</code>) are current the only models that are available to fine-tune.</p>
+                <div class="models-table custom-table"><table><thead><tr><th>Latest model</th><th>Description</th><th>Max tokens</th><th>Training data</th></tr></thead><tbody><tr><td>text-curie-001</td><td>Very capable, faster and lower cost than Davinci.</td><td>2,049 tokens</td><td>Up to Oct 2019</td></tr><tr><td>text-babbage-001</td><td>Capable of straightforward tasks, very fast, and lower cost.</td><td>2,049 tokens</td><td>Up to Oct 2019</td></tr><tr><td>text-ada-001</td><td>Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost.</td><td>2,049 tokens</td><td>Up to Oct 2019</td></tr><tr><td>davinci</td><td>Most capable GPT-3 model. Can do any task the other models can do, often with higher quality.</td><td>2,049 tokens</td><td>Up to Oct 2019</td></tr><tr><td>curie</td><td>Very capable, but faster and lower cost than Davinci.</td><td>2,049 tokens</td><td>Up to Oct 2019</td></tr><tr><td>babbage</td><td>Capable of straightforward tasks, very fast, and lower cost.</td><td>2,049 tokens</td><td>Up to Oct 2019</td></tr><tr><td>ada</td><td>Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost.</td><td>2,049 tokens</td><td>Up to Oct 2019</td></tr></tbody></table></div>
+              </div>
+              <div id="list-item-10">
+                <h2 class="anchor-heading-root">How we use your data</h2>
+                <p>Your data is your data.</p>
+                <p>As of March 1, 2023, data sent to the QX LabAI API will not be used to train or improve QX LabAI models (unless you explicitly <a href="https://docs.google.com/forms/d/e/1FAIpQLSevgtKyiSWIOj6CV6XWBHl1daPZSOcIWzcUYUXQ1xttjBgDpA/viewform" target="_blank" rel="noopener noreferrer">opt in</a>). One advantage to opting in is that the models may get better at your use case over time.</p>
+                <p>To help identify abuse, API data may be retained for up to 30 days, after which it will be deleted (unless otherwise required by law). For trusted customers with sensitive applications, zero data retention may be available. With zero data retention, request and response bodies are not persisted to any logging mechanism and exist only in memory in order to serve the request.</p>
+                <p>Note that this data policy does not apply to QX LabAI's non-API consumer services like <a href="https://chat.qxlabai.com/" target="_blank" rel="noopener noreferrer">Ask Qx</a> or <a href="https://labs.qxlabai.com/" target="_blank" rel="noopener noreferrer">DALL·E Labs</a>.</p>
+                <h2 class="anchor-heading-root">Default usage policies by endpoint</h2>
+                <div class="custom-table">
+                  <table><thead><tr><th>Endpoint</th><th>Data used for training</th><th>Default retention</th><th>Eligible for zero retention</th></tr></thead><tbody><tr><td>/v1/completions</td><td>No</td><td>30 days</td><td>Yes</td></tr><tr><td>/v1/chat/completions</td><td>No</td><td>30 days</td><td>Yes</td></tr><tr><td>/v1/edits</td><td>No</td><td>30 days</td><td>Yes</td></tr><tr><td>/v1/images/generations</td><td>No</td><td>30 days</td><td>No</td></tr><tr><td>/v1/images/edits</td><td>No</td><td>30 days</td><td>No</td></tr><tr><td>/v1/images/variations</td><td>No</td><td>30 days</td><td>No</td></tr><tr><td>/v1/embeddings</td><td>No</td><td>30 days</td><td>Yes</td></tr><tr><td>/v1/audio/transcriptions</td><td>No</td><td>Zero data retention</td><td>-</td></tr><tr><td>/v1/audio/translations</td><td>No</td><td>Zero data retention</td><td>-</td></tr><tr><td>/v1/files</td><td>No</td><td>Until deleted by customer</td><td>No</td></tr><tr><td>/v1/fine_tuning/jobs</td><td>No</td><td>Until deleted by customer</td><td>No</td></tr><tr><td>/v1/fine-tunes</td><td>No</td><td>Until deleted by customer</td><td>No</td></tr><tr><td>/v1/moderations</td><td>No</td><td>Zero data retention</td><td>-</td></tr></tbody></table>
+                </div>
+                <p>For details, see our <a href="https://qxlabai.com/policies/api-data-usage-policies" target="_blank" rel="noopener noreferrer">API data usage policies</a>. To learn more about zero retention, get in touch with our <a href="https://qxlabai.com/contact-sales" target="_blank" rel="noopener noreferrer">sales team</a>.</p>
+              </div>
+              <div id="list-item-11">
+                <h2 class="anchor-heading-root">Model endpoint compatibility</h2>
+                <div class="models-table"><table><thead><tr><th>Endpoint</th><th>Model name</th></tr></thead><tbody><tr><td>/v1/audio/transcriptions</td><td>whisper-1</td></tr><tr><td>/v1/audio/translations</td><td>whisper-1</td></tr><tr><td>/v1/chat/completions</td><td>gpt-4, gpt-4-0613, gpt-4-32k, gpt-4-32k-0613, gpt-3.5-turbo, gpt-3.5-turbo-0613, gpt-3.5-turbo-16k, gpt-3.5-turbo-16k-0613</td></tr><tr><td>/v1/completions (Legacy)</td><td>text-davinci-003, text-davinci-002, text-davinci-001, text-curie-001, text-babbage-001, text-ada-001, davinci, curie, babbage, ada</td></tr><tr><td>/v1/embeddings</td><td>text-embedding-ada-002, text-similarity-*-001, text-search-*-*-001, code-search-*-*-001</td></tr><tr><td>/v1/fine_tuning/jobs</td><td>gpt-3.5-turbo, babbage-002, davinci-002</td></tr><tr><td>/v1/fine-tunes</td><td>davinci, curie, babbage, ada</td></tr><tr><td>/v1/moderations</td><td>text-moderation-stable, text-moderation-latest</td></tr></tbody></table><p>This list does not include all of our <a href="/docs/guides/embeddings/similarity-embeddings">first-generation embedding models</a> nor our <a href="/docs/guides/images/image-generation-beta">DALL·E model</a>.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+
+
+</html>

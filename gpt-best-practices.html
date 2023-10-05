@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <title>Qx Lab AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+  <body data-spy="scroll" data-target="#scrollspy" data-offset="100">
+    <nav class="navbar navbar-expand-lg custom-sticky-bar">
+      <div class="container-fluid" style="padding: 0 24px;">
+        <div class="header-logo">
+          <a href="overView.html">QX LAB AI</a>
+        </div>
+        <button class="navbar-toggler ps-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-md-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="overView.html">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none res-active" href="documentation.html">Documentation</a>
+              <div class="accordion res-header-bar-list" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Documentation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="documentation.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="quick-start.html">
+                        Quickstart
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="libraries.html">
+                        Libraries
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="models.html">
+                        Models
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="deprecations.html">
+                        Deprecations
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="tutorials.html">
+                        Tutorials
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="policies.html">
+                        Policies
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Guides
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="GPT-Models.html">
+                        GPT
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="gpt-best-practices.html">
+                        GPT best practices
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="image-generation.html">
+                        Image generation
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="fine-tuning.html">
+                        Fine-tuning
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="embeddings.html">
+                        Embeddings
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="speech-to-text.html">
+                        Speech to text
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="moderation.html">
+                        moderation
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="rate-limits.html">
+                        rate-limits
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="error-codes.html">
+                        Error codes
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="safety-best-practices.html">
+                        Safety best practices
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="production-best-practices.html">
+                        Production best practices
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Plugins
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="plugins-introduction.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="plugins-getting-started.html">
+                        Getting started
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-authentication.html">
+                        Authentication
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-examples.html">
+                        Examples
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-production.html">
+                        Production
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-review.html">
+                        Plugin review
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="api-reference.html" class="accordion-button collapsed pt-1 pb-1">
+                      API reference
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="examples.html" class="accordion-button collapsed pt-1 pb-1">
+                      Examples
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="api-reference.html">API reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="examples.html">Examples</a>
+            </li>
+          </ul>
+          <div class="res-flex">
+            <button type="button" class="btn d-res-none">Log in</button>
+            <button type="button" class="btn logInbtn d-res-none">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex">
+      <div class="left-content-scroll">
+        <div id="list-example" class="list-group border-radius-0">
+          <form class="d-flex searchForm" role="search">
+            <svg width="20" height="20" class="searchIcon" viewBox="0 0 20 20">
+              <path
+                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+            <input class="form-control sidebarSearch" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div id="scrollspy">
+            <div class="sidebarPadding sidebarMainText">
+              GET STARTED
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="documentation.html">
+                Introduction
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="quick-start.html">
+                Quickstart
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="libraries.html">
+                Libraries
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="models.html">
+                Models
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="deprecations.html">
+              Deprecations
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="tutorials.html">
+              Tutorials
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="policies.html">
+              Policies
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Guides
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="GPT-Models.html">
+                GPT
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText list-group-item active" href="gpt-best-practices.html">
+                GPT best practices
+              </a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-1">
+                Six strategies for getting better results</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-2">
+                Write clear instructions</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-3">
+                Provide reference text</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-4">Split
+                complex tasks into simpler subtasks</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-5">Give
+                GPTs time to "think"</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-6">Use
+                external tools</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-7">Test
+                changes systematically</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" href="#list-item-8">Other
+                resources</a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="image-generation.html">
+              Image generation
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="fine-tuning.html">
+              Fine-tuning
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="embeddings.html">
+              Embeddings
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="speech-to-text.html">
+              Speech to text
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="moderation.html">
+              moderation
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="rate-limits.html">
+              rate-limits
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="error-codes.html">
+              Error codes
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="safety-best-practices.html">
+              Safety best practices
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="production-best-practices.html">
+              Production best practices
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Chat plugins
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="plugins-introduction.html">
+              Introduction
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-getting-started.html">
+              Getting started
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-authentication.html">
+              Authentication
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-examples.html">
+              Examples
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-production.html">
+              Production
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-review.html">
+              Plugin review
+            </a>
+            <div class="sidebarListText">
+              Plugin policies
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content-scroll custom-right-content">
+        <div class="custom-right-content-width">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+            class="scrollspy-example" tabindex="0">
+            <div class="markdown-content">
+              <div class="pt-4">
+                <h1 class="anchor-heading">GPT best practices</h1>
+                <p>This guide shares strategies and tactics for getting better results from GPTs. The methods described
+                  here can sometimes be deployed in combination for greater effect. We encourage experimentation to find
+                  the methods that work best for you.</p>
+                <p>Some of the examples demonstrated here currently work only with our most capable model,
+                  <code>gpt-4</code>. If you don't yet have access to <code>gpt-4</code> consider joining the <a
+                    href="https://qxlabai.com/waitlist/gpt-4-api" target="_blank" rel="noopener noreferrer">waitlist</a>.
+                  In general, if you find that a GPT model fails at a task and a more capable model is available, it's
+                  often worth trying again with the more capable model.
+                </p>
+
+                <div id="list-item-1">
+                  <h2 class="anchor-heading-root">Six strategies for getting better results</h2>
+                  <p><b>Write clear instructions</b></p>
+                  <p>GPTs can’t read your mind. If outputs are too long, ask for brief replies. If outputs are too
+                    simple, ask for expert-level writing. If you dislike the format, demonstrate the format you’d like
+                    to see. The less GPTs have to guess at what you want, the more likely you’ll get it.</p>
+                  <p>Tactics:</p>
+                  <ul>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-include-details-in-your-query-to-get-more-relevant-answers">Include
+                        details in your query to get more relevant answers</a></li>
+                    <li><a href="/docs/guides/gpt-best-practices/tactic-ask-the-model-to-adopt-a-persona">Ask the model
+                        to adopt a persona</a></li>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-use-delimiters-to-clearly-indicate-distinct-parts-of-the-input">Use
+                        delimiters to clearly indicate distinct parts of the input</a></li>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-specify-the-steps-required-to-complete-a-task">Specify
+                        the steps required to complete a task</a></li>
+                    <li><a href="/docs/guides/gpt-best-practices/tactic-provide-examples">Provide examples</a></li>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-specify-the-desired-length-of-the-output">Specify
+                        the desired length of the output</a></li>
+                  </ul>
+                  <p><b>Split complex tasks into simpler subtasks</b></p>
+                  <p>Just as it is good practice in software engineering to decompose a complex system into a set of
+                    modular components, the same is true of tasks submitted to GPTs. Complex tasks tend to have higher
+                    error rates than simpler tasks. Furthermore, complex tasks can often be re-defined as a workflow of
+                    simpler tasks in which the outputs of earlier tasks are used to construct the inputs to later tasks.
+                  </p>
+                  <p>Tactics:</p>
+                  <ul>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-work-out-its-own-solution-before-rushing-to-a-conclusion">Instruct
+                        the model to work out its own solution before rushing to a conclusion</a></li>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-use-inner-monologue-or-a-sequence-of-queries-to-hide-the-model-s-reasoning-process">Use
+                        inner monologue or a sequence of queries to hide the model's reasoning process</a></li>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-ask-the-model-if-it-missed-anything-on-previous-passes">Ask
+                        the model if it missed anything on previous passes</a></li>
+                  </ul>
+                  <p><b>Use external tools</b></p>
+                  <p>Compensate for the weaknesses of GPTs by feeding them the outputs of other tools. For example, a
+                    text retrieval system can tell GPTs about relevant documents. A code execution engine can help GPTs
+                    do math and run code. If a task can be done more reliably or efficiently by a tool rather than by a
+                    GPT, offload it to get the best of both.</p>
+                  <p>Tactics:</p>
+                  <ul>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">Use
+                        embeddings-based search to implement efficient knowledge retrieval</a></li>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-use-code-execution-to-perform-more-accurate-calculations-or-call-external-apis">Use
+                        code execution to perform more accurate calculations or call external APIs</a></li>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-give-the-model-access-to-specific-functions">Give
+                        the model access to specific functions</a></li>
+                  </ul>
+                  <p><b>Test changes systematically</b></p>
+                  <p>Improving performance is easier if you can measure it. In some cases a modification to a prompt
+                    will achieve better performance on a few isolated examples but lead to worse overall performance on
+                    a more representative set of examples. Therefore to be sure that a change is net positive to
+                    performance it may be necessary to define a comprehensive test suite (also known an as an "eval").
+                  </p>
+                  <p>Tactic:</p>
+                  <ul>
+                    <li><a
+                        href="/docs/guides/gpt-best-practices/tactic-evaluate-model-outputs-with-reference-to-gold-standard-answers">Evaluate
+                        model outputs with reference to gold-standard answers</a></li>
+                  </ul>
+                  <h2 class="anchor-heading-root">Tactics</h2>
+                  <p>Each of the strategies listed above can be instantiated with specific tactics. These tactics are
+                    meant to provide ideas for things to try. They are by no means fully comprehensive, and you should
+                    feel free to try creative ideas not represented here.</p>
+
+
+
+
+
+                    </div>
+                    <div id="list-item-2">
+                  <h2><b>Strategy: Write clear instructions</b></h2>
+                  <p><b>Tactic: Include details in your query to get more relevant answers</b></p>
+                  <p>In order to get a highly relevant response, make sure that requests provide any important details
+                    or context. Otherwise you are leaving it up to the model to guess what you mean.</p>
+                  <div class="custom-tabel">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Worse</strong></td>
+                          <td><strong>Better</strong></td>
+                        </tr>
+                        <tr>
+                          <td>How do I add numbers in Excel?</td>
+                          <td>How do I add up a row of dollar amounts in Excel? I want to do this automatically for a
+                            whole sheet of rows with all the totals ending up on the right in a column called "Total".
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Who’s president?</td>
+                          <td>Who was the president of Mexico in 2021, and how frequently are elections held?</td>
+                        </tr>
+                        <tr>
+                          <td>Write code to calculate the Fibonacci sequence.</td>
+                          <td>Write a TypeScript function to efficiently calculate the Fibonacci sequence. Comment the
+                            code liberally to explain what each piece does and why it's written that way.</td>
+                        </tr>
+                        <tr>
+                          <td>Summarize the meeting notes.</td>
+                          <td>Summarize the meeting notes in a single paragraph. Then write a markdown list of the
+                            speakers and each of their key points. Finally, list the next steps or action items
+                            suggested by the speakers, if any.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><b>Tactic: Ask the model to adopt a persona</b></p>
+                  <p>The system message can be used to specify the persona used by the model in its replies.</p>
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">SYSTEM</span></div>
+                        </div>
+                        <div class="example-chat-message-text">When I ask for help to write something, you will reply
+                          with a document that contains at least one joke or playful comment in every paragraph.
+                        </div>
+                      </div>
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Write a thank you note to my steel bolt vendor for
+                          getting the delivery in on time and in short notice. This made it possible for us to deliver
+                          an important order.</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-playful-thank-you-note"
+                      target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+                  <p class="mt-4"><b>Tactic: Use delimiters to clearly indicate distinct parts of the input</b></p>
+                  <p>Delimiters like triple quotation marks, XML tags, section titles, etc. can help demarcate sections
+                    of text to be treated differently.</p>
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Summarize the text delimited by triple quotes with a
+                          haiku.
+
+                          """insert text here"""</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-delimiters-1" target="_blank"
+                      rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">SYSTEM</span></div>
+                        </div>
+                        <div class="example-chat-message-text">You will be provided with a pair of articles (delimited
+                          with XML tags) about the same topic. First summarize the arguments of each article. Then
+                          indicate which of them makes a better argument and explain why.
+                        </div>
+                      </div>
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">&lt;article&gt; insert first article here
+                          &lt;/article&gt;
+
+                          &lt;article&gt; insert second article here &lt;/article&gt;</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-delimiters-2" target="_blank"
+                      rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">SYSTEM</span></div>
+                        </div>
+                        <div class="example-chat-message-text">You will be provided with a thesis abstract and a
+                          suggested title for it. The thesis title should give the reader a good idea of the topic of
+                          the thesis but should also be eye-catching. If the title does not meet these criteria, suggest
+                          5 alternatives.
+                        </div>
+                      </div>
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Abstract: insert abstract here
+
+                          Title: insert title here</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-delimiters-3" target="_blank"
+                      rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+
+                  <p>For straightforward tasks such as these, using delimiters might not make a difference in the output
+                    quality. However, the more complex a task is the more important it is to disambiguate task details.
+                    Don’t make GPTs work to understand exactly what you are asking of them.</p>
+
+                  <p><b>Tactic: Specify the steps required to complete a task</b></p>
+                  <p>Some tasks are best specified as a sequence of steps. Writing the steps out explicitly can make it
+                    easier for the model to follow them.</p>
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">SYSTEM</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Use the following step-by-step instructions to respond to
+                          user inputs.
+
+                          Step 1 - The user will provide you with text in triple quotes. Summarize this text in one
+                          sentence with a prefix that says "Summary: ".
+
+                          Step 2 - Translate the summary from Step 1 into Spanish, with a prefix that says "Translation:
+                          ".
+                        </div>
+                      </div>
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">"""insert text here"""</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-step-by-step-summarize-and-translate"
+                      target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+                  <p><b>Tactic: Provide examples</b></p>
+                  <p>Providing general instructions that apply to all examples is generally more efficient than
+                    demonstrating all permutations of a task by example, but in some cases providing examples may be
+                    easier. For example, if you intend for the model to copy a particular style of responding to user
+                    queries which is difficult to describe explicitly. This is known as "few-shot" prompting.</p>
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">SYSTEM</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Answer in a consistent style.
+                        </div>
+                      </div>
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Teach me about patience.
+                        </div>
+                      </div>
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">ASSISTANT</span></div>
+                        </div>
+                        <div class="example-chat-message-text">The river that carves the deepest valley flows from a
+                          modest spring; the grandest symphony originates from a single note; the most intricate
+                          tapestry begins with a solitary thread.
+                        </div>
+                      </div>
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Teach me about the ocean.</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-chat-few-shot" target="_blank"
+                      rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+                  <p><b>Tactic: Specify the desired length of the output</b></p>
+                  <p>You can ask the model to produce outputs that are of a given target length. The targeted output
+                    length can be specified in terms of the count of words, sentences, paragraphs, bullet points, etc.
+                    Note however that instructing the model to generate a specific number of words does not work with
+                    high precision. The model can more reliably generate outputs with a specific number of paragraphs or
+                    bullet points.</p>
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Summarize the text delimited by triple quotes in about 50
+                          words.
+
+                          """insert text here"""</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-summarize-text-50-words"
+                      target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Summarize the text delimited by triple quotes in 2
+                          paragraphs.
+
+                          """insert text here"""</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-summarize-text-2-paragraphs"
+                      target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Summarize the text delimited by triple quotes in 3 bullet
+                          points.
+
+                          """insert text here"""</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-summarize-text-3-bullet-points"
+                      target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+                </div>
+                <div id="list-item-3">
+                  <h2 class="anchor-heading-root">Strategy: Provide reference text</h2>
+                  <p><b>Tactic: Instruct the model to answer using a reference text</b></p>
+                  <p>If we can provide a model with trusted information that is relevant to the current query, then we
+                    can instruct the model to use the provided information to compose its answer.</p>
+                  <div class="example-chat-container">
+                    <div class="example-chat-messages">
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">SYSTEM</span></div>
+                        </div>
+                        <div class="example-chat-message-text">Use the provided articles delimited by triple quotes to
+                          answer questions. If the answer cannot be found in the articles, write "I could not find an
+                          answer."
+                        </div>
+                      </div>
+                      <div class="example-chat-message">
+                        <div class="example-chat-role">
+                          <div class="example-chat-subheading subheading"><span
+                              class="example-chat-role-text">USER</span></div>
+                        </div>
+                        <div class="example-chat-message-text">&lt;insert articles, each delimited by triple quotes&gt;
+
+                          Question: &lt;insert question here&gt;</div>
+                      </div>
+                    </div><a class="example-chat-link" href="/playground/p/default-answer-from-retrieved-documents"
+                      target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none"
+                        stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg></a>
+                  </div>
+                  <p>Given that GPTs have limited context windows, in order to apply this tactic we need some way to
+                    dynamically lookup information that is relevant to the question being asked. <a
+                      href="https://platform.qxlabai.com/docs/guides/embeddings/what-are-embeddings" target="_blank"
+                      rel="noopener noreferrer">Embeddings</a> can be used to implement efficient knowledge retrieval.
+                    See the tactic <a
+                      href="/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">"Use
+                      embeddings-based search to implement efficient knowledge retrieval"</a> for more details on how to
+                    implement this.</p>
+                    <p><b>Tactic: Instruct the model to answer with citations from a reference text</b></p>
+                    <p>If the input has been supplemented with relevant knowledge, it's straightforward to request that the model add citations to its answers by referencing passages from provided documents. Note that citations in the output can then be verified programmatically by string matching within the provided documents.</p>
+                    <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">You will be provided with a document delimited by triple quotes and a question. Your task is to answer the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({"citation": …}).
+                    </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">"""&lt;insert document here&gt;"""
+                    
+                    Question: &lt;insert question here&gt;</div></div></div><a class="example-chat-link" href="/playground/p/default-answer-with-citation" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+                  </div>
+                  <div id="list-item-4">
+                    <h2><b>Strategy: Split complex tasks into simpler subtasks</b></h2>
+                    <p><b>Tactic: Use intent classification to identify the most relevant instructions for a user query</b></p>
+                    <p>For tasks in which lots of independent sets of instructions are needed to handle different cases, it can be beneficial to first classify the type of query and to use that classification to determine which instructions are needed. This can be achieved by defining fixed categories and hardcoding instructions that are relevant for handling tasks in a given category. This process can also be applied recursively to decompose a task into a sequence of stages. The advantage of this approach is that each query will contain only those instructions that are required to perform the next stage of a task which can result in lower error rates compared to using a single query to perform the whole task. This can also result in lower costs since larger prompts cost more to run (<a href="https://qxlabai.com/pricing" target="_blank" rel="noopener noreferrer">see pricing information</a>).</p>
+                    <p>Suppose for example that for a customer service application, queries could be usefully classified as follows:</p>
+                    <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">You will be provided with customer service queries. Classify each query into a primary category and a secondary category. Provide your output in json format with the keys: primary and secondary.
+
+                      Primary categories: Billing, Technical Support, Account Management, or General Inquiry.
+                      
+                      Billing secondary categories:
+                      - Unsubscribe or upgrade
+                      - Add a payment method
+                      - Explanation for charge
+                      - Dispute a charge
+                      
+                      Technical Support secondary categories:
+                      - Troubleshooting
+                      - Device compatibility
+                      - Software updates
+                      
+                      Account Management secondary categories:
+                      - Password reset
+                      - Update personal information
+                      - Close account
+                      - Account security
+                      
+                      General Inquiry secondary categories:
+                      - Product information
+                      - Pricing
+                      - Feedback
+                      - Speak to a human
+                      </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">I need to get my internet working again.</div></div></div><a class="example-chat-link" href="/playground/p/default-decomposition-by-intent-classification-1" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+                      <p>Based on the classification of the customer query, a set of more specific instructions can be provided to a GPT model to handle next steps. For example, suppose the customer requires help with "troubleshooting".</p>
+                      <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">You will be provided with customer service inquiries that require troubleshooting in a technical support context. Help the user by:
+
+                        - Ask them to check that all cables to/from the router are connected. Note that it is common for cables to come loose over time.
+                        - If all cables are connected and the issue persists, ask them which router model they are using
+                        - Now you will advise them how to restart their device:
+                        -- If the model number is MTD-327J, advise them to push the red button and hold it for 5 seconds, then wait 5 minutes before testing the connection.
+                        -- If the model number is MTD-327S, advise them to unplug and replug it, then wait 5 minutes before testing the connection.
+                        - If the customer's issue persists after restarting the device and waiting 5 minutes, connect them to IT support by outputting {"IT support requested"}.
+                        - If the user starts asking questions that are unrelated to this topic then confirm if they would like to end the current chat about troubleshooting and classify their request according to the following scheme:
+                        
+                        &lt;insert primary/secondary classification scheme from above here&gt;
+                        </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">I need to get my internet working again.</div></div></div><a class="example-chat-link" href="/playground/p/default-decomposition-by-intent-classification-2" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+                        <p>Notice that the model has been instructed to emit special strings to indicate when the state of the conversation changes. This enables us to turn our system into a state machine where the state determines which instructions are injected. By keeping track of state, what instructions are relevant at that state, and also optionally what state transitions are allowed from that state, we can put guardrails around the user experience that would be hard to achieve with a less structured approach.</p>
+                        <p><b>Tactic: For dialogue applications that require very long conversations, summarize or filter previous dialogue</b></p>
+                        <p>Since GPTs have a fixed context length, dialogue between a user and an assistant in which the entire conversation is included in the context window cannot continue indefinitely.</p>
+                        <p>There are various workarounds to this problem, one of which is to summarize previous turns in the conversation. Once the size of the input reaches a predetermined threshold length, this could trigger a query that summarizes part of the conversation and the summary of the prior conversation could be included as part of the system message. Alternatively, prior conversation could be summarized asynchronously in the background throughout the entire conversation.</p>
+                        <p>An alternative solution is to dynamically select previous parts of the conversation that are most relevant to the current query. See the tactic <a href="/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">"Use embeddings-based search to implement efficient knowledge retrieval"</a>.</p>
+                        <p><b>Tactic: Summarize long documents piecewise and construct a full summary recursively</b></p>
+<p>Since GPTs have a fixed context length, they cannot be used to summarize a text longer than the context length minus the length of the generated summary in a single query.
+
+  To summarize a very long document such as a book we can use a sequence of queries to summarize each section of the document. Section summaries can be concatenated and summarized producing summaries of summaries. This process can proceed recursively until an entire document is summarized. If it’s necessary to use information about earlier sections in order to make sense of later sections, then a further trick that can be useful is to include a running summary of the text that precedes any given point in the book while summarizing content at that point. The effectiveness of this procedure for summarizing books has been studied in previous research by QX LabAI using variants of GPT-3.
+  
+  </p>
+</div>
+<div id="list-item-5">
+  <h2><b>Strategy: Give GPTs time to "think"</b></h2>
+  <p><b>Tactic: Instruct the model to work out its own solution before rushing to a conclusion</b></p>
+<p>Sometimes we get better results when we explicitly instruct the model to reason from first principles before coming to a conclusion. Suppose for example we want a model to evaluate a student’s solution to a math problem. The most obvious way to approach this is to simply ask the model if the student's solution is correct or not.</p>
+<div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">Determine if the student's solution is correct or not.
+</div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Problem Statement: I'm building a solar power installation and I need help working out the financials.
+- Land costs $100 / square foot
+- I can buy solar panels for $250 / square foot
+- I negotiated a contract for maintenance that will cost me a flat $100k per year, and an additional $10 / square foot
+What is the total cost for the first year of operations as a function of the number of square feet.
+
+Student's Solution: Let x be the size of the installation in square feet.
+1. Land cost: 100x
+2. Solar panel cost: 250x
+3. Maintenance cost: 100,000 + 100x
+Total cost: 100x + 250x + 100,000 + 100x = 450x + 100,000
+</div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">ASSISTANT</span></div></div><div class="example-chat-message-text">The student's solution is correct.</div></div></div><a class="example-chat-link" href="/playground/p/default-rushing-to-a-conclusion" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+<p>But the student's solution is actually not correct! We can get the model to successfully notice this by prompting the model to generate its own solution first.</p>
+<div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">First work out your own solution to the problem. Then compare your solution to the student's solution and evaluate if the student's solution is correct or not. Don't decide if the student's solution is correct until you have done the problem yourself.
+</div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Problem Statement: I'm building a solar power installation and I need help working out the financials.
+- Land costs $100 / square foot
+- I can buy solar panels for $250 / square foot
+- I negotiated a contract for maintenance that will cost me a flat $100k per year, and an additional $10 / square foot
+What is the total cost for the first year of operations as a function of the number of square feet.
+
+Student's Solution: Let x be the size of the installation in square feet.
+1. Land cost: 100x
+2. Solar panel cost: 250x
+3. Maintenance cost: 100,000 + 100x
+Total cost: 100x + 250x + 100,000 + 100x = 450x + 100,000
+</div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">ASSISTANT</span></div></div><div class="example-chat-message-text">Let x be the size of the installation in square feet.
+1. Land cost: 100x
+2. Solar panel cost: 250x
+3. Maintenance cost: 100,000 + 10x
+Total cost: 100x + 250x + 100,000 + 10x = 360x + 100,000
+
+The student's solution is incorrect. They made an error in the maintenance cost calculation, using 100x instead of 10x. The correct total cost for the first year of operations is 360x + 100,000.</div></div></div><a class="example-chat-link" href="/playground/p/default-avoid-rushing-to-a-conclusion" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+<p><b>Tactic: Use inner monologue or a sequence of queries to hide the model's reasoning process</b></p>
+<p>The previous tactic demonstrates that it is sometimes important for the model to reason in detail about a problem before answering a specific question. For some applications, the reasoning process that a model uses to arrive at a final answer would be inappropriate to share with the user. For example, in tutoring applications we may want to encourage students to work out their own answers, but a model’s reasoning process about the student’s solution could reveal the answer to the student.</p>
+<p>Inner monologue is a tactic that can be used to mitigate this. The idea of inner monologue is to instruct the model to put parts of the output that are meant to be hidden from the user into a structured format that makes parsing them easy. Then before presenting the output to the user, the output is parsed and only part of the output is made visible.</p>
+<div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">Follow these steps to answer the user queries.
+
+  Step 1 - First work out your own solution to the problem. Don't rely on the student's solution since it may be incorrect. Enclose all your work for this step within triple quotes (""").
+  
+  Step 2 - Compare your solution to the student's solution and evaluate if the student's solution is correct or not. Enclose all your work for this step within triple quotes (""").
+  
+  Step 3 - If the student made a mistake, determine what hint you could give the student without giving away the answer. Enclose all your work for this step within triple quotes (""").
+  
+  Step 4 - If the student made a mistake, provide the hint from the previous step to the student (outside of triple quotes). Instead of writing "Step 4 - ..." write "Hint:".
+  </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Problem Statement: &lt;insert problem statement&gt;
+  
+  Student Solution: &lt;insert student solution&gt;</div></div></div><a class="example-chat-link" href="/playground/p/default-inner-monologue" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+  <p>Alternatively, this can be achieved with a sequence of queries in which all except the last have their output hidden from the end user.</p>
+  <p>First, we can ask the model to solve the problem on its own. Since this initial query doesn't require the student’s solution, it can be omitted. This provides the additional advantage that there is no chance that the model’s solution will be biased by the student’s attempted solution.</p>
+  <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">&lt;insert problem statement&gt;</div></div></div><a class="example-chat-link" href="/playground/p/default-query-sequence-1" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+  <p>Next, we can have the model use all available information to assess the correctness of the student’s solution.</p>
+  <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">Compare your solution to the student's solution and evaluate if the student's solution is correct or not.
+  </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Problem statement: """&lt;insert problem statement&gt;"""
+  
+  Your solution: """&lt;insert model generated solution&gt;"""
+  
+  Student’s solution: """&lt;insert student's solution&gt;"""</div></div></div><a class="example-chat-link" href="/playground/p/default-query-sequence-2" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+  <p>Finally, we can let the model use its own analysis to construct a reply in the persona of a helpful tutor.</p>
+  <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">You are a math tutor. If the student made an error, offer a hint to the student in a way that does not reveal the answer. If the student did not make an error, simply offer them an encouraging comment.
+  </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Problem statement: """&lt;insert problem statement&gt;"""
+  
+  Your solution: """&lt;insert model generated solution&gt;"""
+  
+  Student’s solution: """&lt;insert student's solution&gt;"""
+  
+  Analysis: """&lt;insert model generated analysis from previous step&gt;"""</div></div></div><a class="example-chat-link" href="/playground/p/default-query-sequence-3" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+  <p><b>Tactic: Ask the model if it missed anything on previous passes</b></p>
+  <p>Suppose that we are using a model to list excerpts from a source which are relevant to a particular question. After listing each excerpt the model needs to determine if it should start writing another or if it should stop. If the source document is large, it is common for a model to stop too early and fail to list all relevant excerpts. In that case, better performance can often be obtained by prompting the model with followup queries to find any excerpts it missed on previous passes.</p>
+  <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">You will be provided with a document delimited by triple quotes. Your task is to select excerpts which pertain to the following question: "What significant paradigm shifts have occurred in the history of artificial intelligence."
+
+    Ensure that excerpts contain all relevant context needed to interpret them - in other words don't extract small snippets that are missing important context. Provide output in JSON format as follows:
+    
+    [{"excerpt": "..."},
+    ...
+    {"excerpt": "..."}]
+    </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">"""&lt;insert document here&gt;"""
+    </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">ASSISTANT</span></div></div><div class="example-chat-message-text">[{"excerpt": "the model writes an excerpt here"},
+    ...
+    {"excerpt": "the model writes another excerpt here"}]
+    </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Are there more relevant excerpts? Take care not to repeat excerpts. Also ensure that excerpts contain all relevant context needed to interpret them - in other words don't extract small snippets that are missing important context.</div></div></div><a class="example-chat-link" href="/playground/p/default-2nd-pass" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+  </div>
+  <div id="list-item-6">
+    <h2><b>Strategy: Use external tools</b></h2>
+    <p><b>Tactic: Use embeddings-based search to implement efficient knowledge retrieval</b></p>
+<p>A model can leverage external sources of information if provided as part of its input. This can help the model to generate more informed and up-to-date responses. For example, if a user asks a question about a specific movie, it may be useful to add high quality information about the movie (e.g. actors, director, etc…) to the model’s input. Embeddings can be used to implement efficient knowledge retrieval, so that relevant information can be added to the model input dynamically at run-time.</p>
+<p>A text embedding is a vector that can measure the relatedness between text strings. Similar or relevant strings will be closer together than unrelated strings. This fact, along with the existence of fast vector search algorithms means that embeddings can be used to implement efficient knowledge retrieval. In particular, a text corpus can be split up into chunks, and each chunk can be embedded and stored. Then a given query can be embedded and vector search can be performed to find the embedded chunks of text from the corpus that are most related to the query (i.e. closest together in the embedding space).</p>
+<p>Example implementations can be found in the <a href="https://github.com/QX LabAI/QX LabAI-cookbook/blob/main/examples/vector_databases/Using_vector_databases_for_embeddings_search.ipynb" target="_blank" rel="noopener noreferrer">QX LabAI Cookbook</a>. See the tactic <a href="/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-use-retrieved-knowledge-to-answer-queries">“Instruct the model to use retrieved knowledge to answer queries”</a> for an example of how to use knowledge retrieval to minimize the likelihood that a model will make up incorrect facts.</p>
+<p><b>Tactic: Use code execution to perform more accurate calculations or call external APIs</b></p>
+<p>GPTs cannot be relied upon to perform arithmetic or long calculations accurately on their own. In cases where this is needed, a model can be instructed to write and run code instead of making its own calculations. In particular, a model can be instructed to put code that is meant to be run into a designated format such as triple backtics. After an output is produced, the code can be extracted and run. Finally, if necessary, the output from the code execution engine (i.e. Python interpreter) can be provided as an input to the model for the next query.</p>
+<div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">You can write and execute Python code by enclosing it in triple backticks, e.g. ```code goes here```. Use this to perform calculations.
+</div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Find all real-valued roots of the following polynomial: 3*x**5 - 5*x**4 - 3*x**3 - 7*x - 10.</div></div></div><a class="example-chat-link" href="/playground/p/default-code-execution" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+<p>Another good use case for code execution is calling external APIs. If a model is instructed in the proper use of an API, it can write code that makes use of it. A model can be instructed in how to use an API by providing it with documentation and/or code samples showing how to use the API.</p>
+<div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">You can write and execute Python code by enclosing it in triple backticks. Also note that you have access to the following module to help users send messages to their friends:
+
+  ```python
+  import message
+  message.write(to="John", message="Hey, want to meetup after work?")```</div></div></div><a class="example-chat-link" href="/playground/p/default-code-api" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+  <p><b>WARNING: Executing code produced by a model is not inherently safe and precautions should be taken in any application that seeks to do this. In particular, a sandboxed code execution environment is needed to limit the harm that untrusted code could cause.</b></p>
+  <p><b>Tactic: Give the model access to specific functions</b></p>
+  <p>The Chat completions API allows passing a list of function descriptions in requests. This enables models to generate function arguments according to the provided schemas. Generated function arguments are returned by the API in JSON format and can be used to execute function calls. Output provided by function calls can then be fed back into a model in the following request to close the loop. This is the recommended way of using GPT models to call external functions. To learn more see the function calling section in our introductory GPT guide and more function calling examples in the QX LabAI Cookbook.</p>
+</div>
+<div id="list-item-7">
+  <h2><b>Strategy: Test changes systematically</b></h2>
+  <p>Sometimes it can be hard to tell whether a change — e.g., a new instruction or a new design — makes your system better or worse. Looking at a few examples may hint at which is better, but with small sample sizes it can be hard to distinguish between a true improvement or random luck. Maybe the change helps performance on some inputs, but hurts performance on others.</p>
+  <p>Evaluation procedures (or "evals") are useful for optimizing system designs. Good evals are:</p>
+  <ul><li>Representative of real-world usage (or at least diverse)</li><li>Contain many test cases for greater statistical power (see table below for guidelines)</li><li>Easy to automate or repeat</li></ul>
+  <p>Evaluation of outputs can be done by computers, humans, or a mix. Computers can automate evals with objective criteria (e.g., questions with single correct answers) as well as some subjective or fuzzy criteria, in which model outputs are evaluated by other model queries. QX LabAI Evals is an open-source software framework that provides tools for creating automated evals.
+
+    Model-based evals can be useful when there exists a range of possible outputs that would be considered equally high in quality (e.g. for questions with long answers). The boundary between what can be realistically evaluated with a model-based eval and what requires a human to evaluate is fuzzy and is constantly shifting as models become more capable. We encourage experimentation to figure out how well model-based evals can work for your use case.</p>
+    <p><b>Tactic: Evaluate model outputs with reference to gold-standard answers</b></p>
+    <p>Suppose it is known that the correct answer to a question should make reference to a specific set of known facts. Then we can use a model query to count how many of the required facts are included in the answer.</p>
+    <p>For example, using the following system message:</p>
+    <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">You will be provided with text delimited by triple quotes that is supposed to be the answer to a question. Check if the following pieces of information are directly contained in the answer:
+
+      - Neil Armstrong was the first person to walk on the moon.
+      - The date Neil Armstrong first walked on the moon was July 21, 1969.
+      
+      For each of these points perform the following steps:
+      
+      1 - Restate the point.
+      2 - Provide a citation from the answer which is closest to this point.
+      3 - Consider if someone reading the citation who doesn't know the topic could directly infer the point. Explain why or why not before making up your mind.
+      4 - Write "yes" if the answer to 3 was yes, otherwise write "no".
+      
+      Finally, provide a count of how many "yes" answers there are. Provide this count as {"count": &lt;insert count here&gt;}.</div></div></div></div>
+      <p><b>Here's an example input where both points are satisfied:</b></p>
+      <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">&lt;insert system message above&gt;
+      </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">"""Neil Armstrong is famous for being the first human to set foot on the Moon. This historic event took place on July 21, 1969, during the Apollo 11 mission."""</div></div></div><a class="example-chat-link" href="/playground/p/default-model-based-eval-1" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+      <p>Here's an example input where only one point is satisfied:</p>
+      <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">&lt;insert system message above&gt;
+      </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">"""Neil Armstrong made history when he stepped off the lunar module, becoming the first person to walk on the moon."""</div></div></div><a class="example-chat-link" href="/playground/p/default-model-based-eval-2" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+      <p>Here's an example input where none are satisfied:</p>
+      <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">&lt;insert system message above&gt;
+      </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">"""In the summer of '69, a voyage grand,
+      Apollo 11, bold as legend's hand.
+      Armstrong took a step, history unfurled,
+      "One small step," he said, for a new world."""</div></div></div><a class="example-chat-link" href="/playground/p/default-model-based-eval-3" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+      <p>There are many possible variants on this type of model-based eval. Consider the following variation which tracks the kind of overlap between the candidate answer and the gold-standard answer, and also tracks whether the candidate answer contradicts any part of the gold-standard answer.</p>
+      <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">Use the following steps to respond to user inputs. Fully restate each step before proceeding. i.e. "Step 1: Reason...".
+
+        Step 1: Reason step-by-step about whether the information in the submitted answer compared to the expert answer is either: disjoint, equal, a subset, a superset, or overlapping (i.e. some intersection but not subset/superset).
+        
+        Step 2: Reason step-by-step about whether the submitted answer contradicts any aspect of the expert answer.
+        
+        Step 3: Output a JSON object structured like: {"type_of_overlap": "disjoint" or "equal" or "subset" or "superset" or "overlapping", "contradiction": true or false}</div></div></div></div>
+        <p>Here's an example input with a substandard answer which nonetheless does not contradict the expert answer:</p>
+        <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">&lt;insert system message above&gt;
+        </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Question: """What event is Neil Armstrong most famous for and on what date did it occur? Assume UTC time."""
+        
+        Submitted Answer: """Didn't he walk on the moon or something?"""
+        
+        Expert Answer: """Neil Armstrong is most famous for being the first person to walk on the moon. This historic event occurred on July 21, 1969."""</div></div></div><a class="example-chat-link" href="/playground/p/default-model-based-eval-4" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+        <p>Here's an example input with answer that directly contradicts the expert answer:</p>
+        <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">&lt;insert system message above&gt;
+        </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Question: """What event is Neil Armstrong most famous for and on what date did it occur? Assume UTC time."""
+        
+        Submitted Answer: """On the 21st of July 1969, Neil Armstrong became the second person to walk on the moon, following after Buzz Aldrin."""
+        
+        Expert Answer: """Neil Armstrong is most famous for being the first person to walk on the moon. This historic event occurred on July 21, 1969."""</div></div></div><a class="example-chat-link" href="/playground/p/default-model-based-eval-5" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+        <p>Here's an example input with a correct answer that also provides a bit more detail than is necessary:</p>
+        <div class="example-chat-container"><div class="example-chat-messages"><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">SYSTEM</span></div></div><div class="example-chat-message-text">&lt;insert system message above&gt;
+        </div></div><div class="example-chat-message"><div class="example-chat-role"><div class="example-chat-subheading subheading"><span class="example-chat-role-text">USER</span></div></div><div class="example-chat-message-text">Question: """What event is Neil Armstrong most famous for and on what date did it occur? Assume UTC time."""
+        
+        Submitted Answer: """At approximately 02:56 UTC on July 21st 1969, Neil Armstrong became the first human to set foot on the lunar surface, marking a monumental achievement in human history."""
+        
+        Expert Answer: """Neil Armstrong is most famous for being the first person to walk on the moon. This historic event occurred on July 21, 1969."""</div></div></div><a class="example-chat-link" href="/playground/p/default-model-based-eval-6" target="_blank" rel="noopener noreferrer">Open in Playground<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div>
+      </div>
+      <div id="list-item-8">
+        <h2 class="anchor-heading-root">Other resources</h2>
+        <p>For more inspiration, visit the <a href="https://github.com/QX LabAI/QX LabAI-cookbook" target="_blank" rel="noopener noreferrer">QX LabAI Cookbook</a>, which contains example code and also links to third-party resources such as:</p>
+        <ul><li><a href="https://github.com/QX LabAI/QX LabAI-cookbook#prompting-libraries--tools" target="_blank" rel="noopener noreferrer">Prompting libraries &amp; tools</a></li><li><a href="https://github.com/QX LabAI/QX LabAI-cookbook#prompting-guides" target="_blank" rel="noopener noreferrer">Prompting guides</a></li><li><a href="https://github.com/QX LabAI/QX LabAI-cookbook#video-courses" target="_blank" rel="noopener noreferrer">Video courses</a></li><li><a href="https://github.com/QX LabAI/QX LabAI-cookbook#papers-on-advanced-prompting-to-improve-reasoning" target="_blank" rel="noopener noreferrer">Papers on advanced prompting to improve reasoning</a></li></ul>
+      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

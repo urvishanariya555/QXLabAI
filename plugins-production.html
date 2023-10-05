@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <title>Qx Lab AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid" style="padding: 0 24px;">
+        <div class="header-logo">
+          <a href="overView.html">QX LAB AI</a>
+        </div>
+        <button class="navbar-toggler ps-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-md-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="overView.html">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none res-active" href="documentation.html">Documentation</a>
+              <div class="accordion res-header-bar-list" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Documentation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="documentation.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="quick-start.html">
+                        Quickstart
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="libraries.html">
+                        Libraries
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="models.html">
+                        Models
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="deprecations.html">
+                        Deprecations
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="tutorials.html">
+                        Tutorials
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="policies.html">
+                        Policies
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Guides
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="GPT-Models.html">
+                        GPT
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="gpt-best-practices.html">
+                        GPT best practices
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="image-generation.html">
+                        Image generation
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="fine-tuning.html">
+                        Fine-tuning
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="embeddings.html">
+                        Embeddings
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="speech-to-text.html">
+                        Speech to text
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="moderation.html">
+                        moderation
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="rate-limits.html">
+                        rate-limits
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="error-codes.html">
+                        Error codes
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="safety-best-practices.html">
+                        Safety best practices
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="production-best-practices.html">
+                        Production best practices
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Plugins
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="plugins-introduction.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="plugins-getting-started.html">
+                        Getting started
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-authentication.html">
+                        Authentication
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-examples.html">
+                        Examples
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-production.html">
+                        Production
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-review.html">
+                        Plugin review
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="api-reference.html" class="accordion-button collapsed pt-1 pb-1">
+                      API reference
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="examples.html" class="accordion-button collapsed pt-1 pb-1">
+                      Examples
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="api-reference.html">API reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="examples.html">Examples</a>
+            </li>
+          </ul>
+          <div class="res-flex">
+            <button type="button" class="btn d-res-none">Log in</button>
+            <button type="button" class="btn logInbtn d-res-none">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex layout">
+      <div class="left-content">
+        <div id="list-example" class="list-group border-radius-0">
+          <form class="d-flex searchForm" role="search">
+            <svg width="20" height="20" class="searchIcon" viewBox="0 0 20 20">
+              <path
+                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+            <input class="form-control sidebarSearch" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div>
+            <div class="sidebarPadding sidebarMainText">
+              GET STARTED
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="documentation.html">
+                Introduction
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="quick-start.html">
+                Quickstart
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="libraries.html">
+                Libraries
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="models.html">
+                Models
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="deprecations.html">
+              Deprecations
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="tutorials.html">
+              Tutorials
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="policies.html">
+              Policies
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Guides
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="GPT-Models.html">
+                GPT
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="gpt-best-practices.html">
+              GPT best practices
+            </a>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="image-generation.html">
+                Image generation
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="fine-tuning.html">
+                Fine-tuning
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="embeddings.html">
+                Embeddings
+              </a>              
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="speech-to-text.html">
+                Speech to text
+              </a>          
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="moderation.html">
+                Moderation
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="rate-limits.html">
+                Rate Limits
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="error-codes.html">
+                Error codes
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="safety-best-practices.html">
+              Safety best practices
+            </a>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="production-best-practices.html">
+                Production best practices
+              </a>
+            </div>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Chat plugins
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="plugins-introduction.html">
+              Introduction
+            </a>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="plugins-getting-started.html">
+                Getting started
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="plugins-authentication.html">
+              Authentication
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-examples.html">
+              Examples
+            </a>
+            <a class="sidebarListText list-group-item active" href="plugins-production.html">
+              Production
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-review.html">
+              Plugin review
+            </a>
+            <div class="sidebarListText">
+              Plugin policies
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content custom-right-content">
+        <div class="custom-right-content-width">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+            class="scrollspy-example pt-4" tabindex="0">
+            <div class="markdown-page markdown-content"><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/plugins-in-production"><h1 class="anchor-heading" name="plugins-in-production">Plugins in production</h1></a></div><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/rate-limits"><h2 class="anchor-heading" name="rate-limits">Rate limits</h2></a></div><p>Consider implementing rate limiting on the API endpoints you expose. Ask Qx will respect 429 response codes and dynamically back off from sending requests to your plugin after receiving a certain number of 429's or 500's in a short period of time.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/timeouts"><h3 class="anchor-heading" name="timeouts">Timeouts</h3></a></div><p>When making API calls during the plugin experience, timeouts take place if the following thresholds are exceeded:</p><ul><li>15 seconds round trip for fetching <code>ai-plugin.json</code>/<code>openapi.yaml</code></li><li>45 seconds round trip for API calls</li></ul><p>As we scale the plugin experience to more people, we expect that the timeout thresholds will decrease.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/rate-limiting-users"><h3 class="anchor-heading" name="rate-limiting-users">Rate limiting users</h3></a></div><p>We do not expose persistent user level ID's, instead we pass a <code>QX LabAI-ephemeral-user-id</code> header in the requests we send to a plugin. The <code>QX LabAI-ephemeral-user-id</code> resets every day at midnight UTC time. We also expose a persistent <code>QX LabAI-conversation-id</code> header which allows developers to see which conversation a request is related to.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/updating-your-plugin"><h2 class="anchor-heading" name="updating-your-plugin">Updating your plugin</h2></a></div><p>Manifest files must be manually updated by going through the "Develop your own plugin" flow in the plugin store each time you make a change to the <code>ai-plugin.json</code> file. Ask Qx will automatically fetch the latest OpenAPI spec each time a request is made so changes made will propagate to end users immediately. If your plugin is available in the Ask Qx plugin store and you go through the "Develop your own plugin" flow, we will automatically look for changes in the files and remove the plugin if it has changed. You will have to resubmit your plugin to be included in the store again.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/plugin-terms"><h2 class="anchor-heading" name="plugin-terms">Plugin terms</h2></a></div><p>In order to register a plugin, you must agree to the <a href="http://qxlabai.com/policies/plugin-terms" target="_blank" rel="noopener noreferrer">Plugin Terms</a>.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/domain-verification-and-security"><h2 class="anchor-heading" name="domain-verification-and-security">Domain verification and security</h2></a></div><p>To ensure that plugins can only perform actions on resources that they control, QX LabAI enforces requirements on the plugin's manifest and API specifications.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/defining-the-plugin-s-root-domain"><h3 class="anchor-heading" name="defining-the-plugin-s-root-domain">Defining the plugin's root domain</h3></a></div><p>The manifest file defines information shown to the user (like logo and contact information) as well as a URL where the plugin's OpenAPI spec is hosted. When the manifest is fetched, the plugin's root domain is established following these rules:</p><ul><li>If the domain has <code>www.</code> as a subdomain, then the root domain will strip out <code>www.</code> from the domain that hosts the manifest.</li><li>Otherwise, the root domain is the same as the domain that hosts the manifest.</li></ul><p>Note on redirects: If there are any redirects in resolving the manifest, only child subdomain redirects are allowed. The only exception is following a redirect from a www subdomain to one without the www.</p><p>Examples of what the root domain looks like:</p><ul><li>✅ <code>https://example.com/.well-known/ai-plugin.json</code><ul><li>Root domain: <code>example.com</code></li></ul></li><li>✅ <code>https://www.example.com/.well-known/ai-plugin.json</code><ul><li>Root domain: <code>example.com</code></li></ul></li><li>✅ <code>https://www.example.com/.well-known/ai-plugin.json</code> → redirects to <code>https://example.com/.well-known/ai-plugin.json</code><ul><li>Root domain: <code>example.com</code></li></ul></li><li>✅ <code>https://foo.example.com/.well-known/ai-plugin.json</code> → redirects to <code>https://bar.foo.example.com/.well-known/ai-plugin.json</code><ul><li>Root domain: <code>bar.foo.example.com</code></li></ul></li><li>✅ <code>https://foo.example.com/.well-known/ai-plugin.json</code> → redirects to <code>https://bar.foo.example.com/baz/ai-plugin.json</code><ul><li>Root domain: <code>bar.foo.example.com</code></li></ul></li><li>❌ <code>https://foo.example.com/.well-known/ai-plugin.json</code> → redirects to <code>https://example.com/.well-known/ai-plugin.json</code><ul><li>Redirect to parent level domain is disallowed</li></ul></li><li>❌ <code>https://foo.example.com/.well-known/ai-plugin.json</code> → redirects to <code>https://bar.example.com/.well-known/ai-plugin.json</code><ul><li>Redirect to same level subdomain is disallowed</li></ul></li><li>❌ <code>https://example.com/.well-known/ai-plugin.json</code> -&gt; redirects to <code>https://example2.com/.well-known/ai-plugin.json</code><ul><li>Redirect to another domain is disallowed</li></ul></li></ul><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/manifest-validation"><h3 class="anchor-heading" name="manifest-validation">Manifest validation</h3></a></div><p>Specific fields in the manifest itself must satisfy the following requirements:</p><ul><li><code>api.url</code> - the URL provided to the OpenAPI spec must be hosted at the same level or a subdomain of the root domain.</li><li><code>legal_info</code> - The <a href="https://en.wikipedia.org/wiki/Second-level_domain" target="_blank" rel="noopener noreferrer">second-level domain</a> of the URL provided must be the same as the second-level domain of the root domain.</li><li><code>contact_info</code> - The second-level domain of the email address should be the same as the second-level domain of the root domain.</li></ul><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/resolving-the-api-spec"><h3 class="anchor-heading" name="resolving-the-api-spec">Resolving the API spec</h3></a></div><p>The <code>api.url</code> field in the manifest provides a link to an OpenAPI spec that defines APIs that the plugin can call into. OpenAPI allows specifying multiple <a href="https://swagger.io/docs/specification/api-host-and-base-path/" target="_blank" rel="noopener noreferrer">server base URLs</a>. The following logic is used to select the server URL:</p><ul><li>Iterate through the list of server URLs</li><li>Use the first server URL that is either an exact match of the root domain or a subdomain of the root domain</li><li>If neither cases above apply, then default to the domain where the API spec is hosted. For example, if the spec is hosted on <code>api.example.com</code>, then <code>api.example.com</code> will be used as the base URL for the routes in the OpenAPI spec.</li></ul><p>Note: Please avoid using redirects for hosting the API spec and any API endpoints, as it is not guaranteed that redirects will always be followed.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/use-tls-and-https"><h3 class="anchor-heading" name="use-tls-and-https">Use TLS and HTTPS</h3></a></div><p>All traffic with the plugin (e.g., fetching the <code>ai-plugin.json</code> file, the OpenAPI spec, API calls) must use TLS 1.2 or later on port 443 with a valid public certificate.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/ip-egress-ranges"><h3 class="anchor-heading" name="ip-egress-ranges">IP egress ranges</h3></a></div><p>Ask Qx will call your plugin from an IP address in the <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing" target="_blank" rel="noopener noreferrer">CIDR block</a> <code>23.102.140.112/28</code>. You may wish to explicitly allowlist these IP addresses.</p><p>Separately, QX LabAI's web browsing plugin <a href="https://platform.qxlabai.com/docs/plugins/bot" target="_blank" rel="noopener noreferrer">accesses websites</a> from a different IP address block: <code>23.98.142.176/28</code>.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/faq"><h2 class="anchor-heading" name="faq">FAQ</h2></a></div><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/how-is-plugin-data-used"><h3 class="anchor-heading" name="how-is-plugin-data-used">How is plugin data used?</h3></a></div><p>Plugins connect Ask Qx to external apps. If a user enables a plugin, Ask Qx may send parts of their conversation and their country or state to your plugin.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/what-happens-if-a-request-to-my-api-fails"><h3 class="anchor-heading" name="what-happens-if-a-request-to-my-api-fails">What happens if a request to my API fails?</h3></a></div><p>If an API request fails, the model might retry the request up to 10 times before letting the user know it cannot get a response from that plugin.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/can-i-invite-people-to-try-my-plugin"><h3 class="anchor-heading" name="can-i-invite-people-to-try-my-plugin">Can I invite people to try my plugin?</h3></a></div><p>Yes, all unverified plugins can be installed by up to 100 other developers who have plugin access. If your plugin is available in the plugin store, it will be accessible to all Ask Qx plus customers.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/production/can-i-charge-people-money-for-my-plugin"><h3 class="anchor-heading" name="can-i-charge-people-money-for-my-plugin">Can I charge people money for my plugin?</h3></a></div><p>Not at this time.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+
+
+</html>

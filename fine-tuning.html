@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <title>Qx Lab AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+  <body data-spy="scroll" data-target="#scrollspy" data-offset="100">
+    <nav class="navbar navbar-expand-lg custom-sticky-bar">
+      <div class="container-fluid" style="padding: 0 24px;">
+        <div class="header-logo">
+          <a href="overView.html">QX LAB AI</a>
+        </div>
+        <button class="navbar-toggler ps-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-md-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="overView.html">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none res-active" href="documentation.html">Documentation</a>
+              <div class="accordion res-header-bar-list" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Documentation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="documentation.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="quick-start.html">
+                        Quickstart
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="libraries.html">
+                        Libraries
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="models.html">
+                        Models
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="deprecations.html">
+                        Deprecations
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="tutorials.html">
+                        Tutorials
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="policies.html">
+                        Policies
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Guides
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="GPT-Models.html">
+                        GPT
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="gpt-best-practices.html">
+                        GPT best practices
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="image-generation.html">
+                        Image generation
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="fine-tuning.html">
+                        Fine-tuning
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="embeddings.html">
+                        Embeddings
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="speech-to-text.html">
+                        Speech to text
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="moderation.html">
+                        moderation
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="rate-limits.html">
+                        rate-limits
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="error-codes.html">
+                        Error codes
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="safety-best-practices.html">
+                        Safety best practices
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="production-best-practices.html">
+                        Production best practices
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Plugins
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="plugins-introduction.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="plugins-getting-started.html">
+                        Getting started
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-authentication.html">
+                        Authentication
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-examples.html">
+                        Examples
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-production.html">
+                        Production
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-review.html">
+                        Plugin review
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="api-reference.html" class="accordion-button collapsed pt-1 pb-1">
+                      API reference
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="examples.html" class="accordion-button collapsed pt-1 pb-1">
+                      Examples
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="api-reference.html">API reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="examples.html">Examples</a>
+            </li>
+          </ul>
+          <div class="res-flex">
+            <button type="button" class="btn d-res-none">Log in</button>
+            <button type="button" class="btn logInbtn d-res-none">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex">
+      <div class="left-content-scroll">
+        <div id="list-example" class="list-group border-radius-0">
+          <form class="d-flex searchForm" role="search">
+            <svg width="20" height="20" class="searchIcon" viewBox="0 0 20 20">
+              <path
+                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+            <input class="form-control sidebarSearch" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div id="scrollspy">
+            <div class="sidebarPadding sidebarMainText">
+              GET STARTED
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="documentation.html">
+                Introduction
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="quick-start.html">
+                Quickstart
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="libraries.html">
+                Libraries
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="models.html">
+                Models
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="deprecations.html">
+              Deprecations
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="tutorials.html">
+              Tutorials
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="policies.html">
+              Policies
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Guides
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="GPT-Models.html">
+                GPT
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="gpt-best-practices.html">
+              GPT best practices
+            </a>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="image-generation.html">
+                Image generation
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText list-group-item active" href="fine-tuning.html">
+                Fine-tuning
+              </a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-1">
+                When to use fine-tuning</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-2">
+                Common use cases</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-3">
+              Preparing your dataset</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-4">
+              Create a fine-tuned model</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-5">
+              Use a fine-tuned model</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-6">
+              Fine-tuning examples</a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="embeddings.html">
+              Embeddings
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="speech-to-text.html">
+              Speech to text
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="moderation.html">
+              moderation
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="rate-limits.html">
+              rate-limits
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="error-codes.html">
+              Error codes
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="safety-best-practices.html">
+              Safety best practices
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="production-best-practices.html">
+              Production best practices
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Chat plugins
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="plugins-introduction.html">
+              Introduction
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-getting-started.html">
+              Getting started
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-authentication.html">
+              Authentication
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-examples.html">
+              Examples
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-production.html">
+              Production
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-review.html">
+              Plugin review
+            </a>
+            <div class="sidebarListText">
+              Plugin policies
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content-scroll custom-right-content">
+        <div class="custom-right-content-width">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+            class="scrollspy-example pt-4" tabindex="0">
+            <div class="markdown-page markdown-content">
+              <div class="anchor-heading-root">
+                <a class="anchor-heading-link" href="/docs/guides/fine-tuning/fine-tuning">
+                  <h1 class="anchor-heading mt-0" name="fine-tuning">Fine-tuning</h1></a></div><p>Learn how to customize a model for your application.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/introduction"><h2 class="anchor-heading" name="introduction">Introduction</h2></a></div><div class="mt-6 mb-6"><div class="notice notice-neutral has-body has-icon"><div class="notice-icon notice-icon-neutral"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z"></path></svg></div><div class="notice-message"><div class="notice-body">This guide is intended for users of the new QX LabAI fine-tuning API. If you are a legacy fine-tuning user, please refer to our <a href="/docs/guides/legacy-fine-tuning">legacy fine-tuning guide</a>.</div></div></div></div><p>Fine-tuning lets you get more out of the models available through the API by providing:</p><ol><li>Higher quality results than prompting</li><li>Ability to train on more examples than can fit in a prompt</li><li>Token savings due to shorter prompts</li><li>Lower latency requests</li></ol><p>GPT models have been pre-trained on a vast amount of text. To use the models effectively, we include instructions and sometimes several examples in a prompt. Using demonstrations to show how to perform a task is often called "few-shot learning."</p><p>Fine-tuning improves on few-shot learning by training on many more examples than can fit in the prompt, letting you achieve better results on a wide number of tasks. <strong>Once a model has been fine-tuned, you won't need to provide as many examples in the prompt.</strong> This saves costs and enables lower-latency requests.</p><p>At a high level, fine-tuning involves the following steps:</p><ol><li>Prepare and upload training data</li><li>Train a new fine-tuned model</li><li>Use your fine-tuned model</li></ol><p>Visit our <a href="https://qxlabai.com/api/pricing" target="_blank" rel="noopener noreferrer">pricing page</a> to learn more about how fine-tuned model training and usage are billed.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/what-models-can-be-fine-tuned"><h3 class="anchor-heading" name="what-models-can-be-fine-tuned">What models can be fine-tuned?</h3></a></div><div class="mt-6 mb-6"><div class="notice notice-neutral has-body has-icon"><div class="notice-icon notice-icon-neutral"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z"></path></svg></div><div class="notice-message"><div class="notice-body">We are working on enabling fine-tuning for GPT-4 and expect this feature to be available later this year.</div></div></div></div><p>Fine-tuning is currently available for the following models:</p><ul><li><code>gpt-3.5-turbo-0613</code> (recommended)</li><li><code>babbage-002</code></li><li><code>davinci-002</code></li></ul><p>We expect <code>gpt-3.5-turbo</code> to be the right model for most users in terms of results and ease of use, unless you are migrating a legacy fine-tuned model.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/when-to-use-fine-tuning">
+                  
+                    <div id="list-item-1"></div>
+                    <h2 class="anchor-heading" name="when-to-use-fine-tuning">When to use fine-tuning</h2>
+                  </a>
+                </div>
+                <p>Fine-tuning GPT models can make them better for specific applications, but it requires a careful investment of time and effort. We recommend first attempting to get good results with prompt engineering, prompt chaining (breaking complex tasks into multiple prompts), and <a href="/docs/guides/gpt/function-calling">function calling</a>, with the key reasons being:</p><ul><li>There are many tasks for which our models may initially appear to not perform well at, but with better prompting we can achieve much better results and potentially not need to be fine-tune</li><li>Iterating over prompts and other tactics has a much faster feedback loop than iterating with fine-tuning, which requires creating datasets and running training jobs</li><li>In cases where fine-tuning is still necessary, initial prompt engineering work is not wasted - we typically see best results when using a good prompt in the fine-tuning data (or combining prompt chaining / tool use with fine-tuning)</li></ul><p>Our <a href="/docs/guides/gpt-best-practices">GPT best practices guide</a> provides a background on some of the most effective strategies and tactics for getting better performance without fine-tuning. You may find it helpful to iterate quickly on prompts in our <a href="/playground">playground</a>.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/common-use-cases">
+                  <div id="list-item-2"></div>
+                      <h2 class="anchor-heading" name="common-use-cases">Common use cases</h2></a></div><p>Some common use cases where fine-tuning can improve results:</p><ul><li>Setting the style, tone, format, or other qualitative aspects</li><li>Improving reliability at producing a desired output</li><li>Correcting failures to follow complex prompts</li><li>Handling many edge cases in specific ways</li><li>Performing a new skill or task that’s hard to articulate in a prompt</li></ul><p>One high-level way to think about these cases is when it’s easier to "show, not tell". In the sections to come, we will explore how to set up data for fine-tuning and various examples where fine-tuning improves the performance over the baseline model.</p><p>Another scenario where fine-tuning is effective is in reducing costs and / or latency, by replacing GPT-4 or by utilizing shorter prompts, without sacrificing quality. If you can achieve good results with GPT-4, you can often reach similar quality with a fine-tuned <code>gpt-3.5-turbo</code> model by fine-tuning on the GPT-4 completions, possibly with a shortened instruction prompt.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/preparing-your-dataset">
+                      
+                        <div id="list-item-3"></div>
+                        <h2 class="anchor-heading" name="preparing-your-dataset">Preparing your dataset</h2></a></div><p>Once you have determined that fine-tuning is the right solution (i.e. you’ve optimized your prompt as far as it can take you and identified problems that the model still has), you’ll need to prepare data for training the model. You should create a diverse set of demonstration conversations that are similar to the conversations you will ask the model to respond to at inference time in production.</p><p>Each example in the dataset should be a conversation in the same format as our <a href="/docs/api-reference/chat/create">Chat completions API</a>, specifically a list of messages where each message has a role, content, and <a href="/docs/api-reference/chat/create#chat/create-name">optional name</a>. At least some of the training examples should directly target cases where the prompted model is not behaving as desired, and the provided assistant messages in the data should be the ideal responses you want the model to provide.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/example-format"><h3 class="anchor-heading" name="example-format">Example format</h3></a></div><p>In this example, our goal is to create a chatbot that occasionally gives sarcastic responses, these are three training examples (conversations) we could create for a dataset:</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-jsonl" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span></code><span class=""><span class="">{</span><span class="hljs-string">"messages"</span><span class="">: [{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Marv is a factual chatbot that is also sarcastic."</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"What's the capital of France?"</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"assistant"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Paris, as if everyone doesn't know that already."</span><span class="">}]}
+</span></span><span class=""><span class="">{</span><span class="hljs-string">"messages"</span><span class="">: [{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Marv is a factual chatbot that is also sarcastic."</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Who wrote 'Romeo and Juliet'?"</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"assistant"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Oh, just some guy named William Shakespeare. Ever heard of him?"</span><span class="">}]}
+</span></span><span class=""><span class="">{</span><span class="hljs-string">"messages"</span><span class="">: [{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Marv is a factual chatbot that is also sarcastic."</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"How far is the Moon from Earth?"</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"assistant"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Around 384,400 kilometers. Give or take a few, like that really matters."</span><span class="">}]}</span></span></code></pre></div></div><div class="mt-6 mb-6"><div class="notice notice-neutral has-body has-icon"><div class="notice-icon notice-icon-neutral"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z"></path></svg></div><div class="notice-message"><div class="notice-body">We do not currently support <a href="/docs/guides/gpt/function-calling">function calling</a> examples but are working to enable this.</div></div></div></div><p>The conversational chat format is required to fine-tune <code>gpt-3.5-turbo</code>. For <code>babbage-002</code> and <code>davinci-002</code>, you can follow the prompt completion pair format used for <a href="/docs/guides/legacy-fine-tuning/prepare-training-data">legacy fine-tuning</a> as shown below.</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-json" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span></code><span class=""><span class="">{</span><span class="hljs-string">"prompt"</span><span class="">: </span><span class="hljs-string">"&lt;prompt text&gt;"</span><span class="">, </span><span class="hljs-string">"completion"</span><span class="">: </span><span class="hljs-string">"&lt;ideal generated text&gt;"</span><span class="">}
+</span></span><span class=""><span class="">{</span><span class="hljs-string">"prompt"</span><span class="">: </span><span class="hljs-string">"&lt;prompt text&gt;"</span><span class="">, </span><span class="hljs-string">"completion"</span><span class="">: </span><span class="hljs-string">"&lt;ideal generated text&gt;"</span><span class="">}
+</span></span><span class=""><span class="">{</span><span class="hljs-string">"prompt"</span><span class="">: </span><span class="hljs-string">"&lt;prompt text&gt;"</span><span class="">, </span><span class="hljs-string">"completion"</span><span class="">: </span><span class="hljs-string">"&lt;ideal generated text&gt;"</span><span class="">}</span></span></code></pre></div></div><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/crafting-prompts"><h3 class="anchor-heading" name="crafting-prompts">Crafting prompts</h3></a></div><p>We generally recommend taking the set of instructions and prompts that you found worked best for the model prior to fine-tuning, and including them in every training example. This should let you reach the best and most general results, especially if you have relatively few (e.g. under a hundred) training examples.</p><p>If you would like to shorten the instructions or prompts that are repeated in every example to save costs, keep in mind that the model will likely behave as if those instructions were included, and it may be hard to get the model to ignore those "baked-in" instructions at inference time.</p><p>It may take more training examples to arrive at good results, as the model has to learn entirely through demonstration and without guided instructions.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/example-count-recommendations"><h3 class="anchor-heading" name="example-count-recommendations">Example count recommendations</h3></a></div><p>To fine-tune a model, you are required to provide at least 10 examples. We typically see clear improvements from fine-tuning on 50 to 100 training examples with <code>gpt-3.5-turbo</code> but the right number varies greatly based on the exact use case.</p><p>We recommend starting with 50 well-crafted demonstrations and seeing if the model shows signs of improvement after fine-tuning. In some cases that may be sufficient, but even if the model is not yet production quality, clear improvements are a good sign that providing more data will continue to improve the model. No improvement suggests that you may need to rethink how to set up the task for the model or restructure the data before scaling beyond a limited example set.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/train-and-test-splits"><h3 class="anchor-heading" name="train-and-test-splits">Train and test splits</h3></a></div><p>After collecting the initial dataset, we recommend splitting it into a training and test portion. When submitting a fine-tuning job with both training and test files, we will provide statistics on both during the course of training. These statistics will be your initial signal of how much the model is improving. Additionally, constructing a test set early on will be useful in making sure you are able to evaluate the model after training, by generating samples on the test set.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/token-limits"><h3 class="anchor-heading" name="token-limits">Token limits</h3></a></div><p>Each training example is limited to 4096 tokens. Examples longer than this will be truncated to the first 4096 tokens when training. To be sure that your entire training example fits in context, consider checking that the total token counts in the message contents are under 4,000. The maximum number of total tokens trained per job is 50 million tokens (<code>tokens_in_dataset * n_epochs</code>).</p><p>You can compute token counts using our <a href="https://github.com/QX LabAI/QX LabAI-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb" target="_blank" rel="noopener noreferrer">counting tokens notebook</a> from the QX LabAI cookbook.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/estimate-costs"><h3 class="anchor-heading" name="estimate-costs">Estimate costs</h3></a></div><p>Please refer to the <a href="https://qxlabai.com/pricing" target="_blank" rel="noopener noreferrer">pricing page</a> for details on cost per 1k input and output tokens (we do to charge for tokens that are part of the validation data). To estimate the costs for a specific fine-tuning job, use the following formula:</p><blockquote><p>base cost per 1k tokens * number of tokens in the input file * number of epochs trained</p></blockquote><p>For a training file with 100,000 tokens trained over 3 epochs, the expected cost would be ~$2.40 USD.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/check-data-formatting"><h3 class="anchor-heading" name="check-data-formatting">Check data formatting</h3></a></div><p>Once you have compiled a dataset and before you create a fine-tuning job, it is important to check the data formatting. To do this, we created a simple Python script which you can use to find potential errors, review token counts, and estimate the cost of a fine-tuning job.</p><a href="https://github.com/QX LabAI/QX LabAI-cookbook/blob/main/examples/Chat_finetuning_data_prep.ipynb" target="_blank" rel="noopener noreferrer"><div class="icon-item mt-6"><div class="icon-item-icon green-gradient-bg"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg></div><div class="icon-item-right"><div class="icon-item-title body-large bold">Fine-tuning data format validation</div><div class="icon-item-desc body-small">Learn about fine-tuning data formatting</div></div></div></a><hr><br><p>Once you have the data validated, the file needs to be uploaded in order to be used with a fine-tuning jobs:</p><div class="code-sample"><div class="code-sample-header"><div class="code-sample-title body-small"></div><div class="code-sample-select-wrap"><div class="code-sample-select-val">python</div><select class="code-sample-select api-code-lang-select"><option disabled="" value="">Select library</option><option value="python">python</option><option value="node.js">node.js</option></select><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="code-sample-copy"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span><span class="btn-label-inner">Copy&zwj;</span></span></button></div></div><div class="code-sample-body code-sample-body-small"><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span></code><span class=""><span class="hljs-keyword">import</span><span class=""> os
+</span></span><span class=""><span class=""></span><span class="hljs-keyword">import</span><span class=""> QX LabAI
+</span></span><span class=""><span class="">QX LabAI.api_key = os.getenv(</span><span class="hljs-string">"QX LabAI_API_KEY"</span><span class="">)
+</span></span><span class="">QX LabAI.File.create(
+</span><span class=""><span class="">  file=</span><span class="hljs-built_in">open</span><span class="">(</span><span class="hljs-string">"mydata.jsonl"</span><span class="">, </span><span class="hljs-string">"rb"</span><span class="">),
+</span></span><span class=""><span class="">  purpose=</span><span class="hljs-string">'fine-tune'</span><span class="">
+</span></span><span class="">)</span></code></pre></div></div><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/create-a-fine-tuned-model">
+
+
+
+
+  <div id="list-item-4"></div>
+  <h2 class="anchor-heading" name="create-a-fine-tuned-model">Create a fine-tuned model</h2></a></div><p>After ensuring you have the right amount and structure for your dataset, and have uploaded the file, the next step is to create a fine-tuning job.</p><p>Start your fine-tuning job using the QX LabAI SDK:</p><div class="code-sample code-sample-oneliner"><div class="code-sample-header"><div class="code-sample-title body-small"></div><div class="code-sample-select-wrap"><div class="code-sample-select-val">python</div><select class="code-sample-select api-code-lang-select"><option disabled="" value="">Select library</option><option value="python">python</option><option value="node.js">node.js</option></select><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="code-sample-copy"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span><span class="btn-label-inner">Copy&zwj;</span></span></button></div></div><div class="code-sample-body code-sample-body-small"><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><span class=""><span class="">QX LabAI.FineTuningJob.create(training_file=</span><span class="hljs-string">"file-abc123"</span><span class="">, model=</span><span class="hljs-string">"gpt-3.5-turbo"</span><span class="">)</span></span></code></pre></div></div><p><code>model</code> is the name of the model you're starting from (<code>gpt-3.5-turbo</code>, <code>babbage-002</code>, or <code>davinci-002</code>). You can customize your fine-tuned model's name using the <a href="/docs/api-reference/fine-tuning/create#fine-tuning/create-suffix">suffix parameter</a>.</p><p>After you've started a fine-tuning job, it may take some time to complete. Your job may be queued behind other jobs in our system, and training a model can take minutes or hours depending on the model and dataset size. After the model training is completed, the user who created the fine-tuning job will receive an email confirmation.</p><p>In addition to creating a fine-tuning job, you can also list existing jobs, retrieve the status of a job, or cancel a job.</p><div class="code-sample"><div class="code-sample-header"><div class="code-sample-title body-small"></div><div class="code-sample-select-wrap"><div class="code-sample-select-val">python</div><select class="code-sample-select api-code-lang-select"><option disabled="" value="">Select library</option><option value="python">python</option><option value="node.js">node.js</option></select><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="code-sample-copy"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span><span class="btn-label-inner">Copy&zwj;</span></span></button></div></div><div class="code-sample-body code-sample-body-small"><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span><span class="react-syntax-highlighter-line-number">10
+</span><span class="react-syntax-highlighter-line-number">11
+</span><span class="react-syntax-highlighter-line-number">12
+</span><span class="react-syntax-highlighter-line-number">13
+</span><span class="react-syntax-highlighter-line-number">14
+</span></code><span class=""><span class="hljs-comment"># List 10 fine-tuning jobs</span><span class="">
+</span></span><span class=""><span class="">QX LabAI.FineTuningJob.</span><span class="hljs-built_in">list</span><span class="">(limit=</span><span class="hljs-number">10</span><span class="">)
+</span></span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-comment"># Retrieve the state of a fine-tune</span><span class="">
+</span></span><span class=""><span class="">QX LabAI.FineTuningJob.retrieve(</span><span class="hljs-string">"ft-abc123"</span><span class="">)
+</span></span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-comment"># Cancel a job</span><span class="">
+</span></span><span class=""><span class="">QX LabAI.FineTuningJob.cancel(</span><span class="hljs-string">"ft-abc123"</span><span class="">)
+</span></span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-comment"># List up to 10 events from a fine-tuning job</span><span class="">
+</span></span><span class=""><span class="">QX LabAI.FineTuningJob.list_events(</span><span class="hljs-built_in">id</span><span class="">=</span><span class="hljs-string">"ft-abc123"</span><span class="">, limit=</span><span class="hljs-number">10</span><span class="">)
+</span></span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-comment"># Delete a fine-tuned model (must be an owner of the org the model was created in)</span><span class="">
+</span></span><span class=""><span class="">QX LabAI.Model.delete(</span><span class="hljs-string">"ft-abc123"</span><span class="">)</span></span></code></pre></div></div><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/use-a-fine-tuned-model">
+
+
+
+  <div id="list-item-5"></div>
+
+  <h2 class="anchor-heading" name="use-a-fine-tuned-model">Use a fine-tuned model</h2></a></div><p>When a job has succeeded, you will see the <code>fine_tuned_model</code> field populated with the name of the model when you retrieve the job details. You may now specify this model as a parameter to in the <a href="/docs/api-reference/chat">Chat completions</a> (for <code>gpt-3.5-turbo</code>) or <a href="/docs/api-reference/completions">legacy Completions</a> API (for <code>babbage-002</code> and <code>davinci-002</code>), and make requests to it using the <a href="/playground">Playground</a>.</p><p>After your job is completed, the model should be available right away for inference use. In some cases, it may take several minutes for your model to become ready to handle requests. If requests to your model time out or the model name cannot be found, it is likely because your model is still being loaded. If this happens, try again in a few minutes.</p><div class="code-sample"><div class="code-sample-header"><div class="code-sample-title body-small"></div><div class="code-sample-select-wrap"><div class="code-sample-select-val">python</div><select class="code-sample-select api-code-lang-select"><option disabled="" value="">Select library</option><option value="python">python</option><option value="node.js">node.js</option></select><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="code-sample-copy"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span><span class="btn-label-inner">Copy&zwj;</span></span></button></div></div><div class="code-sample-body code-sample-body-small"><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span></code><span class=""><span class="">completion = QX LabAI.ChatCompletion.create(
+</span></span><span class=""><span class="">  model=</span><span class="hljs-string">"ft:gpt-3.5-turbo:my-org:custom_suffix:id"</span><span class="">,
+</span></span><span class="">  messages=[
+</span><span class=""><span class="">    {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"You are a helpful assistant."</span><span class="">},
+</span></span><span class=""><span class="">    {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Hello!"</span><span class="">}
+</span></span><span class="">  ]
+</span><span class="">)
+</span><span class=""><span class=""></span><span class="hljs-built_in">print</span><span class="">(completion.choices[</span><span class="hljs-number">0</span><span class="">].message)</span></span></code></pre></div></div><p>You can start making requests by passing the model name as shown above and in our <a href="/docs/guides/gpt/chat-completions-api">GPT guide</a>.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/analyzing-your-fine-tuned-model"><h2 class="anchor-heading" name="analyzing-your-fine-tuned-model">Analyzing your fine-tuned model</h2></a></div><p>We provide the following training metrics computed over the course of training: training loss, training token accuracy, test loss, and test token accuracy. These statistics are meant to provide a sanity check that training went smoothly (loss should decrease, token accuracy should increase). While an active fine-tuning jobs is running, you can view an event object which contains some useful metrics:</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-json" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span><span class="react-syntax-highlighter-line-number">10
+</span><span class="react-syntax-highlighter-line-number">11
+</span><span class="react-syntax-highlighter-line-number">12
+</span><span class="react-syntax-highlighter-line-number">13
+</span></code><span class=""><span class="">{
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"object"</span><span class="">: </span><span class="hljs-string">"fine_tuning.job.event"</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"id"</span><span class="">: </span><span class="hljs-string">"ftevent-abc-123"</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"created_at"</span><span class="">: </span><span class="hljs-number">1693582679</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"level"</span><span class="">: </span><span class="hljs-string">"info"</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"message"</span><span class="">: </span><span class="hljs-string">"Step 100/100: training loss=0.00"</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"data"</span><span class="">: {
+</span></span><span class=""><span class="">        </span><span class="hljs-string">"step"</span><span class="">: </span><span class="hljs-number">100</span><span class="">,
+</span></span><span class=""><span class="">        </span><span class="hljs-string">"train_loss"</span><span class="">: </span><span class="hljs-number">1.805623287509661e-5</span><span class="">,
+</span></span><span class=""><span class="">        </span><span class="hljs-string">"train_mean_token_accuracy"</span><span class="">: </span><span class="hljs-number">1.0</span><span class="">
+</span></span><span class="">    },
+</span><span class=""><span class="">    </span><span class="hljs-string">"type"</span><span class="">: </span><span class="hljs-string">"metrics"</span><span class="">
+</span></span><span class="">}</span></code></pre></div></div><p>After a fine-tuning job has finished, you can also see metrics around how the training process went by <a href="/docs/api-reference/fine-tuning/retrieve">querying a fine-tuning job</a>, extracting a file ID from the <code>result_files</code>, and then <a href="/docs/api-reference/files/retrieve-contents">retrieving that files content</a>. Each results CSV file has the following columns: <code>step</code>, <code>train_loss</code>, <code>train_accuracy</code>, <code>valid_loss</code>, and <code>valid_mean_token_accuracy</code>.</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-csv" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span></code><span class=""><span class="">step,train_loss,train_accuracy,valid_loss,valid_mean_token_accuracy
+</span></span><span class="">1,1.52347,0.0,,
+</span><span class="">2,0.57719,0.0,,
+</span><span class="">3,3.63525,0.0,,
+</span><span class="">4,1.72257,0.0,,
+</span><span class="">5,1.52379,0.0,,</span></code></pre></div></div><p>While metrics can he helpful, evaluating samples from the fine-tuned model provides the most relevant sense of model quality. We recommend generating samples from both the base model and the fine-tuned model on a test set, and comparing the samples side by side. The test set should ideally include the full distribution of inputs that you might send to the model in a production use case. If manual evaluation is too time-consuming, consider using our <a href="https://github.com/QX LabAI/evals" target="_blank" rel="noopener noreferrer">Evals library</a> to automate future evaluations.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/iterating-on-data-quality"><h3 class="anchor-heading" name="iterating-on-data-quality">Iterating on data quality</h3></a></div><p>If the results from a fine-tuning job are not as good as you expected, consider the following ways to adjust the training dataset:</p><ul><li>Collect examples to target remaining issues<ul><li>If the model still isn’t good at certain aspects, add training examples that directly show the model how to do these aspects correctly</li></ul></li><li>Scrutinize existing examples for issues<ul><li>If your model has grammar, logic, or style issues, check if your data has any of the same issues. For instance, if the model now says "I will schedule this meeting for you" (when it shouldn’t), see if existing examples teach the model to say it can do new things that it can’t do</li></ul></li><li>Consider the balance and diversity of data<ul><li>If 60% of the assistant responses in the data says "I cannot answer this", but at inference time only 5% of responses should say that, you will likely get an overabundance of refusals</li></ul></li><li>Make sure your training examples contain all of the information needed for the response<ul><li>If we want the model to compliment a user based on their personal traits and a training example includes assistant compliments for traits not found in the preceding conversation, the model may learn to hallucinate information</li></ul></li><li>Look at the agreement / consistency in the training examples<ul><li>If multiple people created the training data, it’s likely that model performance will be limited by the level of agreement / consistency between people. For instance, in a text extraction task, if people only agreed on 70% of extracted snippets, the model would likely not be able to do better than this</li></ul></li><li>Make sure your all of your training examples are in the same format, as expected for inference</li></ul><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/iterating-on-data-quantity"><h3 class="anchor-heading" name="iterating-on-data-quantity">Iterating on data quantity</h3></a></div><p>Once you’re satisfied with the quality and distribution of the examples, you can consider scaling up the number of training examples. This tends to help the model learn the task better, especially around possible "edge cases". We expect a similar amount of improvement every time you double the number of training examples. You can loosely estimate the expected quality gain from increasing the training data size by:</p><ul><li>Fine-tuning on your current dataset</li><li>Fine-tuning on half of your current dataset</li><li>Observing the quality gap between the two</li></ul><p>In general, if you have to make a trade-off, a smaller amount of high-quality data is generally more effective than a larger amount of low-quality data.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/iterating-on-hyperparameters"><h3 class="anchor-heading" name="iterating-on-hyperparameters">Iterating on hyperparameters</h3></a></div><p>We allow you to specify the number of epochs to fine-tune a model for. We recommend initially training without specifying the number of epochs, allowing us to pick a default for you based on dataset size, then adjusting if you observe the following:</p><ul><li>If the model does not follow the training data as much as expected increase the number by 1 or 2 epochs<ul><li>This is more common for tasks for which there is a single ideal completion (or a small set of ideal completions which are similar). Some examples include classification, entity extraction, or structured parsing. These are often tasks for which you can compute a final accuracy metric against a reference answer.</li></ul></li><li>If the model becomes less diverse than expected decrease the number by 1 or 2 epochs<ul><li>This is more common for tasks for which there are a wide range of possible good completions</li></ul></li></ul><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/fine-tuning-examples">
+
+  <div id="list-item-6"></div>
+  <h2 class="anchor-heading" name="fine-tuning-examples">Fine-tuning examples</h2></a></div><p>Now that we have explored the basics of the fine-tuning API, let’s look at going through the fine-tuning lifecycle for a few different use cases.</p><div class="expn"><div class="expn-title" role="button" aria-expanded="false" aria-controls="expander-2"><div class="expn-icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg></div><div class="expn-label">Style and tone</div></div><div class="expn-content hidden" id="expander-2"><p>In this example, we will explore how to build a fine-tuned model which gets the model follow specific style and tone guidance beyond what is possible with prompting alone.</p><p>To begin, we create a sample set of messages showing what the model should which in this case is misspelled words.</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-jsonl" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span></code><span class=""><span class="">{</span><span class="hljs-string">"messages"</span><span class="">: [{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Marv is a factual chatbot that is also sarcastic."</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"What's the capital of France?"</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"assistant"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Paris, as if everyone doesn't know that already."</span><span class="">}]}
+</span></span><span class=""><span class="">{</span><span class="hljs-string">"messages"</span><span class="">: [{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Marv is a factual chatbot that is also sarcastic."</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Who wrote 'Romeo and Juliet'?"</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"assistant"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Oh, just some guy named William Shakespeare. Ever heard of him?"</span><span class="">}]}
+</span></span><span class=""><span class="">{</span><span class="hljs-string">"messages"</span><span class="">: [{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Marv is a factual chatbot that is also sarcastic."</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"How far is the Moon from Earth?"</span><span class="">}, {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"assistant"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Around 384,400 kilometers. Give or take a few, like that really matters."</span><span class="">}]}</span></span></code></pre></div></div><p>If you want to follow along and create a fine-tuned model yourself, you will need at least 10 examples.</p><p>After getting the data that will potentially improve the model, the next step is to check if the data meets all the <a href="/docs/guides/fine-tuning/check-data-formatting">formatting requirements</a>.</p><p>Now that we have the data formatted and validated, the final training step is to kick off a job to create the fine-tuned model. You can do this via the QX LabAI CLI or one of our SDKs as shown below:</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span></code><span class=""><span class="">QX LabAI.File.create(file=</span><span class="hljs-built_in">open</span><span class="">(</span><span class="hljs-string">"marv.jsonl"</span><span class="">, </span><span class="hljs-string">"rb"</span><span class="">), purpose=</span><span class="hljs-string">'fine-tune'</span><span class="">)
+</span></span><span class="">
+</span><span class=""><span class="">QX LabAI.FineTuningJob.create(training_file=</span><span class="hljs-string">"file-abc123"</span><span class="">, model=</span><span class="hljs-string">"gpt-3.5-turbo"</span><span class="">)</span></span></code></pre></div></div><p>Once the training job is done, you will be able to <a href="/docs/guides/fine-tuning/use-a-fine-tuned-model">use your fine-tuned model</a>.</p><div class="expn-collapse"><button tabindex="0" class="btn btn-sm btn-filled btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-label-inner">Collapse&zwj;</span></span></button></div></div></div><div class="expn"><div class="expn-title" role="button" aria-expanded="false" aria-controls="expander-3"><div class="expn-icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg></div><div class="expn-label">Structured output</div></div><div class="expn-content hidden" id="expander-3"><p>Another type of use case which works really well with fine-tuning is getting the model to provide structured information, in this case about sports headlines:</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-jsonl" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span></code><span class=""><span class="">{</span><span class="hljs-string">"messages"</span><span class="">: [{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Given a sports headline, provide the following fields in a JSON dict, where applicable: "</span><span class="">playe</span><span class="hljs-string">r" (full name)"</span><span class="">, </span><span class="hljs-string">"team"</span><span class="">, </span><span class="hljs-string">"sport"</span><span class="">, </span><span class="hljs-keyword">and</span><span class=""> </span><span class="hljs-string">"gender"</span><span class="">.},{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Sources: Colts grant RB Taylor OK to seek trade"</span><span class="">},
+</span></span><span class=""><span class="">{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"assistant"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"{"</span><span class="">playe</span><span class="hljs-string">r": "</span><span class="">Jonathan Taylo</span><span class="hljs-string">r", "</span><span class="">team</span><span class="hljs-string">": "</span><span class="">Colts</span><span class="hljs-string">", "</span><span class="">sport</span><span class="hljs-string">": "</span><span class="">football</span><span class="hljs-string">", "</span><span class="">gende</span><span class="hljs-string">r": "</span><span class="">male</span><span class="hljs-string">" }"</span><span class="">},]}
+</span></span><span class=""><span class="">{</span><span class="hljs-string">"messages"</span><span class="">: [{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Given a sports headline, provide the following fields in a JSON dict, where applicable: "</span><span class="">playe</span><span class="hljs-string">r" (full name)"</span><span class="">, </span><span class="hljs-string">"team"</span><span class="">, </span><span class="hljs-string">"sport"</span><span class="">, </span><span class="hljs-keyword">and</span><span class=""> </span><span class="hljs-string">"gender"</span><span class="">.},{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"OSU 'split down middle' on starting QB battle"</span><span class="">},
+</span></span><span class=""><span class="">{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"assistant"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"{"</span><span class="">playe</span><span class="hljs-string">r": null, "</span><span class="">team</span><span class="hljs-string">": "</span><span class="">OS</span><span class="hljs-string">U", "</span><span class="">sport</span><span class="hljs-string">": "</span><span class="">football</span><span class="hljs-string">", "</span><span class="">gende</span><span class="hljs-string">r": null }"</span><span class="">},]}</span></span></code></pre></div></div><p>If you want to follow along and create a fine-tuned model yourself, you will need at least 10 examples.</p><p>After getting the data that will potentially improve the model, the next step is to check if the data meets all the <a href="/docs/guides/fine-tuning/check-data-formatting">formatting requirements</a>.</p><p>Now that we have the data formatted and validated, the final training step is to kick off a job to create the fine-tuned model. You can do this via the QX LabAI CLI or one of our SDKs as shown below:</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span></code><span class=""><span class="">QX LabAI.File.create(file=</span><span class="hljs-built_in">open</span><span class="">(</span><span class="hljs-string">"sports-context.jsonl"</span><span class="">, </span><span class="hljs-string">"rb"</span><span class="">), purpose=</span><span class="hljs-string">'fine-tune'</span><span class="">)
+</span></span><span class="">
+</span><span class=""><span class="">QX LabAI.FineTuningJob.create(training_file=</span><span class="hljs-string">"file-abc123"</span><span class="">, model=</span><span class="hljs-string">"gpt-3.5-turbo"</span><span class="">)</span></span></code></pre></div></div><p>Once the training job is done, you will be able to <a href="/docs/guides/fine-tuning/use-a-fine-tuned-model">use your fine-tuned model</a> and make a request that looks like the following:</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span></code><span class=""><span class="">completion = QX LabAI.ChatCompletion.create(
+</span></span><span class=""><span class="">  model=</span><span class="hljs-string">"ft:gpt-3.5-turbo:my-org:custom_suffix:id"</span><span class="">,
+</span></span><span class="">  messages=[
+</span><span class=""><span class="">    {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Given a sports headline, provide the following fields in a JSON dict, where applicable: player (full name), team, sport, and gender"</span><span class="">},
+</span></span><span class=""><span class="">    {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Richardson wins 100m at worlds to cap comeback"</span><span class="">}
+</span></span><span class="">  ]
+</span><span class="">)
+</span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-built_in">print</span><span class="">(completion.choices[</span><span class="hljs-number">0</span><span class="">].message)</span></span></code></pre></div></div><p>Based on the formatted training data, the response should look like the following:</p><div class="code-sample code-sample-oneliner"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float copy-btn-top " type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-json" style="white-space: pre;"><span class=""><span class="">{</span><span class="hljs-string">"player"</span><span class="">: </span><span class="hljs-string">"Sha'Carri Richardson"</span><span class="">, </span><span class="hljs-string">"team"</span><span class="">: null</span><span class="hljs-string">", "</span><span class="">sport</span><span class="hljs-string">": "</span><span class="">track </span><span class="hljs-keyword">and</span><span class=""> field</span><span class="hljs-string">", "</span><span class="">gende</span><span class="hljs-string">r": "</span><span class="">female</span><span class="hljs-string">"}</span></span></code></pre></div></div><div class="expn-collapse"><button tabindex="0" class="btn btn-sm btn-filled btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-label-inner">Collapse&zwj;</span></span></button></div></div></div><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/migration-of-legacy-models"><h2 class="anchor-heading" name="migration-of-legacy-models">Migration of legacy models</h2></a></div><p>For users migrating from <code>/v1/fine-tunes</code> to the updated <code>/v1/fine_tuning/jobs</code> API and newer models, the main difference you can expect is the updated API. The legacy prompt completion pair data format has been retained for the updated <code>babbage-002</code> and <code>davinci-002</code> models to ensure a smooth transition. The new models will support fine-tuning with 4k token context and have a knowledge cutoff of September 2021.</p><p>For most tasks, you should expect to get better performance from <code>gpt-3.5-turbo</code> than from the GPT base models.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/faq"><h2 class="anchor-heading" name="faq">FAQ</h2></a></div><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/when-should-i-use-fine-tuning-vs-embeddings-with-retrieval"><h3 class="anchor-heading" name="when-should-i-use-fine-tuning-vs-embeddings-with-retrieval">When should I use fine-tuning vs embeddings with retrieval?</h3></a></div><p>Embeddings with retrieval is best suited for cases when you need to have a large database of documents with relevant context and information.</p><p>By default QX LabAI’s models are trained to be helpful generalist assistants. Fine-tuning can be used to make a model which is narrowly focused, and exhibits specific ingrained behavior patterns. Retrieval strategies can be used to make new information available to a model by providing it with relevant context before generating its response. Retrieval strategies are not an alternative to fine-tuning and can in fact be complementary to it.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/when-can-i-fine-tune-gpt-4-or-gpt-3-5-turbo-16k"><h3 class="anchor-heading" name="when-can-i-fine-tune-gpt-4-or-gpt-3-5-turbo-16k">When can I fine-tune GPT-4 or GPT-3.5-Turbo-16k?</h3></a></div><p>We plan to release support for fine-tuning both of these models later this year.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/how-do-i-know-if-my-fine-tuned-model-is-actually-better-than-the-base-model"><h3 class="anchor-heading" name="how-do-i-know-if-my-fine-tuned-model-is-actually-better-than-the-base-model">How do I know if my fine-tuned model is actually better than the base model?</h3></a></div><p>We recommend generating samples from both the base model and the fine-tuned model on a test set of chat conversations, and comparing the samples side by side. For more comprehensive evaluations, consider using the <a href="https://github.com/QX LabAI/evals" target="_blank" rel="noopener noreferrer">QX LabAI evals framework</a> to create an eval specific to your use case.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/can-i-continue-fine-tuning-a-model-that-has-already-been-fine-tuned"><h3 class="anchor-heading" name="can-i-continue-fine-tuning-a-model-that-has-already-been-fine-tuned">Can I continue fine-tuning a model that has already been fine-tuned?</h3></a></div><p>No, we do not currently support continuing the fine-tuning process once a job has finished. We plan to support this in the near future.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/how-can-i-estimate-the-cost-of-fine-tuning-a-model"><h3 class="anchor-heading" name="how-can-i-estimate-the-cost-of-fine-tuning-a-model">How can I estimate the cost of fine-tuning a model?</h3></a></div><p>Please refer to the <a href="/docs/guides/fine-tuning/estimate-costs">estimate cost</a> section above.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/does-the-new-fine-tuning-endpoint-still-work-with-weights-biases-for-tracking-metrics"><h3 class="anchor-heading" name="does-the-new-fine-tuning-endpoint-still-work-with-weights-biases-for-tracking-metrics">Does the new fine-tuning endpoint still work with Weights &amp; Biases for tracking metrics?</h3></a></div><p>No, we do not currently support this integration but are working to enable it in the near future.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/how-many-fine-tuning-jobs-can-i-have-running-at-once"><h3 class="anchor-heading" name="how-many-fine-tuning-jobs-can-i-have-running-at-once">How many fine-tuning jobs can I have running at once?</h3></a></div><p>Please refer to our <a href="/docs/guides/rate-limits/what-are-the-rate-limits-for-our-api">rate limit guide</a> for the most up to date information on the limits.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/fine-tuning/how-do-rate-limits-work-on-fine-tuned-models"><h3 class="anchor-heading" name="how-do-rate-limits-work-on-fine-tuned-models">How do rate limits work on fine-tuned models?</h3></a></div><p>A fine-tuned model pulls from the same shared rate limit as the model it is based off of. For example, if you use half your TPM rate limit in a given time period with the standard <code>gpt-3.5-turbo</code> model, any model(s) you fine-tuned from <code>gpt-3.5-turbo</code> would only have the remaining half of the TPM rate limit accessible since the capacity is shared across all models of the same type.</p><p>Put another way, having fine-tuned models does not give you more capacity to use our models from a total throughput perspective.</p></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

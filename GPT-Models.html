@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <title>Qx Lab AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+  <body data-spy="scroll" data-target="#scrollspy" data-offset="100">
+    <nav class="navbar navbar-expand-lg custom-sticky-bar">
+      <div class="container-fluid" style="padding: 0 24px;">
+        <div class="header-logo">
+          <a href="overView.html">QX LAB AI</a>
+        </div>
+        <button class="navbar-toggler ps-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-md-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="overView.html">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none res-active" href="documentation.html">Documentation</a>
+              <div class="accordion res-header-bar-list" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Documentation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="documentation.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="quick-start.html">
+                        Quickstart
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="libraries.html">
+                        Libraries
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="models.html">
+                        Models
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="deprecations.html">
+                        Deprecations
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="tutorials.html">
+                        Tutorials
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="policies.html">
+                        Policies
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Guides
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="GPT-Models.html">
+                        GPT
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="gpt-best-practices.html">
+                        GPT best practices
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="image-generation.html">
+                        Image generation
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="fine-tuning.html">
+                        Fine-tuning
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="embeddings.html">
+                        Embeddings
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="speech-to-text.html">
+                        Speech to text
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="moderation.html">
+                        moderation
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="rate-limits.html">
+                        rate-limits
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="error-codes.html">
+                        Error codes
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="safety-best-practices.html">
+                        Safety best practices
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="production-best-practices.html">
+                        Production best practices
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Plugins
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="plugins-introduction.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="plugins-getting-started.html">
+                        Getting started
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-authentication.html">
+                        Authentication
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-examples.html">
+                        Examples
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-production.html">
+                        Production
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-review.html">
+                        Plugin review
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="api-reference.html" class="accordion-button collapsed pt-1 pb-1">
+                      API reference
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="examples.html" class="accordion-button collapsed pt-1 pb-1">
+                      Examples
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="api-reference.html">API reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="examples.html">Examples</a>
+            </li>
+          </ul>
+          <div class="res-flex">
+            <button type="button" class="btn d-res-none">Log in</button>
+            <button type="button" class="btn logInbtn d-res-none">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex">
+      <div class="left-content-scroll">
+        <div id="list-example" class="list-group border-radius-0">
+          <form class="d-flex searchForm" role="search">
+            <svg width="20" height="20" class="searchIcon" viewBox="0 0 20 20">
+              <path
+                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+            <input class="form-control sidebarSearch" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div>
+            <div class="sidebarPadding sidebarMainText">
+              GET STARTED
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="documentation.html">
+                Introduction
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="quick-start.html">
+                Quickstart
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="libraries.html">
+                Libraries
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="models.html">
+                Models
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="deprecations.html">
+              Deprecations
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="tutorials.html">
+              Tutorials
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="policies.html">
+              Policies
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Guides
+            </div>
+            <div>
+              <a class="sidebarListText list-group-item active" href="GPT-Models.html">
+                GPT
+              </a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-1">
+              Chat completions API</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-2">
+              Function calling</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-3">
+              Completions API</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-4">Chat completions vs. Completions</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-5">Managing tokens</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace"
+                href="#list-item-6">FAQ</a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="gpt-best-practices.html">
+              GPT best practices
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="image-generation.html">
+              Image generation
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="fine-tuning.html">
+              Fine-tuning
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="embeddings.html">
+              Embeddings
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="speech-to-text.html">
+              Speech to text
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="moderation.html">
+              moderation
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="rate-limits.html">
+              rate-limits
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="error-codes.html">
+              Error codes
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="safety-best-practices.html">
+              Safety best practices
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="production-best-practices.html">
+              Production best practices
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Chat plugins
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="plugins-introduction.html">
+              Introduction
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-getting-started.html">
+              Getting started
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-authentication.html">
+              Authentication
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-examples.html">
+              Examples
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-production.html">
+              Production
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-review.html">
+              Plugin review
+            </a>
+            <div class="sidebarListText">
+              Plugin policies
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content-scroll custom-right-content">
+        <div class="custom-right-content-width">        
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example pt-4"
+          tabindex="0">
+          <div class="markdown-content">
+            <div>
+              <h1 class="anchor-heading">GPT models</h1>
+              <div class="mt-6 mb-6">
+                <div class="notice-neutral notice d-flex align-items-center">
+                  <svg stroke="#6e6e80" fill="#6e6e80" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z">
+                    </path>
+                  </svg>
+                  <div class="notice-message ms-3"><div class="notice-body">Looking for Ask Qx? Head to <a href="https://chat.qxlabai.com" target="_blank" rel="noopener noreferrer">chat.qxlabai.com</a>.</div></div>
+                </div>
+              </div> 
+              <p>QX LabAI's GPT (generative pre-trained transformer) models have been trained to understand natural language and code. GPTs provide text outputs in response to their inputs. The inputs to GPTs are also referred to as "prompts". Designing a prompt is essentially how you “program” a GPT model, usually by providing instructions or some examples of how to successfully complete a task.</p>            
+              <p>Using GPTs, you can build applications to:</p>
+              <ul><li>Draft documents</li><li>Write computer code</li><li>Answer questions about a knowledge base</li><li>Analyze texts</li><li>Create conversational agents</li><li>Give software a natural language interface</li><li>Tutor in a range of subjects</li><li>Translate languages</li><li>Simulate characters for games</li></ul>
+              <p>...and much more!</p>
+              <p>To use a GPT model via the QX LabAI API, you’ll send a request containing the inputs and your API key, and receive a response containing the model’s output. Our latest models, <code>gpt-4</code> and <code>gpt-3.5-turbo</code>, are accessed through the chat completions API endpoint.</p>
+              <div class="custom-table">
+                <table><thead><tr><th></th><th>Model families</th><th>API endpoint</th></tr></thead><tbody><tr><td>Newer models (2023–)</td><td>gpt-4, gpt-3.5-turbo</td><td><a href="https://api.qxlabai.com/v1/chat/completions" target="_blank" rel="noopener noreferrer">https://api.qxlabai.com/v1/chat/completions</a></td></tr><tr><td>Updated base models (2023)</td><td>babbage-002, davinci-002</td><td><a href="https://api.qxlabai.com/v1/completions" target="_blank" rel="noopener noreferrer">https://api.qxlabai.com/v1/completions</a></td></tr><tr><td>Legacy models (2020–2022)</td><td>text-davinci-003, text-davinci-002, davinci, curie, babbage, ada</td><td><a href="https://api.qxlabai.com/v1/completions" target="_blank" rel="noopener noreferrer">https://api.qxlabai.com/v1/completions</a></td></tr></tbody></table>
+              </div>
+              <p>You can experiment with GPTs in the <a href="https://platform.qxlabai.com/playground?mode=chat" target="_blank" rel="noopener noreferrer">playground</a>. If you’re not sure which model to use, then use <code>gpt-3.5-turbo</code> or <code>gpt-4</code>.</p>
+              <div id="list-item-1">
+              <h2 class="anchor-heading-root">Chat completions API</h2>
+              <p>Chat models take a list of messages as input and return a model-generated message as output. Although the chat format is designed to make multi-turn conversations easy, it’s just as useful for single-turn tasks without any conversation.</p>
+              <p>An example Chat completions API call looks like the following:</p>
+              <div class="code-sample"><div class="code-sample-header"><div class="code-sample-title body-small"></div><div class="code-sample-select-wrap"><div class="code-sample-select-val">python</div><select class="code-sample-select api-code-lang-select"><option disabled="" value="">Select library</option><option value="python">python</option><option value="node.js">node.js</option></select><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="code-sample-copy"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span><span class="btn-label-inner">Copy&zwj;</span></span></button></div></div><div class="code-sample-body code-sample-body-small"><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span></code><span class=""><span class="">response = QX LabAI.ChatCompletion.create(
+</span></span><span class=""><span class="">    model=</span><span class="hljs-string">"gpt-3.5-turbo"</span><span class="">,
+</span></span><span class="">    messages=[
+</span><span class=""><span class="">        {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"system"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"You are a helpful assistant."</span><span class="">},
+</span></span><span class=""><span class="">        {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Who won the world series in 2020?"</span><span class="">},
+</span></span><span class=""><span class="">        {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"assistant"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"The Los Angeles Dodgers won the World Series in 2020."</span><span class="">},
+</span></span><span class=""><span class="">        {</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"Where was it played?"</span><span class="">}
+</span></span><span class="">    ]
+</span><span class="">)</span></code></pre></div></div>
+<p>To learn more, you can view the full <a href="https://platform.qxlabai.com/docs/api-reference/chat" target="_blank" rel="noopener noreferrer">API reference documentation</a> for the Chat API.</p>
+<p>The main input is the messages parameter. Messages must be an array of message objects, where each object has a role (either "system", "user", or "assistant") and content. Conversations can be as short as one message or many back and forth turns.</p>
+<p>Typically, a conversation is formatted with a system message first, followed by alternating user and assistant messages.</p>
+<p>The system message helps set the behavior of the assistant. For example, you can modify the personality of the assistant or provide specific instructions about how it should behave throughout the conversation. However note that the system message is optional and the model’s behavior without a system message is likely to be similar to using a generic message such as "You are a helpful assistant."</p>
+<p>The user messages provide requests or comments for the assistant to respond to. Assistant messages store previous assistant responses, but can also be written by you to give examples of desired behavior.</p>
+<p>Including conversation history is important when user instructions refer to prior messages. In the example above, the user’s final question of "Where was it played?" only makes sense in the context of the prior messages about the World Series of 2020. Because the models have no memory of past requests, all relevant information must be supplied as part of the conversation history in each request. If a conversation cannot fit within the model’s token limit, it will need to be <a href="/docs/guides/gpt-best-practices/tactic-for-dialogue-applications-that-require-very-long-conversations-summarize-or-filter-previous-dialogue">shortened</a> in some way.</p>
+<div class="mt-6 mb-6">
+  <div class="notice-neutral notice d-flex align-items-center">
+    <svg stroke="#6e6e80" fill="#6e6e80" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z">
+      </path>
+    </svg>
+    <div class="notice-message ms-3"><div class="notice-body">To mimic the effect seen in Ask Qx where the text is returned iteratively, set the <a href="/docs/api-reference/chat/create#chat/create-stream">stream</a> parameter to true.</div></div>
+  </div>
+</div>
+<h2 class="anchor-heading-root">Chat completions response format</h2>
+<p>An example Chat completions API response looks as follows:</p>
+<div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-text" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span><span class="react-syntax-highlighter-line-number">10
+</span><span class="react-syntax-highlighter-line-number">11
+</span><span class="react-syntax-highlighter-line-number">12
+</span><span class="react-syntax-highlighter-line-number">13
+</span><span class="react-syntax-highlighter-line-number">14
+</span><span class="react-syntax-highlighter-line-number">15
+</span><span class="react-syntax-highlighter-line-number">16
+</span><span class="react-syntax-highlighter-line-number">17
+</span><span class="react-syntax-highlighter-line-number">18
+</span><span class="react-syntax-highlighter-line-number">19
+</span><span class="react-syntax-highlighter-line-number">20
+</span><span class="react-syntax-highlighter-line-number">21
+</span></code><span class=""><span class="">{
+</span></span><span class="">  "choices": [
+</span><span class="">    {
+</span><span class="">      "finish_reason": "stop",
+</span><span class="">      "index": 0,
+</span><span class="">      "message": {
+</span><span class="">        "content": "The 2020 World Series was played in Texas at Globe Life Field in Arlington.",
+</span><span class="">        "role": "assistant"
+</span><span class="">      }
+</span><span class="">    }
+</span><span class="">  ],
+</span><span class="">  "created": 1677664795,
+</span><span class="">  "id": "chatcmpl-7QyqpwdfhqwajicIEznoc6Q47XAyW",
+</span><span class="">  "model": "gpt-3.5-turbo-0613",
+</span><span class="">  "object": "chat.completion",
+</span><span class="">  "usage": {
+</span><span class="">    "completion_tokens": 17,
+</span><span class="">    "prompt_tokens": 57,
+</span><span class="">    "total_tokens": 74
+</span><span class="">  }
+</span><span class="">}</span></code></pre></div></div>
+<p>The assistant’s reply can be extracted with:</p>
+<ul><li><code>stop</code>: API returned complete message, or a message terminated by one of the stop sequences provided via the <a href="/docs/api-reference/chat/create#chat/create-stop">stop</a> parameter</li><li><code>length</code>: Incomplete model output due to <a href="/docs/api-reference/chat/create#chat/create-max_tokens"><code>max_tokens</code></a> parameter or token limit</li><li><code>function_call</code>: The model decided to call a function</li><li><code>content_filter</code>: Omitted content due to a flag from our content filters</li><li><code>null</code>: API response still in progress or incomplete</li></ul>
+Depending on input parameters (like providing functions as shown below), the model response may include different information.
+</div>
+<div id="list-item-2">
+<div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/guides/gpt/function-calling"><h2 class="anchor-heading" name="function-calling">Function calling</h2></a></div>
+<p>In an API call, you can describe functions to <code>gpt-3.5-turbo-0613</code> and <code>gpt-4-0613</code>, and have the model intelligently choose to output a JSON object containing arguments to call those functions. The Chat completions API does not call the function; instead, the model generates JSON that you can use to call the function in your code.</p>
+<p>The latest models (<code>gpt-3.5-turbo-0613</code> and <code>gpt-4-0613</code>) have been fine-tuned to both detect when a function should to be called (depending on the input) and to respond with JSON that adheres to the function signature. With this capability also comes potential risks. We strongly recommend building in user confirmation flows before taking actions that impact the world on behalf of users (sending an email, posting something online, making a purchase, etc).</p>
+<div class="mt-6 mb-6">
+  <div class="notice-neutral notice d-flex align-items-center">
+    <svg stroke="#6e6e80" fill="#6e6e80" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z">
+      </path>
+    </svg>
+    <div class="notice-message ms-3"><div class="notice-body">Under the hood, functions are injected into the system message in a syntax the model has been trained on. This means functions count against the model's context limit and are billed as input tokens. If running into context limits, we suggest limiting the number of functions or the length of documentation you provide for function parameters.</div></div>
+  </div>
+</div> 
+<p>Function calling allows you to more reliably get structured data back from the model. For example, you can:</p>
+<ul><li>Create chatbots that answer questions by calling external APIs (e.g. like Ask Qx Plugins)<ul><li>e.g. define functions like <code>send_email(to: string, body: string)</code>, or <code>get_current_weather(location: string, unit: 'celsius' | 'fahrenheit')</code></li></ul></li><li>Convert natural language into API calls<ul><li>e.g. convert "Who are my top customers?" to <code>get_customers(min_revenue: int, created_before: string, limit: int)</code> and call your internal API</li></ul></li><li>Extract structured data from text<ul><li>e.g. define a function called <code>extract_data(name: string, birthday: string)</code>, or <code>sql_query(query: string)</code></li></ul></li></ul>
+<p>...and much more!</p>
+<p>The basic sequence of steps for function calling is as follows:</p>
+<ol><li>Call the model with the user query and a set of functions defined in the <a href="/docs/api-reference/chat/create#functions">functions parameter</a>.</li><li>The model can choose to call a function; if so, the content will be a stringified JSON object adhering to your custom schema (note: the model may generate invalid JSON or hallucinate parameters).</li><li>Parse the string into JSON in your code, and call your function with the provided arguments if they exist.</li><li>Call the model again by appending the function response as a new message, and let the model summarize the results back to the user.</li></ol>
+<div class="code-sample"><div class="code-sample-header"><div class="code-sample-title body-small"></div><div class="code-sample-select-wrap"><div class="code-sample-select-val">python</div><select class="code-sample-select api-code-lang-select"><option disabled="" value="">Select library</option><option value="python">python</option><option value="node.js">node.js</option></select><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="code-sample-copy"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span><span class="btn-label-inner">Copy&zwj;</span></span></button></div></div><div class="code-sample-body code-sample-body-small"><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span><span class="react-syntax-highlighter-line-number">10
+</span><span class="react-syntax-highlighter-line-number">11
+</span><span class="react-syntax-highlighter-line-number">12
+</span><span class="react-syntax-highlighter-line-number">13
+</span><span class="react-syntax-highlighter-line-number">14
+</span><span class="react-syntax-highlighter-line-number">15
+</span><span class="react-syntax-highlighter-line-number">16
+</span><span class="react-syntax-highlighter-line-number">17
+</span><span class="react-syntax-highlighter-line-number">18
+</span><span class="react-syntax-highlighter-line-number">19
+</span><span class="react-syntax-highlighter-line-number">20
+</span><span class="react-syntax-highlighter-line-number">21
+</span><span class="react-syntax-highlighter-line-number">22
+</span><span class="react-syntax-highlighter-line-number">23
+</span><span class="react-syntax-highlighter-line-number">24
+</span><span class="react-syntax-highlighter-line-number">25
+</span><span class="react-syntax-highlighter-line-number">26
+</span><span class="react-syntax-highlighter-line-number">27
+</span><span class="react-syntax-highlighter-line-number">28
+</span><span class="react-syntax-highlighter-line-number">29
+</span><span class="react-syntax-highlighter-line-number">30
+</span><span class="react-syntax-highlighter-line-number">31
+</span><span class="react-syntax-highlighter-line-number">32
+</span><span class="react-syntax-highlighter-line-number">33
+</span><span class="react-syntax-highlighter-line-number">34
+</span><span class="react-syntax-highlighter-line-number">35
+</span><span class="react-syntax-highlighter-line-number">36
+</span><span class="react-syntax-highlighter-line-number">37
+</span><span class="react-syntax-highlighter-line-number">38
+</span><span class="react-syntax-highlighter-line-number">39
+</span><span class="react-syntax-highlighter-line-number">40
+</span><span class="react-syntax-highlighter-line-number">41
+</span><span class="react-syntax-highlighter-line-number">42
+</span><span class="react-syntax-highlighter-line-number">43
+</span><span class="react-syntax-highlighter-line-number">44
+</span><span class="react-syntax-highlighter-line-number">45
+</span><span class="react-syntax-highlighter-line-number">46
+</span><span class="react-syntax-highlighter-line-number">47
+</span><span class="react-syntax-highlighter-line-number">48
+</span><span class="react-syntax-highlighter-line-number">49
+</span><span class="react-syntax-highlighter-line-number">50
+</span><span class="react-syntax-highlighter-line-number">51
+</span><span class="react-syntax-highlighter-line-number">52
+</span><span class="react-syntax-highlighter-line-number">53
+</span><span class="react-syntax-highlighter-line-number">54
+</span><span class="react-syntax-highlighter-line-number">55
+</span><span class="react-syntax-highlighter-line-number">56
+</span><span class="react-syntax-highlighter-line-number">57
+</span><span class="react-syntax-highlighter-line-number">58
+</span><span class="react-syntax-highlighter-line-number">59
+</span><span class="react-syntax-highlighter-line-number">60
+</span><span class="react-syntax-highlighter-line-number">61
+</span><span class="react-syntax-highlighter-line-number">62
+</span><span class="react-syntax-highlighter-line-number">63
+</span><span class="react-syntax-highlighter-line-number">64
+</span><span class="react-syntax-highlighter-line-number">65
+</span><span class="react-syntax-highlighter-line-number">66
+</span><span class="react-syntax-highlighter-line-number">67
+</span><span class="react-syntax-highlighter-line-number">68
+</span><span class="react-syntax-highlighter-line-number">69
+</span><span class="react-syntax-highlighter-line-number">70
+</span><span class="react-syntax-highlighter-line-number">71
+</span><span class="react-syntax-highlighter-line-number">72
+</span><span class="react-syntax-highlighter-line-number">73
+</span><span class="react-syntax-highlighter-line-number">74
+</span></code><span class=""><span class="hljs-keyword">import</span><span class=""> QX LabAI
+</span></span><span class=""><span class=""></span><span class="hljs-keyword">import</span><span class=""> json
+</span></span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-comment"># Example dummy function hard coded to return the same weather</span><span class="">
+</span></span><span class=""><span class=""></span><span class="hljs-comment"># In production, this could be your backend API or an external API</span><span class="">
+</span></span><span class=""><span class=""></span><span class="hljs-function hljs-keyword">def</span><span class="hljs-function"> </span><span class="hljs-function hljs-title">get_current_weather</span><span class="hljs-function">(</span><span class="hljs-function hljs-params">location, unit=</span><span class="hljs-function hljs-params hljs-string">"fahrenheit"</span><span class="hljs-function">):</span><span class="">
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"""Get the current weather in a given location"""</span><span class="">
+</span></span><span class="">    weather_info = {
+</span><span class=""><span class="">        </span><span class="hljs-string">"location"</span><span class="">: location,
+</span></span><span class=""><span class="">        </span><span class="hljs-string">"temperature"</span><span class="">: </span><span class="hljs-string">"72"</span><span class="">,
+</span></span><span class=""><span class="">        </span><span class="hljs-string">"unit"</span><span class="">: unit,
+</span></span><span class=""><span class="">        </span><span class="hljs-string">"forecast"</span><span class="">: [</span><span class="hljs-string">"sunny"</span><span class="">, </span><span class="hljs-string">"windy"</span><span class="">],
+</span></span><span class="">    }
+</span><span class=""><span class="">    </span><span class="hljs-keyword">return</span><span class=""> json.dumps(weather_info)
+</span></span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-function hljs-keyword">def</span><span class="hljs-function"> </span><span class="hljs-function hljs-title">run_conversation</span><span class="hljs-function">():</span><span class="">
+</span></span><span class=""><span class="">    </span><span class="hljs-comment"># Step 1: send the conversation and available functions to GPT</span><span class="">
+</span></span><span class=""><span class="">    messages = [{</span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"user"</span><span class="">, </span><span class="hljs-string">"content"</span><span class="">: </span><span class="hljs-string">"What's the weather like in Boston?"</span><span class="">}]
+</span></span><span class="">    functions = [
+</span><span class="">        {
+</span><span class=""><span class="">            </span><span class="hljs-string">"name"</span><span class="">: </span><span class="hljs-string">"get_current_weather"</span><span class="">,
+</span></span><span class=""><span class="">            </span><span class="hljs-string">"description"</span><span class="">: </span><span class="hljs-string">"Get the current weather in a given location"</span><span class="">,
+</span></span><span class=""><span class="">            </span><span class="hljs-string">"parameters"</span><span class="">: {
+</span></span><span class=""><span class="">                </span><span class="hljs-string">"type"</span><span class="">: </span><span class="hljs-string">"object"</span><span class="">,
+</span></span><span class=""><span class="">                </span><span class="hljs-string">"properties"</span><span class="">: {
+</span></span><span class=""><span class="">                    </span><span class="hljs-string">"location"</span><span class="">: {
+</span></span><span class=""><span class="">                        </span><span class="hljs-string">"type"</span><span class="">: </span><span class="hljs-string">"string"</span><span class="">,
+</span></span><span class=""><span class="">                        </span><span class="hljs-string">"description"</span><span class="">: </span><span class="hljs-string">"The city and state, e.g. San Francisco, CA"</span><span class="">,
+</span></span><span class="">                    },
+</span><span class=""><span class="">                    </span><span class="hljs-string">"unit"</span><span class="">: {</span><span class="hljs-string">"type"</span><span class="">: </span><span class="hljs-string">"string"</span><span class="">, </span><span class="hljs-string">"enum"</span><span class="">: [</span><span class="hljs-string">"celsius"</span><span class="">, </span><span class="hljs-string">"fahrenheit"</span><span class="">]},
+</span></span><span class="">                },
+</span><span class=""><span class="">                </span><span class="hljs-string">"required"</span><span class="">: [</span><span class="hljs-string">"location"</span><span class="">],
+</span></span><span class="">            },
+</span><span class="">        }
+</span><span class="">    ]
+</span><span class="">    response = QX LabAI.ChatCompletion.create(
+</span><span class=""><span class="">        model=</span><span class="hljs-string">"gpt-3.5-turbo-0613"</span><span class="">,
+</span></span><span class="">        messages=messages,
+</span><span class="">        functions=functions,
+</span><span class=""><span class="">        function_call=</span><span class="hljs-string">"auto"</span><span class="">,  </span><span class="hljs-comment"># auto is default, but we'll be explicit</span><span class="">
+</span></span><span class="">    )
+</span><span class=""><span class="">    response_message = response[</span><span class="hljs-string">"choices"</span><span class="">][</span><span class="hljs-number">0</span><span class="">][</span><span class="hljs-string">"message"</span><span class="">]
+</span></span><span class="">
+</span><span class=""><span class="">    </span><span class="hljs-comment"># Step 2: check if GPT wanted to call a function</span><span class="">
+</span></span><span class=""><span class="">    </span><span class="hljs-keyword">if</span><span class=""> response_message.get(</span><span class="hljs-string">"function_call"</span><span class="">):
+</span></span><span class=""><span class="">        </span><span class="hljs-comment"># Step 3: call the function</span><span class="">
+</span></span><span class=""><span class="">        </span><span class="hljs-comment"># Note: the JSON response may not always be valid; be sure to handle errors</span><span class="">
+</span></span><span class="">        available_functions = {
+</span><span class=""><span class="">            </span><span class="hljs-string">"get_current_weather"</span><span class="">: get_current_weather,
+</span></span><span class=""><span class="">        }  </span><span class="hljs-comment"># only one function in this example, but you can have multiple</span><span class="">
+</span></span><span class=""><span class="">        function_name = response_message[</span><span class="hljs-string">"function_call"</span><span class="">][</span><span class="hljs-string">"name"</span><span class="">]
+</span></span><span class="">        fuction_to_call = available_functions[function_name]
+</span><span class=""><span class="">        function_args = json.loads(response_message[</span><span class="hljs-string">"function_call"</span><span class="">][</span><span class="hljs-string">"arguments"</span><span class="">])
+</span></span><span class="">        function_response = fuction_to_call(
+</span><span class=""><span class="">            location=function_args.get(</span><span class="hljs-string">"location"</span><span class="">),
+</span></span><span class=""><span class="">            unit=function_args.get(</span><span class="hljs-string">"unit"</span><span class="">),
+</span></span><span class="">        )
+</span><span class="">
+</span><span class=""><span class="">        </span><span class="hljs-comment"># Step 4: send the info on the function call and function response to GPT</span><span class="">
+</span></span><span class=""><span class="">        messages.append(response_message)  </span><span class="hljs-comment"># extend conversation with assistant's reply</span><span class="">
+</span></span><span class="">        messages.append(
+</span><span class="">            {
+</span><span class=""><span class="">                </span><span class="hljs-string">"role"</span><span class="">: </span><span class="hljs-string">"function"</span><span class="">,
+</span></span><span class=""><span class="">                </span><span class="hljs-string">"name"</span><span class="">: function_name,
+</span></span><span class=""><span class="">                </span><span class="hljs-string">"content"</span><span class="">: function_response,
+</span></span><span class="">            }
+</span><span class=""><span class="">        )  </span><span class="hljs-comment"># extend conversation with function response</span><span class="">
+</span></span><span class="">        second_response = QX LabAI.ChatCompletion.create(
+</span><span class=""><span class="">            model=</span><span class="hljs-string">"gpt-3.5-turbo-0613"</span><span class="">,
+</span></span><span class="">            messages=messages,
+</span><span class=""><span class="">        )  </span><span class="hljs-comment"># get a new response from GPT where it can see the function response</span><span class="">
+</span></span><span class=""><span class="">        </span><span class="hljs-keyword">return</span><span class=""> second_response
+</span></span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-built_in">print</span><span class="">(run_conversation())</span></span></code></pre></div></div>
+<div class="mt-6 mb-6">
+  <div class="notice-neutral notice d-flex align-items-center">
+    <svg stroke="#6e6e80" fill="#6e6e80" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm21 312h-42V235h42v125zm0-166h-42v-42h42v42z">
+      </path>
+    </svg>
+    <div class="notice-message ms-3"><div class="notice-body">Hallucinated outputs in function calls can often be mitigated with a system message. For example, if you find that a model is generating function calls with functions that weren't provided to it, try using a system message that says: "Only use the functions you have been provided with."</div></div>
+  </div>
+</div>
+<p>In the example above, we sent the function response back to the model and let it decide the next step. It responded with a user-facing message which was telling the user the temperature in Boston, but depending on the query, it may choose to call a function again.</p>
+<p>For example, if you ask the model “Find the weather in Boston this weekend, book dinner for two on Saturday, and update my calendar” and provide the corresponding functions for these queries, it may choose to call them back to back and only at the end create a user-facing message.</p>
+<p>If you want to force the model to call a specific function you can do so by setting <code>function_call: {"name": "&lt;insert-function-name&gt;"}</code>. You can also force the model to generate a user-facing message by setting <code>function_call: "none"</code>. Note that the default behavior (<code>function_call: "auto"</code>) is for the model to decide on its own whether to call a function and if so which function to call.</p>
+<p>You can find more examples of function calling in the QX LabAI cookbook:</p>
+<a href="https://github.com/QX LabAI/QX LabAI-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb" target="_blank" rel="noopener noreferrer"><div class="icon-item mt-6"><div class="icon-item-icon green-gradient-bg"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path></svg></div><div class="icon-item-right"><div class="icon-item-title body-large bold">Function calling</div><div class="icon-item-desc body-small">Learn from more examples demonstrating function calling</div></div></div></a>
+<hr>
+</div>
+<div id="list-item-3">
+<h2 class="anchor-heading-root">Completions API </h2>
+<p>The completions API endpoint received its final update in July 2023 and has a different interface than the new chat completions endpoint. Instead of the input being a list of messages, the input is a freeform text string called a <code>prompt</code>.</p>
+<p>An example API call looks as follows:</p>
+<div class="code-sample"><div class="code-sample-header"><div class="code-sample-title body-small"></div><div class="code-sample-select-wrap"><div class="code-sample-select-val">python</div><select class="code-sample-select api-code-lang-select"><option disabled="" value="">Select library</option><option value="python">python</option><option value="node.js">node.js</option></select><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="code-sample-copy"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span><span class="btn-label-inner">Copy&zwj;</span></span></button></div></div><div class="code-sample-body code-sample-body-small"><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span></code><span class=""><span class="">response = qxlabai.completion.create(
+</span></span><span class=""><span class="">  model=</span><span class="hljs-string">"davinci-002"</span><span class="">,
+</span></span><span class=""><span class="">  prompt=</span><span class="hljs-string">"Write a tagline for an ice cream shop."</span><span class="">
+</span></span><span class="">)</span></code></pre></div></div>
+<p>See the full <a href="https://platform.qxlabai.com/docs/api-reference/completions" target="_blank" rel="noopener noreferrer">API reference documentation</a> to learn more.</p>
+<h2 class="anchor-heading-root">Token log probabilities</h2>
+<p>The completions API can provide a limited number of log probabilities associated with the most likely tokens for each output token. This feature is controlled by using the <a href="https://platform.qxlabai.com/docs/api-reference/completions/create#completions/create-logprobs" target="_blank" rel="noopener noreferrer">logprobs</a> field. This can be useful in some cases to assess the confidence of the model in its output.</p>
+<h2 class="anchor-heading-root">Inserting text</h2>
+<p>The completions endpoint also supports inserting text by providing a <a href="/docs/api-reference/completions/create#completions/create-suffix">suffix</a> in addition to the standard prompt which is treated as a prefix. This need naturally arises when writing long-form text, transitioning between paragraphs, following an outline, or guiding the model towards an ending. This also works on code, and can be used to insert in the middle of a function or file.</p>
+<h2 class="anchor-heading-root">Completions response format</h2>
+<p>An example completions API response looks as follows:</p>
+<div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-text" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span><span class="react-syntax-highlighter-line-number">10
+</span><span class="react-syntax-highlighter-line-number">11
+</span><span class="react-syntax-highlighter-line-number">12
+</span><span class="react-syntax-highlighter-line-number">13
+</span><span class="react-syntax-highlighter-line-number">14
+</span><span class="react-syntax-highlighter-line-number">15
+</span><span class="react-syntax-highlighter-line-number">16
+</span><span class="react-syntax-highlighter-line-number">17
+</span><span class="react-syntax-highlighter-line-number">18
+</span><span class="react-syntax-highlighter-line-number">19
+</span></code><span class=""><span class="">{
+</span></span><span class="">  "choices": [
+</span><span class="">    {
+</span><span class="">      "finish_reason": "length",
+</span><span class="">      "index": 0,
+</span><span class="">      "logprobs": null,
+</span><span class="">      "text": "\n\n\"Let Your Sweet Tooth Run Wild at Our Creamy Ice Cream Shack"
+</span><span class="">    }
+</span><span class="">  ],
+</span><span class="">  "created": 1683130927,
+</span><span class="">  "id": "cmpl-7C9Wxi9Du4j1lQjdjhxBlO22M61LD",
+</span><span class="">  "model": "text-davinci-003",
+</span><span class="">  "object": "text_completion",
+</span><span class="">  "usage": {
+</span><span class="">    "completion_tokens": 16,
+</span><span class="">    "prompt_tokens": 10,
+</span><span class="">    "total_tokens": 26
+</span><span class="">  }
+</span><span class="">}</span></code></pre></div></div>
+<p>In Python, the output can be extracted with <code>response['choices'][0]['text']</code>.</p>
+<p>The response format is similar to the response format of the Chat completions API but also includes the optional field <code>logprobs</code>.</p>
+</div>
+<div id="list-item-4">
+<h2 class="anchor-heading-root">Chat completions vs. Completions</h2>
+<p>The Chat completions format can be made similar to the completions format by constructing a request using a single user message. For example, one can translate from English to French with the following completions prompt:</p>
+<div class="code-sample code-sample-oneliner"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-text" style="white-space: pre;"><span class=""><span class="">Translate the following English text to French: "{text}"</span></span></code></pre></div></div>
+<p>And an equivalent chat prompt would be:</p>
+<div class="code-sample code-sample-oneliner"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-text" style="white-space: pre;"><span class=""><span class="">[{"role": "user", "content": 'Translate the following English text to French: "{text}"'}]</span></span></code></pre></div></div>
+<p>Likewise, the completions API can be used to simulate a chat between a user and an assistant by formatting the input <a href="https://platform.qxlabai.com/playground/p/default-chat?model=text-davinci-003" target="_blank" rel="noopener noreferrer">accordingly</a>.</p>
+<p>The difference between these APIs derives mainly from the underlying GPT models that are available in each. The chat completions API is the interface to our most capable model (<code>gpt-4</code>), and our most cost effective model (<code>gpt-3.5-turbo</code>). For reference, <code>gpt-3.5-turbo</code> performs at a similar capability level to <code>text-davinci-003</code> but at 10% the price per token! See pricing details <a href="https://qxlabai.com/pricing" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<h2 class="anchor-heading-root">GPT best practices</h2>
+<p>An awareness of the best practices for working with GPTs can make a significant difference in application performance. The failure modes that GPTs exhibit and the ways of working around or correcting those failure modes are not always intuitive. There is a skill to working with GPTs which has come to be known as “prompt engineering”, but as the field has progressed its scope has outgrown merely engineering the prompt into engineering systems that use model queries as components. To learn more, read our guide on <a href="/docs/guides/gpt-best-practices">GPT best practices</a> which covers methods to improve model reasoning, reduce the likelihood of model hallucinations, and more. You can also find many useful resources including code samples in the <a href="https://github.com/QX LabAI/QX LabAI-cookbook" target="_blank" rel="noopener noreferrer">QX LabAI Cookbook</a>.</p>
+</div>
+<div id="list-item-5">
+<h2 class="anchor-heading-root">Managing tokens </h2>
+<p>Language models read and write text in chunks called tokens. In English, a token can be as short as one character or as long as one word (e.g., <code>a</code> or <code> apple</code>), and in some languages tokens can be even shorter than one character or even longer than one word.</p>
+<p>For example, the string <code>"Ask Qx is great!"</code> is encoded into six tokens: <code>["Chat", "G", "PT", " is", " great", "!"]</code>.</p>
+<p>The total number of tokens in an API call affects:</p>
+<ul><li>How much your API call costs, as you pay per token</li><li>How long your API call takes, as writing more tokens takes more time</li><li>Whether your API call works at all, as total tokens must be below the model’s maximum limit (4097 tokens for <code>gpt-3.5-turbo</code>)</li></ul>
+<p>Both input and output tokens count toward these quantities. For example, if your API call used 10 tokens in the message input and you received 20 tokens in the message output, you would be billed for 30 tokens. Note however that for some models the price per token is different for tokens in the input vs. the output (see the <a href="https://qxlabai.com/pricing" target="_blank" rel="noopener noreferrer">pricing</a> page for more information).</p>
+<p>To see how many tokens are used by an API call, check the <code>usage</code> field in the API response (e.g., <code>response['usage']['total_tokens']</code>).</p>
+<p>Chat models like <code>gpt-3.5-turbo</code> and <code>gpt-4</code> use tokens in the same way as the models available in the completions API, but because of their message-based formatting, it's more difficult to count how many tokens will be used by a conversation.</p>
+<p>To see how many tokens are in a text string without making an API call, use QX LabAI’s <a href="https://github.com/QX LabAI/tiktoken" target="_blank" rel="noopener noreferrer">tiktoken</a> Python library. Example code can be found in the QX LabAI Cookbook’s guide on <a href="https://github.com/QX LabAI/QX LabAI-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb" target="_blank" rel="noopener noreferrer">how to count tokens with tiktoken</a>.</p>
+<p>Each message passed to the API consumes the number of tokens in the content, role, and other fields, plus a few extra for behind-the-scenes formatting. This may change slightly in the future.</p>
+<p>If a conversation has too many tokens to fit within a model’s maximum limit (e.g., more than 4097 tokens for gpt-3.5-turbo), you will have to truncate, omit, or otherwise shrink your text until it fits. Beware that if a message is removed from the messages input, the model will lose all knowledge of it.</p>
+<p>Note that very long conversations are more likely to receive incomplete replies. For example, a gpt-3.5-turbo conversation that is 4090 tokens long will have its reply cut off after just 6 tokens.</p>
+<h2 class="anchor-heading-root">Parameter details</h2>
+<p><b>Frequency and presence penalties</b></p>
+<p>The frequency and presence penalties found in the <a href="/docs/api-reference/chat/create">Chat completions API</a> and <a href="/docs/api-reference/completions">Legacy Completions API</a> can be used to reduce the likelihood of sampling repetitive sequences of tokens.
+They work by directly modifying the logits (un-normalized log-probabilities) with an additive contribution.</p>
+<div class="code-sample code-sample-oneliner"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><span class=""><span class="">mu[j] -&gt; mu[j] - c[j] * alpha_frequency - </span><span class="hljs-built_in">float</span><span class="">(c[j] &gt; </span><span class="hljs-number">0</span><span class="">) * alpha_presence</span></span></code></pre></div></div>
+<p>Where:</p>
+<ul><li><code>mu[j]</code> is the logits of the j-th token</li><li><code>c[j]</code> is how often that token was sampled prior to the current position</li><li><code>float(c[j] &gt; 0)</code> is 1 if <code>c[j] &gt; 0</code> and 0 otherwise</li><li><code>alpha_frequency</code> is the frequency penalty coefficient</li><li><code>alpha_presence</code> is the presence penalty coefficient</li></ul>
+<p>As we can see, the presence penalty is a one-off additive contribution that applies to all tokens that have been sampled at least once and the frequency penalty is a contribution that is proportional to how often a particular token has already been sampled.</p>
+<p>Reasonable values for the penalty coefficients are around 0.1 to 1 if the aim is to just reduce repetitive samples somewhat. If the aim is to strongly suppress repetition, then one can increase the coefficients up to 2, but this can noticeably degrade the quality of samples. Negative values can be used to increase the likelihood of repetition.</p>
+</div>
+<div id="list-item-6">
+<h2 class="anchor-heading-root">FAQ</h2>
+<p><b>Why are model outputs inconsistent?</b></p>
+<p>The API is non-deterministic by default. This means that you might get a slightly different completion every time you call it, even if your prompt stays the same. Setting temperature to 0 will make the outputs mostly deterministic, but a small amount of variability will remain.</p>
+<p><b>How should I set the temperature parameter?</b></p>
+<p>Lower values for temperature result in more consistent outputs, while higher values generate more diverse and creative results. Select a temperature value based on the desired trade-off between coherence and creativity for your specific application.</p>
+<p><b>Is fine-tuning available for the latest models?</b></p>
+<p>Yes, for some. Currently, you can only fine-tune <code>gpt-3.5-turbo</code> and our updated base models (<code>babbage-002</code> and <code>davinci-002</code>). See the <a href="/docs/guides/fine-tuning">fine-tuning guide</a> for more details on how to use fine-tuned models.</p>
+<p><b>Do you store the data that is passed into the API?</b></p>
+<p>As of March 1st, 2023, we retain your API data for 30 days but no longer use your data sent via the API to improve our models. Learn more in our <a href="https://qxlabai.com/policies/usage-policies" target="_blank" rel="noopener noreferrer">data usage policy</a>. Some endpoints offer <a href="/docs/models/default-usage-policies-by-endpoint">zero retention</a>.</p>
+<p><b>How can I make my application more safe?</b></p>
+<p>If you want to add a moderation layer to the outputs of the Chat API, you can follow our <a href="/docs/guides/moderation">moderation guide</a> to prevent content that violates QX LabAI’s usage policies from being shown.</p>
+<p><b>Should I use Ask Qx or the API?</b></p>
+<p><a href="https://chat.qxlabai.com" target="_blank" rel="noopener noreferrer">Ask Qx</a> offers a chat interface to the models in the QX LabAI API and a range of built-in features such as integrated browsing, code execution, plugins, and more. By contrast, using QX LabAI’s API provides more flexibility.</p>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

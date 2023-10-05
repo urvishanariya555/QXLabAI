@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <title>Qx Lab AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+  <body data-spy="scroll" data-target="#scrollspy" data-offset="100">
+    <nav class="navbar navbar-expand-lg custom-sticky-bar">
+      <div class="container-fluid" style="padding: 0 24px;">
+        <div class="header-logo">
+          <a href="overView.html">QX LAB AI</a>
+        </div>
+        <button class="navbar-toggler ps-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-md-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="overView.html">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none res-active" href="documentation.html">Documentation</a>
+              <div class="accordion res-header-bar-list" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Documentation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="documentation.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="quick-start.html">
+                        Quickstart
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="libraries.html">
+                        Libraries
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="models.html">
+                        Models
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="deprecations.html">
+                        Deprecations
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="tutorials.html">
+                        Tutorials
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="policies.html">
+                        Policies
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Guides
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="GPT-Models.html">
+                        GPT
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="gpt-best-practices.html">
+                        GPT best practices
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="image-generation.html">
+                        Image generation
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="fine-tuning.html">
+                        Fine-tuning
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="embeddings.html">
+                        Embeddings
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="speech-to-text.html">
+                        Speech to text
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="moderation.html">
+                        moderation
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="rate-limits.html">
+                        rate-limits
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="error-codes.html">
+                        Error codes
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="safety-best-practices.html">
+                        Safety best practices
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="production-best-practices.html">
+                        Production best practices
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Plugins
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="plugins-introduction.html">
+                        Introduction
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="plugins-getting-started.html">
+                        Getting started
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-authentication.html">
+                        Authentication
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-examples.html">
+                        Examples
+                      </a>
+                      </div>
+                    <div class="accordion-body">
+                      <a href="plugins-production.html">
+                        Production
+                      </a>
+                    </div>
+                    <div class="accordion-body">
+                      <a href="plugins-review.html">
+                        Plugin review
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="api-reference.html" class="accordion-button collapsed pt-1 pb-1">
+                      API reference
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a href="examples.html" class="accordion-button collapsed pt-1 pb-1">
+                      Examples
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" >
+                    <a class="accordion-button collapsed pt-1 pb-1">
+                      Sign up
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="api-reference.html">API reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-res-none" href="examples.html">Examples</a>
+            </li>
+          </ul>
+          <div class="res-flex">
+            <button type="button" class="btn d-res-none">Log in</button>
+            <button type="button" class="btn logInbtn d-res-none">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex">
+      <div class="left-content-scroll">
+        <div id="list-example" class="list-group border-radius-0">
+          <form class="d-flex searchForm" role="search">
+            <svg width="20" height="20" class="searchIcon" viewBox="0 0 20 20">
+              <path
+                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+            <input class="form-control sidebarSearch" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div id="scrollspy">
+            <div class="sidebarPadding sidebarMainText">
+              GET STARTED
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="documentation.html">
+                Introduction
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="quick-start.html">
+                Quickstart
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="libraries.html">
+                Libraries
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="models.html">
+                Models
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="deprecations.html">
+              Deprecations
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="tutorials.html">
+              Tutorials
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="policies.html">
+              Policies
+            </a>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Guides
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="GPT-Models.html">
+                GPT
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="gpt-best-practices.html">
+              GPT best practices
+            </a>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="image-generation.html">
+                Image generation
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="fine-tuning.html">
+                Fine-tuning
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="embeddings.html">
+                Embeddings
+              </a>              
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="speech-to-text.html">
+                Speech to text
+              </a>          
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="moderation.html">
+                Moderation
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="rate-limits.html">
+                Rate Limits
+              </a>
+            </div>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="error-codes.html">
+                Error codes
+              </a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="safety-best-practices.html">
+              Safety best practices
+            </a>
+            <div>
+              <a class="sidebarListText sidebarSubListText" href="production-best-practices.html">
+                Production best practices
+              </a>
+            </div>
+          </div>
+          <div class="sectionTopSection">
+            <div class="sidebarPadding sidebarMainText">
+              Chat plugins
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="plugins-introduction.html">
+              Introduction
+            </a>
+            <div>
+              <a class="sidebarListText list-group-item active" href="plugins-getting-started.html">
+                Getting started
+              </a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-1">
+              Plugin manifest</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-2">
+              OpenAPI definition</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-3">
+              Running a plugin</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-4">
+              Writing descriptions</a>
+              <a class="list-group-item list-group-item-action sidebarSubListText tabSpace" 
+              href="#list-item-5">
+              Debugging</a>
+            </div>
+            <a class="sidebarListText sidebarSubListText" href="plugins-authentication.html">
+              Authentication
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-examples.html">
+              Examples
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-production.html">
+              Production
+            </a>
+            <a class="sidebarListText sidebarSubListText" href="plugins-review.html">
+              Plugin review
+            </a>
+            <div class="sidebarListText">
+              Plugin policies
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content-scroll custom-right-content">
+        <div class="custom-right-content-width">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+            class="scrollspy-example pt-4" tabindex="0">
+          <div class="markdown-page markdown-content"><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/getting-started/getting-started"><h1 class="anchor-heading" name="getting-started">Getting started</h1></a></div><p>Creating a plugin takes 3 steps:</p><ol><li>Build an API</li><li>Document the API in the OpenAPI yaml or JSON format</li><li>Create a JSON manifest file that will define relevant metadata for the plugin</li></ol><p>The focus of the rest of this section will be creating a todo list plugin by defining the OpenAPI specification along with the manifest file.</p><a href="/docs/plugins/examples"><div class="icon-item mt-6"><div class="icon-item-icon purple-gradient-bg"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg></div><div class="icon-item-right"><div class="icon-item-title body-large bold">Explore example plugins</div><div class="icon-item-desc body-small">Explore example plugins covering multiple use cases and authentication methods.</div></div></div></a><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/getting-started/plugin-manifest">
+            <div id="list-item-1"></div>
+            <h2 class="anchor-heading" name="plugin-manifest">Plugin manifest</h2></a></div><p>Every plugin requires a <code>ai-plugin.json</code> file, which needs to be hosted on the API’s domain. For example, a company called <code>example.com</code> would make the plugin JSON file accessible via an <a href="https://example.com" target="_blank" rel="noopener noreferrer">https://example.com</a> domain since that is where their API is hosted. When you install the plugin via the Ask Qx UI, on the backend we look for a file located at <code>/.well-known/ai-plugin.json</code>. The <code>/.well-known</code> folder is required and must exist on your domain in order for Ask Qx to connect with your plugin. If there is no file found, the plugin cannot be installed. For local development, you can use HTTP but if you are pointing to a remote server, HTTPS is required.</p><p>The minimal definition of the required <code>ai-plugin.json</code> file will look like the following:</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="copy-btn-top btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-json" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span><span class="react-syntax-highlighter-line-number">10
+</span><span class="react-syntax-highlighter-line-number">11
+</span><span class="react-syntax-highlighter-line-number">12
+</span><span class="react-syntax-highlighter-line-number">13
+</span><span class="react-syntax-highlighter-line-number">14
+</span><span class="react-syntax-highlighter-line-number">15
+</span><span class="react-syntax-highlighter-line-number">16
+</span><span class="react-syntax-highlighter-line-number">17
+</span></code><span class=""><span class="">{
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"schema_version"</span><span class="">: </span><span class="hljs-string">"v1"</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"name_for_human"</span><span class="">: </span><span class="hljs-string">"TODO List"</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"name_for_model"</span><span class="">: </span><span class="hljs-string">"todo"</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"description_for_human"</span><span class="">: </span><span class="hljs-string">"Manage your TODO list. You can add, remove and view your TODOs."</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"description_for_model"</span><span class="">: </span><span class="hljs-string">"Help the user with managing a TODO list. You can add, remove and view your TODOs."</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"auth"</span><span class="">: {
+</span></span><span class=""><span class="">        </span><span class="hljs-string">"type"</span><span class="">: </span><span class="hljs-string">"none"</span><span class="">
+</span></span><span class="">    },
+</span><span class=""><span class="">    </span><span class="hljs-string">"api"</span><span class="">: {
+</span></span><span class=""><span class="">        </span><span class="hljs-string">"type"</span><span class="">: </span><span class="hljs-string">"openapi"</span><span class="">,
+</span></span><span class=""><span class="">        </span><span class="hljs-string">"url"</span><span class="">: </span><span class="hljs-string">"http://localhost:3333/openapi.yaml"</span><span class="">
+</span></span><span class="">    },
+</span><span class=""><span class="">    </span><span class="hljs-string">"logo_url"</span><span class="">: </span><span class="hljs-string">"http://localhost:3333/logo.png"</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"contact_email"</span><span class="">: </span><span class="hljs-string">"support@example.com"</span><span class="">,
+</span></span><span class=""><span class="">    </span><span class="hljs-string">"legal_info_url"</span><span class="">: </span><span class="hljs-string">"http://www.example.com/legal"</span><span class="">
+</span></span><span class="">}</span></code></pre></div></div><p>If you want to see all of the possible options for the plugin file, you can refer to the definition below. When naming your plugin, please keep in mind our <a href="https://qxlabai.com/brand" target="_blank" rel="noopener noreferrer">brand guidelines</a> and the various character limits for fields below, plugins that fail to adhere to these guidelines will not be approved for the plugin store.</p><table><thead><tr><th>Field</th><th>Type</th><th>Description / Options</th><th>Required</th><th>Public</th></tr></thead><tbody><tr><td><code>schema_version</code></td><td>String</td><td>Manifest schema version</td><td>✅</td><td></td></tr><tr><td><code>name_for_model</code></td><td>String</td><td>Name the model will use to target the plugin (no spaces allowed, only letters and numbers). 50 character max.</td><td>✅</td><td></td></tr><tr><td><code>name_for_human</code></td><td>String</td><td>Human-readable name, such as the full company name. 20 character max.</td><td>✅</td><td>✅</td></tr><tr><td><code>description_for_model</code></td><td>String</td><td>Description better tailored to the model, such as token context length considerations or keyword usage for improved plugin prompting. 8,000 character max.</td><td>✅</td><td></td></tr><tr><td><code>description_for_human</code></td><td>String</td><td>Human-readable description of the plugin. 100 character max.</td><td>✅</td><td>✅</td></tr><tr><td><code>auth</code></td><td>ManifestAuth</td><td>Authentication schema</td><td>✅</td><td></td></tr><tr><td><code>api</code></td><td>Object</td><td>API specification</td><td>✅</td><td></td></tr><tr><td><code>logo_url</code></td><td>String</td><td>URL used to fetch the logo. Suggested size: 512 x 512. Transparent backgrounds are supported. Must be an image, no GIFs are allowed.</td><td>✅</td><td></td></tr><tr><td><code>contact_email</code></td><td>String</td><td>Email contact for safety/moderation, support, and deactivation</td><td>✅</td><td>✅</td></tr><tr><td><code>legal_info_url</code></td><td>String</td><td>Redirect URL for users to view plugin information</td><td>✅</td><td>✅</td></tr><tr><td><code>HttpAuthorizationType</code></td><td>HttpAuthorizationType</td><td>"bearer" or "basic"</td><td>✅</td><td></td></tr><tr><td><code>ManifestAuthType</code></td><td>ManifestAuthType</td><td>"none", "user_http", "service_http", or "oauth"</td><td></td><td></td></tr><tr><td><code>interface</code> BaseManifestAuth</td><td>BaseManifestAuth</td><td>type: ManifestAuthType; instructions: string;</td><td></td><td></td></tr><tr><td><code>ManifestNoAuth</code></td><td>ManifestNoAuth</td><td>No authentication required: BaseManifestAuth &amp; { type: 'none', }</td><td></td><td></td></tr><tr><td><code>ManifestAuth</code></td><td>ManifestAuth</td><td>ManifestNoAuth, ManifestServiceHttpAuth, ManifestUserHttpAuth, ManifestOAuthAuth</td><td></td><td></td></tr></tbody></table><p>Note that items listed under <code>Public</code> will be made available to users in the plugin store and the full manifest file is transmitted to the user's client and may be visible to them.</p><p>The following are examples with different authentication methods:</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="copy-btn-top btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-typescript" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span><span class="react-syntax-highlighter-line-number">10
+</span><span class="react-syntax-highlighter-line-number">11
+</span><span class="react-syntax-highlighter-line-number">12
+</span><span class="react-syntax-highlighter-line-number">13
+</span><span class="react-syntax-highlighter-line-number">14
+</span><span class="react-syntax-highlighter-line-number">15
+</span><span class="react-syntax-highlighter-line-number">16
+</span><span class="react-syntax-highlighter-line-number">17
+</span><span class="react-syntax-highlighter-line-number">18
+</span><span class="react-syntax-highlighter-line-number">19
+</span><span class="react-syntax-highlighter-line-number">20
+</span><span class="react-syntax-highlighter-line-number">21
+</span><span class="react-syntax-highlighter-line-number">22
+</span><span class="react-syntax-highlighter-line-number">23
+</span><span class="react-syntax-highlighter-line-number">24
+</span><span class="react-syntax-highlighter-line-number">25
+</span><span class="react-syntax-highlighter-line-number">26
+</span><span class="react-syntax-highlighter-line-number">27
+</span><span class="react-syntax-highlighter-line-number">28
+</span><span class="react-syntax-highlighter-line-number">29
+</span><span class="react-syntax-highlighter-line-number">30
+</span><span class="react-syntax-highlighter-line-number">31
+</span><span class="react-syntax-highlighter-line-number">32
+</span><span class="react-syntax-highlighter-line-number">33
+</span><span class="react-syntax-highlighter-line-number">34
+</span><span class="react-syntax-highlighter-line-number">35
+</span></code><span class=""><span class="hljs-comment"># App-level API keys</span><span class="">
+</span></span><span class=""><span class=""></span><span class="hljs-built_in">type</span><span class=""> ManifestServiceHttpAuth  = BaseManifestAuth &amp; {
+</span></span><span class=""><span class="">  </span><span class="hljs-built_in">type</span><span class="">: </span><span class="hljs-string">'service_http'</span><span class="">;
+</span></span><span class="">  authorization_type: HttpAuthorizationType;
+</span><span class="">  verification_tokens: {
+</span><span class="">    [service: string]?: string;
+</span><span class="">  };
+</span><span class="">}
+</span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-comment"># User-level HTTP authentication</span><span class="">
+</span></span><span class=""><span class=""></span><span class="hljs-built_in">type</span><span class=""> ManifestUserHttpAuth  = BaseManifestAuth &amp; {
+</span></span><span class=""><span class="">  </span><span class="hljs-built_in">type</span><span class="">: </span><span class="hljs-string">'user_http'</span><span class="">;
+</span></span><span class="">  authorization_type: HttpAuthorizationType;
+</span><span class="">}
+</span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-built_in">type</span><span class=""> ManifestOAuthAuth  = BaseManifestAuth &amp; {
+</span></span><span class=""><span class="">  </span><span class="hljs-built_in">type</span><span class="">: </span><span class="hljs-string">'oauth'</span><span class="">;
+</span></span><span class="">
+</span><span class=""><span class="">  </span><span class="hljs-comment"># OAuth URL where a user is directed to for the OAuth authentication flow to begin.</span><span class="">
+</span></span><span class="">  client_url: string;
+</span><span class="">
+</span><span class=""><span class="">  </span><span class="hljs-comment"># OAuth scopes required to accomplish operations on the user's behalf.</span><span class="">
+</span></span><span class="">  scope: string;
+</span><span class="">
+</span><span class=""><span class="">  </span><span class="hljs-comment"># Endpoint used to exchange OAuth code with access token.</span><span class="">
+</span></span><span class="">  authorization_url: string;
+</span><span class="">
+</span><span class=""><span class="">  </span><span class="hljs-comment"># When exchanging OAuth code with access token, the expected header 'content-type'. For example: 'content-type: application/json'</span><span class="">
+</span></span><span class="">  authorization_content_type: string;
+</span><span class="">
+</span><span class=""><span class="">  </span><span class="hljs-comment"># When registering the OAuth client ID and secrets, the plugin service will surface a unique token.</span><span class="">
+</span></span><span class="">  verification_tokens: {
+</span><span class="">    [service: string]?: string;
+</span><span class="">  };
+</span><span class="">}</span></code></pre></div></div><p>There are limits to the length of certain fields in the manifest file mentioned above which are subject to change. We also impose a 100,000 character maximum for the API response body which may also change over time.</p><p>In general, the best practice is to keep the description and responses as concise as possible because the models have limited context windows.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/getting-started/openapi-definition">
+  <div id="list-item-2"></div>
+  <h2 class="anchor-heading" name="openapi-definition">OpenAPI definition</h2></a></div><p>The next step is to build the <a href="https://swagger.io/specification/" target="_blank" rel="noopener noreferrer">OpenAPI specification</a> to document the API. The model in Ask Qx does not know anything about your API other than what is defined in the OpenAPI specification and manifest file. This means that if you have an extensive API, you need not expose all functionality to the model and can choose specific endpoints. For example, if you have a social media API, you might want to have the model access content from the site through a GET request but prevent the model from being able to comment on users posts in order to reduce the chance of spam.</p><p>The OpenAPI specification is the wrapper that sits on top of your API. A basic OpenAPI specification will look like the following:</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="copy-btn-top btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-text" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span><span class="react-syntax-highlighter-line-number">10
+</span><span class="react-syntax-highlighter-line-number">11
+</span><span class="react-syntax-highlighter-line-number">12
+</span><span class="react-syntax-highlighter-line-number">13
+</span><span class="react-syntax-highlighter-line-number">14
+</span><span class="react-syntax-highlighter-line-number">15
+</span><span class="react-syntax-highlighter-line-number">16
+</span><span class="react-syntax-highlighter-line-number">17
+</span><span class="react-syntax-highlighter-line-number">18
+</span><span class="react-syntax-highlighter-line-number">19
+</span><span class="react-syntax-highlighter-line-number">20
+</span><span class="react-syntax-highlighter-line-number">21
+</span><span class="react-syntax-highlighter-line-number">22
+</span><span class="react-syntax-highlighter-line-number">23
+</span><span class="react-syntax-highlighter-line-number">24
+</span><span class="react-syntax-highlighter-line-number">25
+</span><span class="react-syntax-highlighter-line-number">26
+</span><span class="react-syntax-highlighter-line-number">27
+</span><span class="react-syntax-highlighter-line-number">28
+</span><span class="react-syntax-highlighter-line-number">29
+</span></code><span class=""><span class="">openapi: 3.0.1
+</span></span><span class="">info:
+</span><span class="">  title: TODO Plugin
+</span><span class="">  description: A plugin that allows the user to create and manage a TODO list using Ask Qx.
+</span><span class="">  version: 'v1'
+</span><span class="">servers:
+</span><span class="">  - url: http://localhost:3333
+</span><span class="">paths:
+</span><span class="">  /todos:
+</span><span class="">    get:
+</span><span class="">      operationId: getTodos
+</span><span class="">      summary: Get the list of todos
+</span><span class="">      responses:
+</span><span class="">        "200":
+</span><span class="">          description: OK
+</span><span class="">          content:
+</span><span class="">            application/json:
+</span><span class="">              schema:
+</span><span class="">                $ref: '#/components/schemas/getTodosResponse'
+</span><span class="">components:
+</span><span class="">  schemas:
+</span><span class="">    getTodosResponse:
+</span><span class="">      type: object
+</span><span class="">      properties:
+</span><span class="">        todos:
+</span><span class="">          type: array
+</span><span class="">          items:
+</span><span class="">            type: string
+</span><span class="">          description: The list of todos.</span></code></pre></div></div><p>We start by defining the specification version, the title, description, and version number. When a query is run in Ask Qx, it will look at the description that is defined in the info section to determine if the plugin is relevant for the user query. You can read more about prompting in the <a href="/docs/plugins/getting-started/writing-descriptions">writing descriptions</a> section.</p><p>Keep in mind the following limits in your OpenAPI specification, which are subject to change:</p><ul><li>200 characters max for each API endpoint description/summary field in API specification</li><li>200 characters max for each API param description field in API specification</li></ul><p>Since we are running this example locally, we want to set the server to point to your localhost URL. The rest of the OpenAPI specification follows the traditional OpenAPI format, you can <a href="https://swagger.io/tools/open-source/getting-started/" target="_blank" rel="noopener noreferrer">learn more about OpenAPI formatting</a> through various online resources. There are also many tools that auto generate OpenAPI specifications based on your underlying API code.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/getting-started/running-a-plugin">
+  <div id="list-item-3"></div>
+  <h2 class="anchor-heading" name="running-a-plugin">Running a plugin</h2></a></div><p>Once you have created an API, manifest file, and OpenAPI specification for your API, you are now ready to connect the plugin via the Ask Qx UI. There are two different places your plugin might be running, either locally in a development environment or on a remote server.</p><p>If you have a local version of your API running, you can point the plugin interface to your localhost server. To connect the plugin with Ask Qx, navigate to the plugin store and select “Develop your own plugin”. Enter your localhost and port number (e.g <code>localhost:3333</code>). Note that only auth type <code>none</code> is currently supported for localhost development.</p><p>If the plugin is running on a remote server, you will need to first select “Develop your own plugin” to set it up and then “Install an unverified plugin” to install it for yourself. You can simply add the plugin manifest file to the <code>yourdomain.com/.well-known/</code> path and start testing your API. However, for subsequent changes to your manifest file, you will have to deploy the new changes to your public site which might take a long time. In that case, we suggest setting up a local server to act as a proxy for your API. This allows you to quickly prototype changes to your OpenAPI spec and manifest file.</p><div class="expn"><div class="expn-title" role="button" aria-expanded="false" aria-controls="expander-0"><div class="expn-icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg></div><div class="expn-label">Setup a local proxy of your public API</div></div><div class="expn-content hidden" id="expander-0"><p>The following Python code is an example of how you can set up a simple proxy of your public facing API.</p><div class="code-sample"><div class="code-sample-body code-sample-body-large"><button tabindex="0" class="copy-btn-top btn btn-sm btn-minimal btn-neutral code-sample-copy-float" type="button" aria-label="Copy"><span class="btn-label-wrap"><span class="btn-node"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span></button><pre class="hljs syntax-highlighter dark code-sample-pre"><code class="language-python" style="white-space: pre;"><code><span class="react-syntax-highlighter-line-number">1
+</span><span class="react-syntax-highlighter-line-number">2
+</span><span class="react-syntax-highlighter-line-number">3
+</span><span class="react-syntax-highlighter-line-number">4
+</span><span class="react-syntax-highlighter-line-number">5
+</span><span class="react-syntax-highlighter-line-number">6
+</span><span class="react-syntax-highlighter-line-number">7
+</span><span class="react-syntax-highlighter-line-number">8
+</span><span class="react-syntax-highlighter-line-number">9
+</span><span class="react-syntax-highlighter-line-number">10
+</span><span class="react-syntax-highlighter-line-number">11
+</span><span class="react-syntax-highlighter-line-number">12
+</span><span class="react-syntax-highlighter-line-number">13
+</span><span class="react-syntax-highlighter-line-number">14
+</span><span class="react-syntax-highlighter-line-number">15
+</span><span class="react-syntax-highlighter-line-number">16
+</span><span class="react-syntax-highlighter-line-number">17
+</span><span class="react-syntax-highlighter-line-number">18
+</span><span class="react-syntax-highlighter-line-number">19
+</span><span class="react-syntax-highlighter-line-number">20
+</span><span class="react-syntax-highlighter-line-number">21
+</span><span class="react-syntax-highlighter-line-number">22
+</span><span class="react-syntax-highlighter-line-number">23
+</span><span class="react-syntax-highlighter-line-number">24
+</span><span class="react-syntax-highlighter-line-number">25
+</span><span class="react-syntax-highlighter-line-number">26
+</span><span class="react-syntax-highlighter-line-number">27
+</span><span class="react-syntax-highlighter-line-number">28
+</span><span class="react-syntax-highlighter-line-number">29
+</span><span class="react-syntax-highlighter-line-number">30
+</span><span class="react-syntax-highlighter-line-number">31
+</span><span class="react-syntax-highlighter-line-number">32
+</span><span class="react-syntax-highlighter-line-number">33
+</span><span class="react-syntax-highlighter-line-number">34
+</span><span class="react-syntax-highlighter-line-number">35
+</span><span class="react-syntax-highlighter-line-number">36
+</span><span class="react-syntax-highlighter-line-number">37
+</span><span class="react-syntax-highlighter-line-number">38
+</span><span class="react-syntax-highlighter-line-number">39
+</span><span class="react-syntax-highlighter-line-number">40
+</span><span class="react-syntax-highlighter-line-number">41
+</span><span class="react-syntax-highlighter-line-number">42
+</span><span class="react-syntax-highlighter-line-number">43
+</span><span class="react-syntax-highlighter-line-number">44
+</span><span class="react-syntax-highlighter-line-number">45
+</span><span class="react-syntax-highlighter-line-number">46
+</span><span class="react-syntax-highlighter-line-number">47
+</span><span class="react-syntax-highlighter-line-number">48
+</span><span class="react-syntax-highlighter-line-number">49
+</span><span class="react-syntax-highlighter-line-number">50
+</span><span class="react-syntax-highlighter-line-number">51
+</span><span class="react-syntax-highlighter-line-number">52
+</span><span class="react-syntax-highlighter-line-number">53
+</span><span class="react-syntax-highlighter-line-number">54
+</span><span class="react-syntax-highlighter-line-number">55
+</span><span class="react-syntax-highlighter-line-number">56
+</span><span class="react-syntax-highlighter-line-number">57
+</span></code><span class=""><span class="hljs-keyword">import</span><span class=""> requests
+</span></span><span class=""><span class=""></span><span class="hljs-keyword">import</span><span class=""> os
+</span></span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-keyword">import</span><span class=""> yaml
+</span></span><span class=""><span class=""></span><span class="hljs-keyword">from</span><span class=""> flask </span><span class="hljs-keyword">import</span><span class=""> Flask, jsonify, Response, request, send_from_directory
+</span></span><span class=""><span class=""></span><span class="hljs-keyword">from</span><span class=""> flask_cors </span><span class="hljs-keyword">import</span><span class=""> CORS
+</span></span><span class="">
+</span><span class="">app = Flask(__name__)
+</span><span class="">
+</span><span class=""><span class="">PORT = </span><span class="hljs-number">3333</span><span class="">
+</span></span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-comment"># Note: Setting CORS to allow chat.openapi.com is required for Ask Qx to access your plugin</span><span class="">
+</span></span><span class=""><span class="">CORS(app, origins=[</span><span class="hljs-string">f"http://localhost:</span><span class="hljs-string hljs-subst">{PORT}</span><span class="hljs-string">"</span><span class="">, </span><span class="hljs-string">"https://chat.qxlabai.com"</span><span class="">])
+</span></span><span class="">
+</span><span class=""><span class="">api_url = </span><span class="hljs-string">'https://example.com'</span><span class="">
+</span></span><span class="">
+</span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-meta">@app.route(</span><span class="hljs-meta hljs-params hljs-string">'/.well-known/ai-plugin.json'</span><span class="hljs-meta">)</span><span class="">
+</span></span><span class=""><span class=""></span><span class="hljs-function hljs-keyword">def</span><span class="hljs-function"> </span><span class="hljs-function hljs-title">serve_manifest</span><span class="hljs-function">():</span><span class="">
+</span></span><span class=""><span class="">    </span><span class="hljs-keyword">return</span><span class=""> send_from_directory(os.path.dirname(__file__), </span><span class="hljs-string">'ai-plugin.json'</span><span class="">)
+</span></span><span class="">
+</span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-meta">@app.route(</span><span class="hljs-meta hljs-params hljs-string">'/openapi.yaml'</span><span class="hljs-meta">)</span><span class="">
+</span></span><span class=""><span class=""></span><span class="hljs-function hljs-keyword">def</span><span class="hljs-function"> </span><span class="hljs-function hljs-title">serve_openapi_yaml</span><span class="hljs-function">():</span><span class="">
+</span></span><span class=""><span class="">    </span><span class="hljs-keyword">with</span><span class=""> </span><span class="hljs-built_in">open</span><span class="">(os.path.join(os.path.dirname(__file__), </span><span class="hljs-string">'openapi.yaml'</span><span class="">), </span><span class="hljs-string">'r'</span><span class="">) </span><span class="hljs-keyword">as</span><span class=""> f:
+</span></span><span class="">        yaml_data = f.read()
+</span><span class="">    yaml_data = yaml.load(yaml_data, Loader=yaml.FullLoader)
+</span><span class=""><span class="">    </span><span class="hljs-keyword">return</span><span class=""> jsonify(yaml_data)
+</span></span><span class="">
+</span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-meta">@app.route(</span><span class="hljs-meta hljs-params hljs-string">'/openapi.json'</span><span class="hljs-meta">)</span><span class="">
+</span></span><span class=""><span class=""></span><span class="hljs-function hljs-keyword">def</span><span class="hljs-function"> </span><span class="hljs-function hljs-title">serve_openapi_json</span><span class="hljs-function">():</span><span class="">
+</span></span><span class=""><span class="">    </span><span class="hljs-keyword">return</span><span class=""> send_from_directory(os.path.dirname(__file__), </span><span class="hljs-string">'openapi.json'</span><span class="">)
+</span></span><span class="">
+</span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-meta">@app.route(</span><span class="hljs-meta hljs-params hljs-string">'/&lt;path:path&gt;'</span><span class="hljs-meta hljs-params">, methods=[</span><span class="hljs-meta hljs-params hljs-string">'GET'</span><span class="hljs-meta hljs-params">, </span><span class="hljs-meta hljs-params hljs-string">'POST'</span><span class="hljs-meta hljs-params">]</span><span class="hljs-meta">)</span><span class="">
+</span></span><span class=""><span class=""></span><span class="hljs-function hljs-keyword">def</span><span class="hljs-function"> </span><span class="hljs-function hljs-title">wrapper</span><span class="hljs-function">(</span><span class="hljs-function hljs-params">path</span><span class="hljs-function">):</span><span class="">
+</span></span><span class="">
+</span><span class="">    headers = {
+</span><span class=""><span class="">    </span><span class="hljs-string">'Content-Type'</span><span class="">: </span><span class="hljs-string">'application/json'</span><span class="">,
+</span></span><span class="">    }
+</span><span class="">
+</span><span class=""><span class="">    url = </span><span class="hljs-string">f'</span><span class="hljs-string hljs-subst">{api_url}</span><span class="hljs-string">/</span><span class="hljs-string hljs-subst">{path}</span><span class="hljs-string">'</span><span class="">
+</span></span><span class=""><span class="">    </span><span class="hljs-built_in">print</span><span class="">(</span><span class="hljs-string">f'Forwarding call: </span><span class="hljs-string hljs-subst">{request.method}</span><span class="hljs-string"> </span><span class="hljs-string hljs-subst">{path}</span><span class="hljs-string"> -&gt; </span><span class="hljs-string hljs-subst">{url}</span><span class="hljs-string">'</span><span class="">)
+</span></span><span class="">
+</span><span class=""><span class="">    </span><span class="hljs-keyword">if</span><span class=""> request.method == </span><span class="hljs-string">'GET'</span><span class="">:
+</span></span><span class="">        response = requests.get(url, headers=headers, params=request.args)
+</span><span class=""><span class="">    </span><span class="hljs-keyword">elif</span><span class=""> request.method == </span><span class="hljs-string">'POST'</span><span class="">:
+</span></span><span class=""><span class="">        </span><span class="hljs-built_in">print</span><span class="">(request.headers)
+</span></span><span class="">        response = requests.post(url, headers=headers, params=request.args, json=request.json)
+</span><span class=""><span class="">    </span><span class="hljs-keyword">else</span><span class="">:
+</span></span><span class=""><span class="">        </span><span class="hljs-keyword">raise</span><span class=""> NotImplementedError(</span><span class="hljs-string">f'Method </span><span class="hljs-string hljs-subst">{request.method}</span><span class="hljs-string"> not implemented in wrapper for </span><span class="hljs-string hljs-subst">{path=}</span><span class="hljs-string">'</span><span class="">)
+</span></span><span class=""><span class="">    </span><span class="hljs-keyword">return</span><span class=""> response.content
+</span></span><span class="">
+</span><span class="">
+</span><span class=""><span class=""></span><span class="hljs-keyword">if</span><span class=""> __name__ == </span><span class="hljs-string">'__main__'</span><span class="">:
+</span></span><span class="">    app.run(port=PORT)</span></code></pre></div></div><div class="expn-collapse"><button tabindex="0" class="btn btn-sm btn-filled btn-neutral" type="button"><span class="btn-label-wrap"><span class="btn-label-inner">Collapse&zwj;</span></span></button></div></div></div><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/getting-started/writing-descriptions">
+  <div id="list-item-4"></div>
+  <h2 class="anchor-heading" name="writing-descriptions">Writing descriptions</h2></a></div><p>When a user makes a query that might be a potential request that goes to a plugin, the model looks through the descriptions of the endpoints in the OpenAPI specification along with the <code>description_for_model</code> in the manifest file. Just like with prompting other language models, you will want to test out multiple prompts and descriptions to see what works best.</p><p>The OpenAPI spec itself is a great place to give the model information about the diverse details of your API – what functions are available, with what parameters, etc. Besides using expressive, informative names for each field, the spec can also contain “description” fields for every attribute. These can be used to provide natural language descriptions of what a function does or what information a query field expects, for example. The model will be able to see these, and they will guide it in using the API. If a field is restricted to only certain values, you can also provide an “enum” with descriptive category names.</p><p>The <code>description_for_model</code> attribute gives you the freedom to instruct the model on how to use your plugin generally. Overall, the language model behind Ask Qx is highly capable of understanding natural language and following instructions. Therefore, this is a good place to put in general instructions on what your plugin does and how the model should use it properly. Use natural language, preferably in a concise yet descriptive and objective tone. You can look at some of the examples to have an idea of what this should look like. We suggest starting the <code>description_for_model</code> with “Plugin for …” and then enumerating all of the functionality that your API provides.</p><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/getting-started/best-practices"><h3 class="anchor-heading" name="best-practices">Best practices</h3></a></div><p>Here are some best practices to follow when writing your <code>description_for_model</code> and descriptions in your OpenAPI specification, as well as when designing your API responses:</p><ol><li><p>Your descriptions should not attempt to control the mood, personality, or exact responses of Ask Qx. Ask Qx is designed to write appropriate responses to plugins.</p><p><em>Bad example</em>:</p><blockquote><p>When the user asks to see their todo list, always respond with "I was able to find your todo list! You have [x] todos: [list the todos here]. I can add more todos if you'd like!"</p></blockquote><p><em>Good example</em>:</p><blockquote><p>[no instructions needed for this]</p></blockquote></li><li><p>Your descriptions should not encourage Ask Qx to use the plugin when the user hasn’t asked for your plugin’s particular category of service.</p><p><em>Bad example</em>:</p><blockquote><p>Whenever the user mentions any type of task or plan, ask if they would like to use the TODOs plugin to add something to their todo list.</p></blockquote><p><em>Good example</em>:</p><blockquote><p>The TODO list can add, remove and view the user's TODOs.</p></blockquote></li><li><p>Your descriptions should not prescribe specific triggers for Ask Qx to use the plugin. Ask Qx is designed to use your plugin automatically when appropriate.</p><p><em>Bad example</em>:</p><blockquote><p>When the user mentions a task, respond with "Would you like me to add this to your TODO list? Say 'yes' to continue."</p></blockquote><p><em>Good example</em>:</p><blockquote><p>[no instructions needed for this]</p></blockquote></li><li><p>Plugin API responses should return raw data instead of natural language responses unless it’s necessary. Ask Qx will provide its own natural language response using the returned data.</p><p><em>Bad example</em>:</p><blockquote><p>I was able to find your todo list! You have 2 todos: get groceries and walk the dog. I can add more todos if you'd like!</p></blockquote><p><em>Good example</em>:</p><blockquote><p>{ "todos": [ "get groceries", "walk the dog" ] }</p></blockquote></li></ol><div class="anchor-heading-root"><a class="anchor-heading-link" href="/docs/plugins/getting-started/debugging">
+    <div id="list-item-5"></div>
+    <h2 class="anchor-heading" name="debugging">Debugging</h2></a></div><p>By default, the chat will not show plugin calls and other information that is not surfaced to the user. In order to get a more complete picture of how the model is interacting with your plugin, you can see the request and response by clicking the down arrow on the plugin name after interacting with the plugin.</p><p>A model call to the plugin will usually consist of a message from the model containing JSON-like parameters which are sent to the plugin, followed by a response from the plugin, and finally a message from the model utilizing the information returned by the plugin.</p><p>If you are developing a localhost plugin, you can also open the developer console by going to "Settings" and toggling "Open plugin devtools". From there, you can see more verbose logs and "refresh plugin" which re-fetches the Plugin and OpenAPI specification.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+
+
+</html>
