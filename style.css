@@ -1971,6 +1971,7 @@ h2 {
     padding-left: unset;
   }
 }
+
 .back-bg{
   /* background-image: url("./images/bg_ai.jpg"); */
   background-image: url("./images/5079835.jpg");
@@ -2043,4 +2044,23 @@ h2 {
 }
 .light-pine-bg {
   background-color: #e4e8ff !important;
+}
+@media (max-width: 767px) {
+  .title-text{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .title-sub-text{
+    font-size: 14px;
+  }
+  .img-box-wrapper-circle{
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .back-bg {
+    height: 600px !important;
+  }
+  .custom-bg-icon-wrapper {
+    border-radius: 0 !important;
+  }
 }
