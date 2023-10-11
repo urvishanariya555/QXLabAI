@@ -2116,3 +2116,25 @@ h2 {
   height: 18px;
   margin-right: 5px;
 }
+.custom-flex{
+  display: flex;
+  gap: 10px;
+}
+.border-box-50{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+  margin-bottom: 10px;
+ 
+}
+@media screen and (max-width:767px) {
+  .border-box-50{
+  width: 100%;
+  }
+}
+.border-box-50:hover{
+  background-color: #f2f7ff;
+    border: 1px solid #9dc6ff;
+}
