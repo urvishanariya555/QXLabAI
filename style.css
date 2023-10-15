@@ -2141,6 +2141,7 @@ h2 {
 @media screen and (max-width: 991px) {
   .right-content-scroll {
     padding-left: 0 !important;
+    max-width: 100%;
   }
   .custom-right-content-width{
   width: 100% ;
