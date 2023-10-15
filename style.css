@@ -176,6 +176,7 @@
     padding: 0;
     box-shadow: none;
     border: none;
+    font-size: 18px !important;
   }
 
   .res-header-bar-list .accordion-button:focus {
@@ -199,6 +200,7 @@
 
   .res-header-bar-list .accordion-header button {
     color: #0659fd !important;
+    font-size: 18px !important;
   }
 
   .nav-link {
@@ -209,6 +211,7 @@
     background-color: transparent;
     box-shadow: none;
     color: #0659fd !important;
+    
   }
 
   .res-header-bar-list .accordion-button::after {
@@ -2161,6 +2164,7 @@ h2 {
   .custom-res-text {
     padding: 0 !important;
     line-height: 32px;
+    font-size: 18px !important;
   }
   .custom-table {
     max-width: 100% !important;
