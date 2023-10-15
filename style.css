@@ -2160,4 +2160,8 @@ h2 {
     padding: 0 !important;
     line-height: 32px;
   }
+  .custom-table {
+    max-width: 100% !important;
+    overflow: auto !important;
+  }
 }
