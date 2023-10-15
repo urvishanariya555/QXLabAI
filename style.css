@@ -2164,4 +2164,7 @@ h2 {
     max-width: 100% !important;
     overflow: auto !important;
   }
+  .notice {
+    display: flex;
+  }
 }
