@@ -234,13 +234,14 @@
 
   .navbar-collapse.show {
     position: absolute;
-    top: 55px;
+    top: 86px;
     background: #fff;
     z-index: 1;
     width: 100%;
     left: 0;
     padding-left: 10px;
-    height: calc(100vh - 55px);
+    height: calc(100vh - 86px);
+    padding-top: 10px;
   }
 
   .navbar-nav .nav-link.active,
@@ -281,24 +282,26 @@
     margin-left: 20px;
     padding-left: 30px !important; */
 }
+
 a.list-group-item.list-group-item-action.sidebarSubListText.tabSpace {
   width: 200px;
   border-radius: 8px;
   margin-left: 20px;
   padding-left: 30px !important;
   padding-top: 10px;
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
+
 a.list-group-item.list-group-item-action.sidebarSubListText.tabSpace.active {
   background: #d9e9ff !important;
-    border: none !important;
-    color: #0659fd !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 200px;
-    border-radius: 8px;
-    margin-left: 20px;
-    padding-left: 30px !important;
+  border: none !important;
+  color: #0659fd !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  border-radius: 8px;
+  margin-left: 20px;
+  padding-left: 30px !important;
 }
 
 .sidebarPadding {
@@ -2116,34 +2119,45 @@ h2 {
   height: 18px;
   margin-right: 5px;
 }
-.custom-flex{
+
+.custom-flex {
   display: flex;
   gap: 10px;
 }
-.border-box-50{
+
+.border-box-50 {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 20px;
   padding: 20px;
   width: 50%;
   margin-bottom: 10px;
- 
+
 }
+
 @media screen and (max-width:767px) {
-  .border-box-50{
-  width: 100%;
+  .border-box-50 {
+    width: 100%;
   }
 }
-.border-box-50:hover{
+
+.border-box-50:hover {
   background-color: #f2f7ff;
-    border: 1px solid #9dc6ff;
+  border: 1px solid #9dc6ff;
 }
+
 @media screen and (max-width: 991px) {
   .right-content-scroll {
     padding-left: 0 !important;
     max-width: 100%;
   }
-  .custom-right-content-width{
-  width: 100% ;
+
+  .custom-right-content-width {
+    width: 100%;
   }
+
+  .custom-res-text {
+    padding: 0;
+    line-height: 32px;
   }
+}
