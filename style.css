@@ -2138,3 +2138,11 @@ h2 {
   background-color: #f2f7ff;
     border: 1px solid #9dc6ff;
 }
+@media screen and (max-width: 991px) {
+  .right-content-scroll {
+    padding-left: 0 !important;
+  }
+  .custom-right-content-width{
+  width: 100% ;
+  }
+  }
