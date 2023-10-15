@@ -2165,6 +2165,6 @@ h2 {
     overflow: auto !important;
   }
   .notice {
-    display: flex;
+    display: flex !important;
   }
 }
