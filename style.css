@@ -211,7 +211,7 @@
     background-color: transparent;
     box-shadow: none;
     color: #0659fd !important;
-    
+
   }
 
   .res-header-bar-list .accordion-button::after {
@@ -593,12 +593,9 @@ a {
 }
 
 @media screen and (max-width:767px) {
-  .custom-gap {
-    gap: 32px;
-  }
 
   .overView-gradient-bg {
-    height: 164px;
+    height: 175px;
   }
 
   .overView-content-spacing {
@@ -1820,9 +1817,7 @@ h2 .yellow-badge {
     width: 100%
   }
 
-  .custom-gap .col-lg-6 {
-    padding: 0 !important;
-  }
+
 }
 
 .ovr-page.page-body {
@@ -1864,16 +1859,19 @@ h2 {
 
 
 @media screen and (max-width: 800px) {
-  .ovr-card {
-    height: 164px !important;
-  }
+
 
   .ovr-footer-grid {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .ovr-footer-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
 @media screen and (max-width: 700px) {
   .ovr-shortcuts {
     grid-template-columns: 1fr !important;
@@ -2096,7 +2094,7 @@ h2 {
   background-color: #e4e8ff !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .title-text {
     font-size: 20px;
     line-height: 1.5;
@@ -2112,7 +2110,7 @@ h2 {
   }
 
   .back-bg {
-    height: 600px !important;
+    height: 400px !important;
   }
 
   .custom-bg-icon-wrapper {
@@ -2166,11 +2164,45 @@ h2 {
     line-height: 32px;
     font-size: 18px !important;
   }
+
   .custom-table {
     max-width: 100% !important;
     overflow: auto !important;
   }
+
   .notice {
     display: flex !important;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .custom-gap {
+    gap: 32px;
+  }
+
+  .custom-gap .col-lg-6 {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .back-bg {
+    height: 560px !important;
+  }
+}
+
+@media screen and (max-width:880px) {
+  .overView-content {
+    background-color: #fff;
+  }
+  .custom-top-margin {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:991px) {
+
+  .ovr-card {
+    height: 200px;
   }
 }
